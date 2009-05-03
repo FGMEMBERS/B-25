@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+   <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m> -0.481 </y-m>
+      <z-m>  0.023 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Compass -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.363 </y-m>
+      <z-m>  0.023 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Attitude -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.012 </x-m>
+      <y-m> -0.243 </y-m>
+      <z-m>  0.023 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.481 </y-m>
+      <z-m> -0.097 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Turn -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.363 </y-m>
+      <z-m> -0.097 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.014 </x-m>
+      <y-m> -0.243 </y-m>
+      <z-m> -0.097 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

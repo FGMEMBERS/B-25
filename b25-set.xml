@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="b25-jsbsim-cnf.xml"> -->
+<PropertyList include="b25-yasim-cnf.xml">
+
+  <sim>
+    <description>B 25 Mitchell</description>
+    <author>BARANGER Emmanuel</author>
+  </sim>
+
+</PropertyList>
+
