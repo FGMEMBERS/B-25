@@ -52,6 +52,8 @@
     <object-name>axeDH</object-name>
     <object-name>axeDB</object-name>
     <object-name>air</object-name>
+    <object-name>antenne</object-name>
+    <object-name>tourelle</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -59,6 +61,8 @@
     <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
     <object-name>propdiscD</object-name>
+    <object-name>vitretourelle</object-name>
+    <object-name>cables</object-name>
   </animation>
 
   <animation>
@@ -66,6 +70,7 @@
     <shader>chrome</shader>
     <texture>glass_shader.png</texture>
     <object-name>vitres</object-name>
+    <object-name>vitretourelle</object-name>
   </animation>
 
   <animation>
@@ -75,6 +80,8 @@
     <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
     <object-name>propdiscD</object-name>
+    <object-name>vitretourelle</object-name>
+    <object-name>cables</object-name>
   </animation>
 
   <animation>
@@ -116,6 +123,8 @@
     <object-name>axeDH</object-name>
     <object-name>axeDB</object-name>
     <object-name>air</object-name>
+    <object-name>antenne</object-name>
+    <object-name>tourelle</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
