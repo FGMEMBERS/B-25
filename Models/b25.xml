@@ -54,6 +54,8 @@
     <object-name>air</object-name>
     <object-name>antenne</object-name>
     <object-name>tourelle</object-name>
+    <object-name>soustour</object-name>
+    <object-name>echappes</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -62,6 +64,7 @@
     <object-name>propblurD</object-name>
     <object-name>propdiscD</object-name>
     <object-name>vitretourelle</object-name>
+    <object-name>vitresoustour</object-name>
     <object-name>cables</object-name>
   </animation>
 
@@ -71,6 +74,7 @@
     <texture>glass_shader.png</texture>
     <object-name>vitres</object-name>
     <object-name>vitretourelle</object-name>
+    <object-name>vitresoustour</object-name>
   </animation>
 
   <animation>
@@ -81,6 +85,7 @@
     <object-name>propblurD</object-name>
     <object-name>propdiscD</object-name>
     <object-name>vitretourelle</object-name>
+    <object-name>vitresoustour</object-name>
     <object-name>cables</object-name>
   </animation>
 
@@ -125,6 +130,8 @@
     <object-name>air</object-name>
     <object-name>antenne</object-name>
     <object-name>tourelle</object-name>
+    <object-name>soustour</object-name>
+    <object-name>echappes</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>

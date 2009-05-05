@@ -26,9 +26,13 @@ Some useful keys:
 Thanks
 ======
 
+Jacques Brault who accepted that I use pieces of the texture of this B25 for X-Plane that can be found here:
+http://forums.x-plane.org/index.php?autocom=downloads&showfile=4157
+
 ===============
 BARANGER Emmanuel
 May, 03, 2009. 
+Mau, 05, 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
@@ -61,9 +65,14 @@ Quelques touches utiles :
 Remerciements
 =============
 
+Jacques BRAULT qui a accepté que j'utilise des morceaux de la texture de son B25 pour X-Plane que l'on peut trouver ici :
+http://forums.x-plane.org/index.php?autocom=downloads&showfile=4157
+
 ===============
 BARANGER Emmanuel
 03 Mai 2009.
+05 Mai 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
+
