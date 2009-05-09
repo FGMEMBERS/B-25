@@ -333,7 +333,7 @@
   <animation>
     <type>rotate</type>
     <object-name>directionG</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor> 25 </factor>
     <axis>
       <x1-m>  6.719 </x1-m>
@@ -348,7 +348,7 @@
   <animation>
     <type>rotate</type>
     <object-name>directionD</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor> 25 </factor>
     <axis>
       <x1-m> 6.719 </x1-m>
@@ -364,7 +364,7 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>controls/flight/elevator</property>
+    <property>/controls/flight/elevator</property>
     <factor> 25 </factor>
     <center>
      <x-m> 6.758 </x-m>
@@ -382,7 +382,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronG</object-name>
-    <property>surface-positions/left-aileron-pos-norm</property>
+    <property>/surface-positions/left-aileron-pos-norm</property>
     <factor>15.0</factor>
     <axis>
       <x1-m> -0.499 </x1-m>
@@ -397,7 +397,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronD</object-name>
-    <property>surface-positions/right-aileron-pos-norm</property>
+    <property>/surface-positions/right-aileron-pos-norm</property>
     <factor>15.0</factor>
     <axis>
       <x1-m> -0.182 </x1-m>
@@ -413,7 +413,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG1</object-name>
-    <property>surface-positions/flap-pos-norm</property>
+    <property>/surface-positions/flap-pos-norm</property>
     <factor>-40.0</factor>
     <axis>
       <x1-m>  0.256 </x1-m>
@@ -428,7 +428,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD1</object-name>
-    <property>surface-positions/flap-pos-norm</property>
+    <property>/surface-positions/flap-pos-norm</property>
     <factor>-40.0</factor>
     <axis>
       <x1-m>  0.436 </x1-m>
@@ -443,7 +443,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG2</object-name>
-    <property>surface-positions/flap-pos-norm</property>
+    <property>/surface-positions/flap-pos-norm</property>
     <factor>-40.0</factor>
     <axis>
       <x1-m> -0.182 </x1-m>
@@ -458,7 +458,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD2</object-name>
-    <property>surface-positions/flap-pos-norm</property>
+    <property>/surface-positions/flap-pos-norm</property>
     <factor>-40.0</factor>
     <axis>
       <x1-m>  0.143 </x1-m>
@@ -790,7 +790,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainAvantComlplet</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor> 40.0 </factor>
     <center>
       <x-m> -5.929317 </x-m>
