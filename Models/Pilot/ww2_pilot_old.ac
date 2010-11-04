@@ -8,7 +8,7 @@ data 10
 avantbrasD
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 35
 0.014722 0.075792 -0.081083
 0.011822 0.068692 -0.081983
@@ -389,7 +389,7 @@ data 10
 avantbrasG
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 183
 -0.037203 0.088076 0.206655
 -0.03104 0.06662 0.244355
@@ -2610,7 +2610,7 @@ data 5
 brasD
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 22
 0.306063 0.047226 -0.207684
 0.381672 0.142887 -0.234242
@@ -2882,7 +2882,7 @@ data 5
 brasG
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 32
 0.136932 -0.036759 0.237096
 0.293733 -0.007516 0.181896
@@ -3224,7 +3224,7 @@ data 5
 corps
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 355
 0.211322 0.305461 -0.050745
 0.178222 0.275861 -0.035945
@@ -6403,7 +6403,7 @@ data 7
 cuisseD
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 30
 -0.202798 -0.174854 -0.082338
 -0.122585 -0.184154 -0.125605
@@ -6731,7 +6731,7 @@ data 7
 cuisseG
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 30
 -0.081378 -0.058938 0.162555
 0.150222 -0.069638 0.071255
@@ -7047,7 +7047,7 @@ data 6
 jambeD
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 112
 -0.033048 -0.098061 -0.107382
 -0.059369 -0.069846 -0.094693
@@ -8345,7 +8345,7 @@ data 6
 jambeG
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 112
 -0.090596 -0.073894 0.077468
 -0.065097 -0.100789 0.09947
@@ -9643,7 +9643,7 @@ data 6
 manche
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 343
 -0.04574 0.090127 -0.01014
 -0.048765 0.090535 -0.006605
@@ -13626,7 +13626,7 @@ data 5
 piedD
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 51
 -0.565968 -0.204902 -0.12806
 -0.574342 -0.208143 -0.144882
@@ -14143,7 +14143,7 @@ data 5
 piedG
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 51
 -0.61286 -0.187584 0.173039
 -0.60577 -0.183786 0.155539
@@ -14660,7 +14660,7 @@ data 4
 tete
 texture "ww2_pilot_old.png"
 texrep 1 1
-crease 30.000000
+crease 180.000000
 numvert 783
 0.329507 0.397092 -0.081245
 0.289271 0.416914 -0.081245

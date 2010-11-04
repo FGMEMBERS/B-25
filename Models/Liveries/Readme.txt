@@ -8,7 +8,11 @@ Thanks to him.
 
 Kon-Marine
 
-These liveries were made by : Brett HARRISON 2009
+40-2249
+
+MA956
+
+These liveries were made by : Brett HARRISON 2009/2010
 
 Thanks to him.
 
