@@ -28,25 +28,29 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        <int type="int">0</int>  <!-- 0 immat -->
-        <int type="int">0</int>  <!-- 1 immat -->
-        <int type="int">0</int>  <!-- 2 immat -->
-        <int type="int">0</int>  <!-- 3 immat -->
-        <int type="int">0</int>  <!-- 4 immat -->
-        <int type="int">0</int>  <!-- 5 immat -->
-        <int type="bool">0</int> <!-- 6 smoke -->
-        <int type="int">0</int>  <!-- 7 color -->
+        <int type="int" n="0">  0 </int>                                      <!-- 0 immat -->
+        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
+        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
+        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
+        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
+        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
+        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
+        <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
+        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
+        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
+        <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
+        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>  
       </generic>
     </multiplay>
 
     <flaps>
-      <setting>0.00</setting>
-      <setting>0.25</setting>
-      <setting>0.50</setting>
-      <setting>0.75</setting>
-      <setting>1.00</setting>
+      <setting> 0.00 </setting>
+      <setting> 0.25 </setting>
+      <setting> 0.50 </setting>
+      <setting> 0.75 </setting>
+      <setting> 1.00 </setting>
     </flaps>
 
     <help>
@@ -90,10 +94,13 @@
   </input>
  
   <nasal>
-    <b25>
+    <doors>
       <file>Aircraft/B-25/Nasal/doors.nas</file>
+    </doors>
+    <b25>
       <file>Aircraft/B-25/Nasal/liveries.nas</file>
       <file>Aircraft/B-25/Nasal/light.nas</file>
+      <file>Aircraft/B-25/Nasal/b25.nas</file>
     </b25>
   </nasal>
 

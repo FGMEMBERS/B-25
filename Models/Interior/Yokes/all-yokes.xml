@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Pilot -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Yokes/yoke.xml</path>
+    <offsets>
+      <x-m> -5.215 </x-m>
+      <y-m> -0.324 </y-m>
+      <z-m> -0.042 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Copilot -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Yokes/yoke.xml</path>
+    <offsets>
+      <x-m> -5.215 </x-m>
+      <y-m>  0.324 </y-m>
+      <z-m> -0.042 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

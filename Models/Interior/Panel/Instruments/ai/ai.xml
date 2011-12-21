@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList> 
 
@@ -9,10 +9,7 @@
     <object-name>face</object-name>
     <object-name>fond</object-name>
     <object-name>bezel</object-name>
-    <object-name>visse1</object-name>
-    <object-name>visse2</object-name>
-    <object-name>visse3</object-name>
-    <object-name>visse4</object-name>
+    <object-name>visses</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitre</object-name>
@@ -40,7 +37,7 @@
   <animation> 
     <type>rotate</type>
     <object-name>face</object-name>
-    <property>/instrumentation/attitude-indicator/indicated-roll-deg</property>
+    <property>instrumentation/attitude-indicator/indicated-roll-deg</property>
     <axis> 
       <x> 1 </x>
       <y> 0 </y>

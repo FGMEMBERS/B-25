@@ -110,7 +110,7 @@
 
     <!-- Moteur 2 -->
     <crank>
-      <name>engstart</name>
+      <name>engstart2</name>
       <path>Aircraft/B-25/Sounds/R2600-starter.wav</path>
       <property>/engines/engine[1]/cranking</property>
       <volume>
@@ -121,7 +121,7 @@
     </crank>
 
     <crank>
-      <name>crank</name>
+      <name>crank2</name>
       <mode>looped</mode>
       <path>Aircraft/B-25/Sounds/R2600-starter.wav</path>
       <condition>
@@ -142,7 +142,7 @@
     </crank>
 
     <crank>
-      <name>cough</name>
+      <name>cough2</name>
       <path>Aircraft/B-25/Sounds/R2600-starter.wav</path>
       <property>/engines/engine[1]/running</property>
       <volume>
@@ -157,7 +157,7 @@
     </crank>
 
     <engine>
-      <name>engine</name>
+      <name>engine2</name>
       <mode>looped</mode>
       <path>Aircraft/B-25/Sounds/R2600-running.wav</path>
       <condition>
@@ -185,7 +185,7 @@
     </engine>
 
     <engine>
-      <name>enginerun</name>
+      <name>enginerun2</name>
       <mode>looped</mode>
       <path>Aircraft/B-25/Sounds/R2600-running.wav</path>
       <condition>

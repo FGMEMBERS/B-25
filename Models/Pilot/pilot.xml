@@ -74,5 +74,40 @@
     </axis>
   </animation> 
 
+  <!-- MOVING FEET -->
+<animation>
+  <type>rotate</type>
+  <object-name>piedG</object-name>
+  <property>/controls/flight/rudder</property>
+  <factor>25</factor>
+  <center>
+   <x-m>-0.451</x-m>
+   <y-m>0.000</y-m>
+   <z-m>-0.308</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>piedD</object-name>
+  <property>/controls/flight/rudder</property>
+  <factor>-25</factor>
+  <center>
+   <x-m>-0.451</x-m>
+   <y-m>0.000</y-m>
+   <z-m>-0.308</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+  
 </PropertyList>
 

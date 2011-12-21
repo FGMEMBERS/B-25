@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>divers.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond1</object-name>
+    <object-name>bouton1</object-name>
+    <object-name>bouton2</object-name>
+    <object-name>bouton3</object-name>
+
+    <object-name>fond2</object-name>
+    <object-name>keyL</object-name>
+    <object-name>decreaseL</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>keyR</object-name>
+    <object-name>decreaseR</object-name>
+    <object-name>increaseR</object-name>
+    <object-name>poussoir</object-name>
+    <object-name>LandingSwR</object-name>
+
+    <object-name>fond3</object-name>
+    <object-name>bouton4</object-name>
+    <object-name>bouton5</object-name>
+
+    <object-name>fond4</object-name>
+    <object-name>RPMSwitch1</object-name>
+    <object-name>RPMSwitch2</object-name>
+    <object-name>RPMSwitch3</object-name>
+    <object-name>RPMSwitch4</object-name>
+
+    <object-name>fond5</object-name>
+    <object-name>bouton6</object-name>
+
+    <object-name>fond6</object-name>
+    <object-name>bouton7</object-name>
+
+    <object-name>fond7</object-name>
+    <object-name>bouton8</object-name>
+
+    <object-name>fond8</object-name>
+    <object-name>bouton9</object-name>
+
+    <object-name>fond9</object-name>
+    <object-name>key1</object-name>
+    <object-name>decrease1</object-name>
+    <object-name>increase1</object-name>
+    <object-name>key2</object-name>
+    <object-name>decrease2</object-name>
+    <object-name>increase2</object-name>
+    <object-name>key3</object-name>
+    <object-name>decrease3</object-name>
+    <object-name>increase3</object-name>
+    <object-name>bouton10</object-name>
+    <object-name>bouton11</object-name>
+    <object-name>bouton12</object-name>
+    <object-name>LandingSwL</object-name>
+
+    <object-name>fond10</object-name>
+    <object-name>bouton13</object-name>
+    <object-name>bouton14</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>decreaseL</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>decreaseR</object-name>
+    <object-name>increaseR</object-name>
+    <object-name>decrease1</object-name>
+    <object-name>increase1</object-name>
+    <object-name>decrease2</object-name>
+    <object-name>increase2</object-name>
+    <object-name>decrease3</object-name>
+    <object-name>increase3</object-name>
+    <visible>false</visible>
+  </animation>
+
+</PropertyList>
+

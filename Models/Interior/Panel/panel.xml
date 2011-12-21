@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-   <path>panel.ac</path>
+  <path>panel.ac</path>
 
   <animation>
     <!-- Objets opaques -->
@@ -17,7 +17,7 @@
     <offsets>
       <x-m>  0.013 </x-m>
       <y-m> -0.481 </y-m>
-      <z-m>  0.023 </z-m>
+      <z-m>  0.073 </z-m>
     </offsets>
   </model>
 
@@ -25,9 +25,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.363 </y-m>
-      <z-m>  0.023 </z-m>
+      <z-m>  0.073 </z-m>
     </offsets>
   </model>
 
@@ -35,9 +35,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.012 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.243 </y-m>
-      <z-m>  0.023 </z-m>
+      <z-m>  0.073 </z-m>
     </offsets>
   </model>
 
@@ -45,9 +45,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.481 </y-m>
-      <z-m> -0.097 </z-m>
+      <z-m> -0.047 </z-m>
     </offsets>
   </model>
 
@@ -55,9 +55,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.363 </y-m>
-      <z-m> -0.097 </z-m>
+      <z-m> -0.047 </z-m>
     </offsets>
   </model>
 
@@ -65,10 +65,196 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.243 </y-m>
-      <z-m> -0.097 </z-m>
+      <z-m> -0.047 </z-m>
     </offsets>
+  </model>
+
+  <!-- ADDED  by  JC_SV  -->
+  <!-- PDI  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/pdi/jrb-wbd-pdi.xml</path>
+    <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m> -0.240 </y-m>
+     <z-m>  0.200 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- RRC  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/rrc/jrb-wbd-fluxgate.xml</path>
+     <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m> -0.120 </y-m>
+     <z-m>  0.215 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- VACUUM GAUGE  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vacuum/vacuum.xml</path>
+     <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m> -0.120 </y-m>
+     <z-m>  0.130 </z-m>
+    </offsets> 
+  </model> 
+
+  <!-- CLOCK  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+     <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m> -0.120 </y-m>
+     <z-m>  0.055 </z-m>
+    </offsets> 
+  </model> 
+
+  <!-- VOR1 --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vor/vor.xml</path>
+    <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m> -0.000 </y-m>
+     <z-m>  0.215 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- VOR2 --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vor/vor2.xml</path>
+     <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.125 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- RADIO COMPASS --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
+     <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.038 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- MANIFOLD --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/manifold/manifold.xml</path>
+    <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m>  0.115 </y-m>
+     <z-m>  0.215 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- FUEL PRESS --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/fuelpress/fuel_pressure.xml</path>
+    <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m>  0.115 </y-m>
+     <z-m>  0.125 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- OIL TEMP -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m>  0.115 </y-m>
+      <z-m>  0.038 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- CYL TEMP --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/cyl/cyl.xml</path>
+    <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m>  0.229 </y-m>
+     <z-m>  0.125 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- RPM ( TACHOMETER) --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/rpm/rpm-gauge.xml</path>
+    <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m>  0.229 </y-m>
+     <z-m>  0.209 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- OIL PRESS-->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/oilpress/oilpress.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m>  0.229 </y-m>
+      <z-m>  0.038 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CARB -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/carb/carb.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m>  0.115 </y-m>
+      <z-m> -0.047 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AIR TEMP  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/air-temp/airtemp.xml</path>
+     <offsets>
+     <x-m>  0.013 </x-m>
+     <y-m>  0.229 </y-m>
+     <z-m> -0.047 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- FUEL GAUGE 1  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge1.xml</path>
+     <offsets>
+     <x-m>  0.022 </x-m>
+     <y-m>  0.329 </y-m>
+     <z-m>  0.038 </z-m>
+    </offsets> 
+  </model>
+
+  <!-- FUEL GAUGE 2  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge2.xml</path>
+     <offsets>
+     <x-m>  0.022 </x-m>
+     <y-m>  0.329 </y-m>
+     <z-m> -0.047 </z-m>
+    </offsets> 
+  </model>
+ 
+  <!-- FLAPS AND GEAR-->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m>  0.429 </y-m>
+      <z-m>  0.038 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALL SWITCH -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/all-switch.xml</path>
   </model>
 
 </PropertyList>

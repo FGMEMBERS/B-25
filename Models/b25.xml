@@ -219,16 +219,16 @@
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/B-25/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.277 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.112 </z-m>
+    </offsets>
   </model>
 
   <!-- Intérieur -->
   <model>
     <path>Aircraft/B-25/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Les moteurs -->
@@ -257,72 +257,54 @@
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m> -3.192 </y-m>
       <z-m>  0.540 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m> -3.408 </y-m>
       <z-m>  0.404 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m> -3.594 </y-m>
       <z-m>  0.077 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m> -3.601 </y-m>
       <z-m> -0.168 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m> -3.518 </y-m>
       <z-m> -0.474 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m> -3.395 </y-m>
       <z-m> -0.610 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -330,72 +312,54 @@
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m> -2.590 </y-m>
       <z-m>  0.540 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m> -2.381 </y-m>
       <z-m>  0.412 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m> -2.259 </y-m>
       <z-m>  0.087 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m> -2.181 </y-m>
       <z-m> -0.168 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m> -2.259 </y-m>
       <z-m> -0.465 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m> -2.387 </y-m>
       <z-m> -0.610 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -403,72 +367,54 @@
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m>  3.192 </y-m>
       <z-m>  0.540 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m>  3.408 </y-m>
       <z-m>  0.404 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m>  3.594 </y-m>
       <z-m>  0.077 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m>  3.601 </y-m>
       <z-m> -0.168 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m>  3.518 </y-m>
       <z-m> -0.474 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m>  3.395 </y-m>
       <z-m> -0.610 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -476,72 +422,54 @@
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m>  2.590 </y-m>
       <z-m>  0.540 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m>  2.381 </y-m>
       <z-m>  0.412 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m>  2.259 </y-m>
       <z-m>  0.087 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m>  2.181 </y-m>
       <z-m> -0.168 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.802 </x-m>
+      <x-m> -3.080 </x-m>
       <y-m>  2.259 </y-m>
       <z-m> -0.465 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Effects/cranking/cranking.xml</path>
     <offsets>
-      <x-m> -3.879 </x-m>
+      <x-m> -3.214 </x-m>
       <y-m>  2.387 </y-m>
       <z-m> -0.610 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -860,12 +788,12 @@
       <entry><ind> 1.0 </ind><dep> 95 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -5.642 </x1-m>
-     <y1-m>  0.091 </y1-m>
-     <z1-m> -0.961 </z1-m>
-     <x2-m> -5.090 </x2-m>
-     <y2-m>  0.091 </y2-m>
-     <z2-m> -0.994 </z2-m>
+      <x1-m> -5.642 </x1-m>
+      <y1-m>  0.091 </y1-m>
+      <z1-m> -0.961 </z1-m>
+      <x2-m> -5.090 </x2-m>
+      <y2-m>  0.091 </y2-m>
+      <z2-m> -0.994 </z2-m>
     </axis>
   </animation>
 
@@ -880,12 +808,12 @@
       <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -4.360 </x1-m>
-     <y1-m>  0.231 </y1-m>
-     <z1-m> -1.017 </z1-m>
-     <x2-m> -3.635 </x2-m>
-     <y2-m>  0.231 </y2-m>
-     <z2-m> -1.017 </z2-m>
+      <x1-m> -4.360 </x1-m>
+      <y1-m>  0.231 </y1-m>
+      <z1-m> -1.017 </z1-m>
+      <x2-m> -3.635 </x2-m>
+      <y2-m>  0.231 </y2-m>
+      <z2-m> -1.017 </z2-m>
     </axis>
   </animation>
 
@@ -899,12 +827,12 @@
       <entry><ind> 1.0 </ind><dep> 65 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -1.270 </x1-m>
-     <y1-m> -2.328 </y1-m>
-     <z1-m> -0.557 </z1-m>
-     <x2-m> -0.862 </x2-m>
-     <y2-m> -2.235 </y2-m>
-     <z2-m> -0.557 </z2-m>
+      <x1-m> -1.270 </x1-m>
+      <y1-m> -2.328 </y1-m>
+      <z1-m> -0.557 </z1-m>
+      <x2-m> -0.862 </x2-m>
+      <y2-m> -2.235 </y2-m>
+      <z2-m> -0.557 </z2-m>
     </axis>
   </animation>
 
@@ -919,12 +847,12 @@
       <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -0.862 </x1-m>
-     <y1-m> -2.325 </y1-m>
-     <z1-m> -0.557 </z1-m>
-     <x2-m>  0.107 </x2-m>
-     <y2-m> -2.239 </y2-m>
-     <z2-m> -0.509 </z2-m>
+      <x1-m> -0.862 </x1-m>
+      <y1-m> -2.325 </y1-m>
+      <z1-m> -0.557 </z1-m>
+      <x2-m>  0.107 </x2-m>
+      <y2-m> -2.239 </y2-m>
+      <z2-m> -0.509 </z2-m>
     </axis>
   </animation>
 
@@ -939,12 +867,12 @@
       <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -0.862 </x1-m>
-     <y1-m> -3.457 </y1-m>
-     <z1-m> -0.557 </z1-m>
-     <x2-m>  0.107 </x2-m>
-     <y2-m> -3.443 </y2-m>
-     <z2-m> -0.509 </z2-m>
+      <x1-m> -0.862 </x1-m>
+      <y1-m> -3.457 </y1-m>
+      <z1-m> -0.557 </z1-m>
+      <x2-m>  0.107 </x2-m>
+      <y2-m> -3.443 </y2-m>
+      <z2-m> -0.509 </z2-m>
     </axis>
   </animation>
 
@@ -958,12 +886,12 @@
       <entry><ind> 1.0 </ind><dep> -65 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -1.270 </x1-m>
-     <y1-m>  2.328 </y1-m>
-     <z1-m> -0.557 </z1-m>
-     <x2-m> -0.862 </x2-m>
-     <y2-m>  2.235 </y2-m>
-     <z2-m> -0.557 </z2-m>
+      <x1-m> -1.270 </x1-m>
+      <y1-m>  2.328 </y1-m>
+      <z1-m> -0.557 </z1-m>
+      <x2-m> -0.862 </x2-m>
+      <y2-m>  2.235 </y2-m>
+      <z2-m> -0.557 </z2-m>
     </axis>
   </animation>
 
@@ -978,12 +906,12 @@
       <entry><ind> 1.0 </ind><dep>   0 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -0.862 </x1-m>
-     <y1-m>  2.325 </y1-m>
-     <z1-m> -0.557 </z1-m>
-     <x2-m>  0.107 </x2-m>
-     <y2-m>  2.239 </y2-m>
-     <z2-m> -0.509 </z2-m>
+      <x1-m> -0.862 </x1-m>
+      <y1-m>  2.325 </y1-m>
+      <z1-m> -0.557 </z1-m>
+      <x2-m>  0.107 </x2-m>
+      <y2-m>  2.239 </y2-m>
+      <z2-m> -0.509 </z2-m>
     </axis>
   </animation>
 
@@ -998,12 +926,12 @@
       <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
     </interpolation>
     <axis>
-     <x1-m> -0.862 </x1-m>
-     <y1-m>  3.457 </y1-m>
-     <z1-m> -0.557 </z1-m>
-     <x2-m>  0.107 </x2-m>
-     <y2-m>  3.443 </y2-m>
-     <z2-m> -0.509 </z2-m>
+      <x1-m> -0.862 </x1-m>
+      <y1-m>  3.457 </y1-m>
+      <z1-m> -0.557 </z1-m>
+      <x2-m>  0.107 </x2-m>
+      <y2-m>  3.443 </y2-m>
+      <z2-m> -0.509 </z2-m>
     </axis>
   </animation>
 
@@ -1128,9 +1056,9 @@
       <entry><ind> 1.00 </ind><dep>  0.29 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0.0 </x>
-      <y> 0.0 </y>
-      <z> 1.0 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -1150,9 +1078,9 @@
       <entry><ind> 1.00 </ind><dep>  0.29 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0.0 </x>
-      <y> 0.0 </y>
-      <z> 1.0 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 

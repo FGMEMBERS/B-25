@@ -44,7 +44,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ball</object-name>
-    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <min>-1.1</min>
     <max>1.1</max>
     <interpolation>
@@ -66,7 +66,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
+    <property>instrumentation/turn-indicator/indicated-turn-rate</property>
     <factor>8.0</factor>
     <axis>
       <x> -1 </x>

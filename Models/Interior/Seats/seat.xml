@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>seat.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>siege</object-name>
+    <object-name>accoudoirs</object-name>
+    <object-name>structure</object-name>
+    <object-name>socle</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+</PropertyList>
+

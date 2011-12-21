@@ -61,11 +61,6 @@
       <entry><ind> 330.21 </ind><dep> 575 </dep></entry>
       <entry><ind> 347.59 </ind><dep> 610 </dep></entry>
     </interpolation>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y> 

@@ -7,7 +7,9 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>planchet</object-name>
     <object-name>inttour</object-name>
+    <object-name>supportyokes</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
@@ -25,6 +27,16 @@
     <object-name>intvitres</object-name>
   </animation>
 
+  <!-- Sièges -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Seats/all-seats.xml</path>
+  </model>
+
+  <!-- Les manches -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Yokes/all-yokes.xml</path>
+  </model>
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/B-25/Models/Pilot/pilot.xml</path>
@@ -32,9 +44,6 @@
       <x-m> -4.935 </x-m>
       <y-m> -0.332 </y-m>
       <z-m>  0.329 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -52,15 +61,20 @@
   </model>
 
   <model>
-    <path>Aircraft/B-25/Models/Interior/Panel/console.xml</path>
+    <path>Aircraft/B-25/Models/Interior/Panel/Pedestal/console.xml</path>
     <offsets>
       <x-m> -5.223 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.145 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Divers/all.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Pedals/all-pedals.xml</path>
   </model>
 
 </PropertyList>

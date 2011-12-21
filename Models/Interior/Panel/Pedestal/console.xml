@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>console.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>console</object-name>
+    <object-name>ElevatorTrimWheel</object-name>
+    <object-name>Starter</object-name>
+    <object-name>MagnetoL</object-name>
+    <object-name>decreaseL</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>MagnetoR</object-name>
+    <object-name>decreaseR</object-name>
+    <object-name>increaseR</object-name>
+    <object-name>manette1</object-name>
+    <object-name>manette2</object-name>
+    <object-name>ParkingBrake</object-name>
+    <object-name>Throttle.Lever.L</object-name>
+    <object-name>Throttle.Sphere.L</object-name>
+    <object-name>Throttle.Lever.R</object-name>
+    <object-name>Throttle.Sphere.R</object-name>
+    <object-name>ThrottleLock</object-name>
+    <object-name>Propeller.Lever.L</object-name>
+    <object-name>Propeller.Sphere.L</object-name>
+    <object-name>Propeller.Lever.R</object-name>
+    <object-name>Propeller.Sphere.R</object-name>
+    <object-name>Mixture.Lever.L</object-name>
+    <object-name>Mixture.SphereL</object-name>
+    <object-name>Mixture.Lever.R</object-name>
+    <object-name>Mixture.SphereR</object-name>
+    <object-name>ElevatorTrim.Needle</object-name>
+    <object-name>tour0</object-name>
+    <object-name>PropFeathererL</object-name>
+    <object-name>tour1</object-name>
+    <object-name>PropFeathererR</object-name>
+    <object-name>MixtureLock</object-name>
+    <object-name>MixtureLockSphere</object-name>
+    <object-name>CarbHeat.LeverL</object-name>
+    <object-name>CarbHeat.SphereL</object-name>
+    <object-name>CarbHeat.LeverR</object-name>
+    <object-name>CarbHeat.SphereR</object-name>
+    <object-name>SCBooster.LeverL</object-name>
+    <object-name>SCBooster.SphereL</object-name>
+    <object-name>SCBooster.LeverR</object-name>
+    <object-name>SCBooster.SphereR</object-name>
+    <object-name>FlapLever</object-name>
+    <object-name>Cowl.Flap.L</object-name>
+    <object-name>Cowl.Flap.R</object-name>
+    <object-name>RudderTrim</object-name>
+    <object-name>AileronTrim</object-name>
+    <object-name>GearLever</object-name>
+    <object-name>manette3</object-name>
+    <object-name>manette4</object-name>
+
+    <object-name>RedIDSw</object-name>
+    <object-name>GreenIDSw</object-name>
+    <object-name>AmberIDSw</object-name>
+    <object-name>RPMSwitch1</object-name>
+    <object-name>RPMSwitch2</object-name>
+    <object-name>RPMSwitch3</object-name>
+    <object-name>RPMSwitch4</object-name>
+    <object-name>LandingSwL</object-name>
+    <object-name>LandingSwR</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Left Throttle  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Throttle.Lever.L</object-name>
+    <object-name>Throttle.Sphere.L</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m>  0.059 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+   
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Throttle.Lever.L</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Throttle.Lever.L</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Right Throttle  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Throttle.Lever.R</object-name>
+    <object-name>Throttle.Sphere.R</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m>  0.059 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+            
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Throttle.Lever.R</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>                 
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Throttle.Lever.R</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Left Propeller -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Propeller.Lever.L</object-name>
+    <object-name>Propeller.Sphere.L</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m>  0.059 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Propeller.Lever.L</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Propeller.Lever.L</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Right Propeller -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Propeller.Lever.R</object-name>
+    <object-name>Propeller.Sphere.R</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m>  0.059 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Propeller.Lever.R</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/propeller-pitch</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Propeller.Lever.R</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/propeller-pitch</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Left Mixture -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Mixture.Lever.L</object-name>
+    <object-name>Mixture.SphereL</object-name>
+    <property>controls/engines/engine[0]/mixture</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m>  0.059 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Mixture.Lever.L</object-name> 
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Mixture.Lever.L</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Right Mixture  -->    
+  <animation>
+    <type>rotate</type>
+    <object-name>Mixture.Lever.R</object-name>
+    <object-name>Mixture.SphereR</object-name>
+    <property>controls/engines/engine[1]/mixture</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m>  0.059 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.108 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Mixture.Lever.R</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/mixture</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Mixture.Lever.R</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/mixture</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Elevator Trim Wheel  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ElevatorTrimWheel</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor> 400 </factor>
+    <center>
+      <x-m>  0.059 </x-m>
+      <y-m> -0.082 </y-m>
+      <z-m>  0.110 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ElevatorTrimWheel</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/elevator-trim</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ElevatorTrimWheel</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/elevator-trim</property>
+        <step type="double">-0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Rudder Trim  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>RudderTrim</object-name>
+    <property>controls/flight/rudder-trim</property>
+    <factor> 400 </factor>
+    <center>
+      <x-m>  0.425 </x-m>
+      <y-m>  0.029 </y-m>
+      <z-m> -0.116 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>RudderTrim</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/rudder-trim</property>
+        <step type="double">-0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>RudderTrim</object-name>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/rudder-trim</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <!--  Elevator Trim Needle  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ElevatorTrim.Needle</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor> 0.7 </factor>
+    <center>
+      <x-m>  0.010 </x-m>
+      <y-m> -0.054 </y-m>
+      <z-m> -0.499 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Aileron Trim --> 
+  <animation>
+    <type>rotate</type>
+    <object-name>AileronTrim</object-name>
+    <property>controls/flight/aileron-trim</property>
+    <factor> 500 </factor>
+    <center>
+      <x-m>  0.369 </x-m>
+      <y-m>  0.014 </y-m>
+      <z-m> -0.118 </z-m>
+    </center>
+    <axis>
+      <x>  0.5 </x>
+      <y>  0.0 </y>
+      <z> -0.5 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>AileronTrim</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/aileron-trim</property>
+        <step type="double">-0.05</step>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+   <type>pick</type>
+   <visible>true</visible>
+   <object-name>AileronTrim</object-name>
+   <action>
+     <button>1</button>
+     <repeatable>false</repeatable>
+     <binding>
+       <command>property-adjust</command>
+       <property>/controls/flight/aileron-trim</property>
+       <step type="double">0.05</step>
+     </binding>
+    </action>
+  </animation>
+
+  <!-- Parking  Brake  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>ParkingBrake</object-name>
+    <property>controls/gear/brake-parking[0]</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m>  0.619 </x-m>
+      <y-m> -0.021 </y-m>
+      <z-m> -0.119 </z-m>
+    </center>
+    <axis>
+     <x> 0 </x>
+     <y> 1 </y>
+     <z> 0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>ParkingBrake</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/gear/brake-parking[0]</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Gear  Lever  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>GearLever</object-name>
+    <property>controls/gear/gear-down</property>
+    <factor>-40</factor>
+    <center>
+      <x-m>  0.266 </x-m>
+      <y-m> -0.122 </y-m>
+      <z-m> -0.130 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>GearLever</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/gear-down</property>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Flaps Lever  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>FlapLever</object-name>
+    <property>controls/flight/flaps</property>
+    <factor> 45 </factor>
+    <center>
+      <x-m>  0.240 </x-m>
+      <y-m>  0.010 </y-m>
+      <z-m> -0.118 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>FlapLever</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>controls.flapsDown(1)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>controls.flapsDown(0)</script>
+        </binding>
+      </mod-up>
+    </action>
+    <action>
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>controls.flapsDown(-1)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>controls.flapsDown(0)</script>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <!-- Magnetos  !!  -->
+  <animation>
+    <type>rotate</type>
+    <object-name>MagnetoL</object-name>
+    <property>controls/engines/engine[0]/magnetos</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -0.217 </x-m>
+      <y-m> -0.012 </y-m>
+      <z-m>  0.210 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>MagnetoR</object-name>
+    <property>controls/engines/engine[1]/magnetos</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -0.217 </x-m>
+      <y-m>  0.027 </y-m>
+      <z-m>  0.210 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>increaseL</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <condition>
+          <less-than>
+            <property>controls/engines/engine[0]/magnetos</property>
+            <value>3</value>
+          </less-than>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <step>1</step>
+      </binding>
+      <binding>
+        <condition>
+          <equals>
+            <property>controls/engines/engine[0]/magnetos</property>
+            <value>3</value>
+          </equals>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[0]/starter</property>
+        <value>1</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/starter</property>
+          <value>0</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>decreaseL</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[0]/magnetos</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>4</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>increaseR</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <condition>
+          <less-than>
+            <property>controls/engines/engine[1]/magnetos</property>
+            <value>3</value>
+          </less-than>
+        </condition>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <step>1</step>
+      </binding>
+      <binding>
+        <condition>
+          <equals>
+            <property>controls/engines/engine[1]/magnetos</property>
+            <value>3</value>
+          </equals>
+        </condition>
+        <command>property-assign</command>
+        <property>controls/engines/engine[1]/starter</property>
+        <value>1</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[1]/starter</property>
+          <value>0</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>decreaseR</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <binding>
+      <command>property-adjust</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>3</max>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
+
