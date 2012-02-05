@@ -23,6 +23,30 @@
     <!-- Objets transparents -->
   </animation>
 
+<!--  
+  <animation>
+    <type>material</type>
+    <object-name>tete</object-name>
+    <object-name>corps</object-name>
+    <object-name>brasG</object-name>
+    <object-name>brasD</object-name>
+    <object-name>avantbrasG</object-name>
+    <object-name>avantbrasD</object-name>
+    <object-name>manche</object-name>
+    <object-name>cuisseG</object-name>
+    <object-name>cuisseD</object-name>
+    <object-name>jambeG</object-name>
+    <object-name>jambed</object-name>
+    <object-name>piedG</object-name>
+    <object-name>piedD</object-name>
+    <emission>
+      <red>   0.003 </red>
+      <green> 0.003 </green>
+      <blue>  0.003 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>tete</object-name>
@@ -73,6 +97,8 @@
       <z> 0.000 </z>
     </axis>
   </animation> 
+
+-->
 
   <!-- MOVING FEET -->
 <animation>

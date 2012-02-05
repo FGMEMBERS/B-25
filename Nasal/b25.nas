@@ -1,4 +1,5 @@
-[21~
+
+
 ################ OIL TEMP CONVERSION #################
 
   setlistener("engines/engine/oil-temperature-degf", func(degf) {
@@ -16,50 +17,7 @@
     });
 
 
-################ TIRE SYSTEM #################
 
-#tire rotation per minute by circumference/groundspeed#
-TireSpeed = {
-    new : func(number){
-        m = { parents : [TireSpeed] };
-            m.num=number;
-            m.circumference=[];
-            m.tire=[];
-            m.rpm=[];
-            for(var i=0; i<m.num; i+=1) {
-                var diam =arg[i];
-                var circ=diam * math.pi;
-                append(m.circumference,circ);
-                append(m.tire,props.globals.initNode("gear/gear["~i~"]/tire-rpm",0,"DOUBLE"));
-                append(m.rpm,0);
-            }
-        m.count = 0;
-        return m;
-    },
-    #### calculate and write rpm ###########
-    get_rotation: func (fdm1){
-        var speed=0;
-        if(fdm1=="yasim"){ 
-            speed =getprop("gear/gear["~me.count~"]/rollspeed-ms") or 0;
-            speed=speed*60;
-            }elsif(fdm1=="jsb"){
-                speed =getprop("fdm/jsbsim/gear/unit["~me.count~"]/wheel-speed-fps") or 0;
-                speed=speed*18.288;
-            }
-        var wow = getprop("gear/gear["~me.count~"]/wow");
-        if(wow){
-            me.rpm[me.count] = speed / me.circumference[me.count];
-        }else{
-            if(me.rpm[me.count] > 0) me.rpm[me.count]=me.rpm[me.count]*0.95;
-        }
-        me.tire[me.count].setValue(me.rpm[me.count]);
-        me.count+=1;
-        if(me.count>=me.num)me.count=0;
-    },
-};
-
-#var tire=TireSpeed.new(# of gear,diam[0],diam[1],diam[2], ...);
-var tire=TireSpeed.new(3, 1.143, 1.143, 0.560);
 
 
 ############### ENGINE SYSTEM ################
@@ -102,9 +60,9 @@ var Engine = {
         var cyltemp = me.cyl_temp.getValue();
         var cheat =   me.carb_heat.getValue();
 	var cooling =    (getprop("velocities/airspeed-kt") * 0.1) *2;
-
+     
         ######### OIL TEMPERATURE #########
-
+    
 	cooling += (mx * 5);
 	var tgt  = me.ot_target + mp;
 	var tgt -= cooling;
@@ -115,9 +73,10 @@ var Engine = {
 		if(OT > me.air_temp.getValue()) OT-=0.001; 
 	}
         me.oil_temp.setValue(OT);
-       
+   
         #### CYLINDER HEAT TEMPERATURE ####
-   	var thr = getprop("/engines/engine["~eng_num~"]/prop-thrust");
+   
+	var thr = getprop("/engines/engine["~eng_num~"]/prop-thrust");
 	var ct = getprop("/engines/engine["~eng_num~"]/cyl-temp");
 	var cp = getprop("/controls/engines/engine["~eng_num~"]/cowl-flaps-norm");
 	var as = getprop("/velocities/airspeed-kt");
@@ -131,7 +90,7 @@ var Engine = {
 	interpolate("/engines/engine["~eng_num~"]/cyl-temp", temp * 0.4, 45);
        
         ##### CARBURATOR TEMPERATURE ######
-      
+    
         if(props.globals.getNode("systems/electrical/outputs/carb-heat").getValue() > 8){
           cheat += 0.01;
           if(cheat > 40) cheat = 40;
@@ -146,3 +105,21 @@ var Engine = {
 	ctemp = rpm * 0.007;
 	me.carb_temp.setValue(et0 - ctemp + cheat);
 
+###############################################
+
+var update_system = func{
+  EngineLeft.update(0);
+  EngineRight.update(1);
+
+    if(getprop("/engines/engine[0]/running")){
+      setprop("/controls/engines/engine[0]/starter",0);
+      setprop("/controls/engines/engine[0]/cranking",0);
+    }
+
+
+    if(getprop("/engines/engine[1]/running")){
+      setprop("/controls/engines/engine[1]/starter",0);
+      setprop("/controls/engines/engine[1]/cranking",0);
+  }
+}
+ 

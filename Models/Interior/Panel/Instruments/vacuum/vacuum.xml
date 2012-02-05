@@ -2,12 +2,13 @@
 
 <PropertyList>
 
-  <path>vac-gauge.ac</path>
+<path>vac-gauge.ac</path>
 
   <animation>
     <object-name>fond</object-name>
-    <object-name>face</object-name>
-    <object-name>needle</object-name>
+    <object-name>visses</object-name>
+    <object-name>VACface</object-name>
+    <object-name>VACneedle</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -26,19 +27,19 @@
 
   <animation>
     <type>material</type>
-    <object-name>face</object-name>
-    <object-name>needle</object-name>
+    <object-name>VACface</object-name>
+    <object-name>VACneedle</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>needle</object-name>
+    <object-name>VACneedle</object-name>
     <property>systems/vacuum/suction-inhg</property>
     <interpolation>
       <entry><ind>  0 </ind><dep>   0 </dep></entry>
@@ -52,4 +53,3 @@
   </animation>
 
 </PropertyList>
-

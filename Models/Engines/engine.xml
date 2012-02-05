@@ -7,27 +7,72 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>bloc</object-name>
-    <object-name>caches</object-name>
-    <object-name>cames</object-name>
-    <object-name>pistons</object-name>
-    <object-name>ecrous</object-name>
-    <object-name>bougies</object-name>
-    <object-name>tuyaux</object-name>
     <object-name>echappes</object-name>
-    <object-name>souflets</object-name>
     <object-name>moteurlow</object-name>
   </animation>
 
+  <model>
+    <name>Bloc1</name>
+    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+  </model>
+
+  <model>
+    <name>Bloc2</name>
+    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 52 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Bloc3</name>
+    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 104 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Bloc4</name>
+    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 156 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Bloc5</name>
+    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 208 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Bloc6</name>
+    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 260 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Bloc7</name>
+    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <offsets>
+      <roll-deg> 312 </roll-deg>
+    </offsets>
+  </model>
+
   <animation>
     <name>HighPoly</name>
-    <object-name>bloc</object-name>
-    <object-name>caches</object-name>
-    <object-name>cames</object-name>
-    <object-name>pistons</object-name>
-    <object-name>ecrous</object-name>
-    <object-name>bougies</object-name>
-    <object-name>tuyaux</object-name>
-    <object-name>souflets</object-name>
+    <object-name>Bloc1</object-name>
+    <object-name>Bloc2</object-name>
+    <object-name>Bloc3</object-name>
+    <object-name>Bloc4</object-name>
+    <object-name>Bloc5</object-name>
+    <object-name>Bloc6</object-name>
+    <object-name>Bloc7</object-name>
     <object-name>echappes</object-name>
   </animation>
 

@@ -8,15 +8,50 @@
     <!-- Objets opaques -->
     <object-name>Column</object-name>
     <object-name>Yoke</object-name>
-
+    <object-name>Yoke.Button</object-name>
+    <object-name>Yoke.Button.Base</object-name>
+    <object-name>rivets</object-name>
     <!-- Objets transparents -->
   </animation>
+
+
+  <animation>
+    <type>material</type>
+    <object-name>Yoke</object-name>
+    <object-name>Yoke.Button</object-name>
+    <object-name>Yoke.Button.Base</object-name>
+    <object-name>rivets</object-name>
+    <emission>
+      <red>   0.004 </red>
+      <green> 0.004 </green>
+      <blue>  0.004 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+
+
+  <animation>
+    <type>material</type>
+    <object-name>Column</object-name>
+    <emission>
+      <red>   0.002 </red>
+      <green> 0.002 </green>
+      <blue>  0.002 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+
 
   <!-- Let's animate Yokes (JC_SV) -->
   <animation>
     <type>rotate</type>
     <object-name>Yoke</object-name>
     <object-name>Column</object-name>
+    <object-name>Yoke.Button</object-name>
+    <object-name>Yoke.Button.Base</object-name>
+    <object-name>rivets</object-name>
     <property>controls/flight/elevator</property>
     <factor> 10 </factor>
     <axis>
@@ -29,12 +64,14 @@
   <animation>
     <type>rotate</type>
     <object-name>Yoke</object-name>
+    <object-name>Yoke.Button</object-name>
+    <object-name>Yoke.Button.Base</object-name>
     <property>controls/flight/aileron</property>
     <factor> 40 </factor>
     <center>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
-      <z-m> 0.451 </z-m>
+      <z-m> 0.530 </z-m>
     </center>
     <axis>
       <x> -1 </x>

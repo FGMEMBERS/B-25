@@ -5,13 +5,16 @@
   <path>flapgear.ac</path>
 
   <animation>
+    <!-- Objects Opaques -->
     <object-name>fond</object-name>
-    <object-name>face</object-name>
+    <object-name>visses</object-name>
     <object-name>Flap.needle</object-name>
     <object-name>Lgear.needle</object-name>
     <object-name>Rgear.needle</object-name>
     <object-name>Cgear.needle</object-name>
+    <object-name>FlapGear.face</object-name>
 
+    <!-- Objects Transparents -->
     <object-name>vitre</object-name>
   </animation>
 
@@ -21,24 +24,17 @@
   </animation>
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
-    <object-name>face</object-name>
+    <object-name>FlapGear.face</object-name>
     <object-name>Flap.needle</object-name>
     <object-name>Lgear.needle</object-name>
     <object-name>Rgear.needle</object-name>
     <object-name>Cgear.needle</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -50,7 +46,7 @@
     <center>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
-      <z-m> 0.025 </z-m>
+      <z-m> 0.023 </z-m>
     </center>
     <axis>
       <x> -1 </x>
@@ -63,11 +59,11 @@
     <type>rotate</type>
     <object-name>Lgear.needle</object-name>
     <property>gear/gear[0]/position-norm</property>
-    <factor> 85 </factor>
+    <factor> 90 </factor>
     <center>
-      <x-m>  0.00 </x-m>
-      <y-m> -0.02 </y-m>
-      <z-m>  0.00 </z-m>
+      <x-m>  0.005</x-m>
+      <y-m> -0.019</y-m>
+      <z-m>  0.000</z-m>
     </center>
     <axis>
       <x> -1 </x>
@@ -80,11 +76,11 @@
     <type>rotate</type>
     <object-name>Rgear.needle</object-name>
     <property>gear/gear[1]/position-norm</property>
-    <factor> 85 </factor>
+    <factor> 90 </factor>
     <center>
-      <x-m> 0.00 </x-m>
-      <y-m> 0.02 </y-m>
-      <z-m> 0.00 </z-m>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.019 </y-m>
+      <z-m> 0.000 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -99,7 +95,7 @@
     <property>gear/gear[2]/position-norm</property>
     <factor> 90 </factor>
     <center>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m>  0.001 </y-m>
       <z-m> -0.019 </z-m>
     </center>

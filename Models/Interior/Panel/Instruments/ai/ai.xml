@@ -5,12 +5,17 @@
   <path>ai.ac</path>
 
   <animation>
+    <name>Global</name>
     <!-- Objets opaques -->
-    <object-name>face</object-name>
     <object-name>fond</object-name>
-    <object-name>bezel</object-name>
+    <object-name>cadran</object-name>
+    <object-name>face</object-name>
     <object-name>visses</object-name>
-
+    <object-name>contour</object-name>
+    <object-name>interrupteur</object-name>
+    <object-name>intocage</object-name>
+    <object-name>ai</object-name>
+	
     <!-- Objets transparents -->
     <object-name>vitre</object-name>
   </animation>
@@ -19,25 +24,31 @@
     <type>shader</type>
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <name>vitre</name>
+    <object-name>vitre</object-name>
   </animation>
 
   <animation> 
     <type>material</type>
     <object-name>face</object-name>
-    <object-name>fond</object-name>
+    <object-name>cadran</object-name>
+    <object-name>ai</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation> 
     <type>rotate</type>
-    <object-name>face</object-name>
+    <object-name>ai</object-name>
     <property>instrumentation/attitude-indicator/indicated-roll-deg</property>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.026 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
     <axis> 
       <x> 1 </x>
       <y> 0 </y>

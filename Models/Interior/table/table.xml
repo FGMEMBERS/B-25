@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>table.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>NavigatorTableStowage</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>NavigatorTableStowage</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/config/table-up</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>NavigatorTableStowage</object-name>
+    <property>sim/model/config/table-up</property>
+    <factor> -90 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

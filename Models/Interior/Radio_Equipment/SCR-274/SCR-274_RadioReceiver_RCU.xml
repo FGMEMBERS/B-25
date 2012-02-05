@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>SCR-274_RadioReceiver_RCU.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>ReceiverCtrlBox</object-name>
+    <object-name>RadioDial1</object-name>
+    <object-name>RadioDial2</object-name>
+    <object-name>RadioDial3</object-name>
+    <object-name>boutons</object-name>
+    <object-name>RadioKnob1</object-name>
+    <object-name>RadioKnob2</object-name>
+    <object-name>RadioKnob3</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+   <type>material</type>
+    <object-name>ReceiverCtrlBox</object-name>
+    <object-name>RadioDial1</object-name>
+    <object-name>RadioDial2</object-name>
+    <object-name>RadioDial3</object-name>
+    <object-name>boutons</object-name>
+    <object-name>RadioKnob1</object-name>
+    <object-name>RadioKnob2</object-name>
+    <object-name>RadioKnob3</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+
+</PropertyList>
+

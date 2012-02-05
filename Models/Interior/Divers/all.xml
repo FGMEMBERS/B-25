@@ -3,21 +3,11 @@
 <PropertyList>
 
   <model>
-    <path>Aircraft/B-25/Models/Interior/Divers/radio.xml</path>
-    <offsets>
-      <x-m> -5.009 </x-m>
-      <y-m> -0.666 </y-m>
-      <z-m>  0.413 </z-m>
-      <heading-deg> 90 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
     <path>Aircraft/B-25/Models/Interior/Divers/divers.xml</path>
     <offsets>
       <x-m> -4.915 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.375 </z-m>
+      <z-m>  0.355 </z-m>
     </offsets>
   </model>
 

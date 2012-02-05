@@ -18,6 +18,7 @@
   <animation>
     <type>noshadow</type>
     <object-name>intvitres</object-name>
+    <object-name>WindowsVitre</object-name>
   </animation>
 
   <animation>
@@ -25,7 +26,23 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
+    <object-name>WindowsVitre</object-name>
   </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>interieur</object-name>
+    <object-name>planchet</object-name>
+    <object-name>inttour</object-name>
+    <object-name>supportyokes</object-name>
+    <emission>
+      <red>   0.002 </red>
+      <green> 0.002 </green>
+      <blue>  0.002 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
 
   <!-- Sièges -->
   <model>
@@ -74,8 +91,37 @@
   </model>
 
   <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/SCR-274/SCR-274.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/Interphone/Interphone.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/RadioCompassRemoteCtrl/RadioCompassRemoteCtrl.xml</path>
+    <offsets>
+      <x-m> -5.056 </x-m>
+      <y-m>  0.648 </y-m>
+      <z-m>  0.370 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/B-25/Models/Interior/BombControlPanel/BombControlPanel.xml</path>
+    <offsets>
+      <x-m> -5.009 </x-m>
+      <y-m> -0.600 </y-m>
+      <z-m>  0.090 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
     <path>Aircraft/B-25/Models/Interior/Pedals/all-pedals.xml</path>
   </model>
+
+
 
 </PropertyList>
 

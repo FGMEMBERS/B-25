@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/SCR-274/SCR-274_RadioReceiver_RCU.xml</path>
+    <offsets>
+      <x-m> -4.996 </x-m>
+      <y-m> -0.656 </y-m>
+      <z-m>  0.400 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/SCR-274/SCR-274_RadioTransmitter_RCU.xml</path>
+    <offsets>
+      <x-m> -4.733 </x-m>
+      <y-m> -0.666 </y-m>
+      <z-m>  0.400 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+
+</PropertyList>
+

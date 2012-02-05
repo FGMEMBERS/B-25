@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/Interphone/Interphone_Jack_Box.xml</path>
+    <offsets>
+      <x-m> -5.081 </x-m>
+      <y-m>  0.658 </y-m>
+      <z-m>  0.410 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/Interphone/Radio_Filter_Unit.xml</path>
+    <offsets>
+      <x-m> -5.219 </x-m>
+      <y-m>  0.658 </y-m>
+      <z-m>  0.406 </z-m>
+      <heading-deg> -80 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/Interphone/Radio_Filter_Unit.xml</path>
+    <offsets>
+      <x-m> -5.275 </x-m>
+      <y-m>  0.648 </y-m>
+      <z-m>  0.406 </z-m>
+      <heading-deg> -80 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/Interphone/Radio_Filter_Unit.xml</path>
+    <offsets>
+      <x-m> -5.309 </x-m>
+      <y-m> -0.644 </y-m>
+      <z-m>  0.406 </z-m>
+      <heading-deg> 80 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/Interphone/Radio_Filter_Unit.xml</path>
+    <offsets>
+      <x-m> -5.253 </x-m>
+      <y-m> -0.654 </y-m>
+      <z-m>  0.406 </z-m>
+      <heading-deg> 80 </heading-deg>
+    </offsets>
+  </model>
+
+
+</PropertyList>
+

@@ -4,26 +4,13 @@
 
   <path>compass.ac</path>
 
-  <animation>
+  <animation> 
+    <object-name>Compass</object-name>
     <object-name>fond</object-name>
     <object-name>face</object-name>
-    <object-name>Compass</object-name>
     <object-name>box</object-name>
-    <object-name>cylinder</object-name>
-
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
+    <object-name>knob</object-name>
+    <object-name>visses	</object-name>
   </animation>
 
   <animation>
@@ -31,10 +18,10 @@
     <object-name>face</object-name>
     <object-name>Compass</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -43,9 +30,9 @@
     <object-name>Compass</object-name>
     <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
     <center> 
-      <x-m> -0.040 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.012 </z-m>
+      <x-m> -0.030 </x-m>
+      <y-m>  0.002 </y-m>
+      <z-m>  0.000 </z-m>
     </center>
     <axis> 
       <x> 0 </x>

@@ -29,10 +29,10 @@
     <object-name>face</object-name>
     <object-name>needle</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -40,27 +40,25 @@
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
-    <interpolation> 
-      <entry><ind>   0.00 </ind><dep>   0 </dep></entry> 
-      <entry><ind>  52.14 </ind><dep>  10 </dep></entry>
-      <entry><ind>  69.52 </ind><dep>  30 </dep></entry>
-      <entry><ind>  86.90 </ind><dep>  50 </dep></entry>
-      <entry><ind> 104.28 </ind><dep>  90 </dep></entry>
-      <entry><ind> 121.66 </ind><dep> 130 </dep></entry>
-      <entry><ind> 139.04 </ind><dep> 170 </dep></entry>
-      <entry><ind> 156.41 </ind><dep> 210 </dep></entry>
-      <entry><ind> 173.79 </ind><dep> 250 </dep></entry>
-      <entry><ind> 191.17 </ind><dep> 290 </dep></entry>
-      <entry><ind> 208.55 </ind><dep> 330 </dep></entry>
-      <entry><ind> 225.93 </ind><dep> 365 </dep></entry>
-      <entry><ind> 243.31 </ind><dep> 400 </dep></entry>
-      <entry><ind> 260.69 </ind><dep> 435 </dep></entry>
-      <entry><ind> 278.07 </ind><dep> 470 </dep></entry>
-      <entry><ind> 295.45 </ind><dep> 505 </dep></entry>
-      <entry><ind> 312.83 </ind><dep> 540 </dep></entry>
-      <entry><ind> 330.21 </ind><dep> 575 </dep></entry>
-      <entry><ind> 347.59 </ind><dep> 610 </dep></entry>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  50 </ind><dep>  20 </dep></entry>
+      <entry><ind> 100 </ind><dep>  55 </dep></entry>
+      <entry><ind> 150 </ind><dep>  95 </dep></entry>
+      <entry><ind> 200 </ind><dep> 135 </dep></entry>
+      <entry><ind> 250 </ind><dep> 180 </dep></entry>
+      <entry><ind> 300 </ind><dep> 238 </dep></entry>
+      <entry><ind> 420 </ind><dep> 270 </dep></entry>
+      <entry><ind> 500 </ind><dep> 290 </dep></entry>
+      <entry><ind> 600 </ind><dep> 313 </dep></entry>
+      <entry><ind> 700 </ind><dep> 335 </dep></entry>
     </interpolation>
+
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y> 

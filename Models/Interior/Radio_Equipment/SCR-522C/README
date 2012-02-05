@@ -1,0 +1,29 @@
+To enable full functionality of the SCR-522C/TR1133 radio there are several things 
+that you will need to do.  
+
+First you will need to change the <nasal> section of your *set.xml file so that it 
+looks like the following.  
+
+<nasal>
+   <!-- your other nasal files -->
+   <!-- the following three lines must be exactly like this -->
+   <SCR_522C>
+      <file>Aircraft/Instruments-3d/SCR-522C/Nasal/SCR-522C.nas</file>
+   </SCR_522C>
+</nasal>
+
+This will enable the F12 key to bring up the frequencies dialog. It will also over ride the 
+Equipment --> radios menu item so that it brings up the correct menu for the SCR-522C/TR1133
+radios.  This also implements other radio features like support for a remote TR switch,  the 
+TR switch on the BC-602-A control box,  TR switch lock, channel switching, power switch and 
+so on.
+
+For dark conditions when cabin/cockpit illumination is used all of the radio models object 
+are illuminated in response to 
+
+<property>/controls/lighting/cabin-norm</property>
+
+If you are using a different property for your cabin/cockpit lights you will need to map your 
+lighting property to /controls/lighting/cabin-norm.
+
+ 
