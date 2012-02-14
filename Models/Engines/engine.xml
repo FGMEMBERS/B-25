@@ -83,16 +83,15 @@
 
   <animation>
     <type>range</type>
-    <object-name>HighPoly</object-name>
-    <min-m>0</min-m>
-    <max-property>/sim/rendering/static-lod/detailed</max-property>
+    <object-name>LowPoly</object-name>
+    <min-property>sim/rendering/static-lod/detailed</min-property>
   </animation>
 
   <animation>
     <type>range</type>
-    <object-name>LowPoly</object-name>
-    <min-property>/sim/rendering/static-lod/detailed</min-property>
-    <max-property>/sim/rendering/static-lod/bare</max-property>
+    <object-name>HighPoly</object-name>
+    <min-m>0</min-m>
+    <max-property>sim/rendering/static-lod/detailed</max-property>
   </animation>
 
 </PropertyList>
