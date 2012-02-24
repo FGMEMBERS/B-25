@@ -14,7 +14,6 @@
     </offsets>
   </model>
 
-
   <!-- Landing Gear Signal Indicator -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_red.xml</path>
@@ -91,7 +90,6 @@
     </offsets>
   </model>
 
-
   <!-- Vaccum Adjustment Knob -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/knob.xml</path>
@@ -148,7 +146,6 @@
       <z-m> -0.075 </z-m>
     </offsets>
   </model>
-
 
   <!-- SUBPANEL -->
   <!-- Supérieur Subpanel-->
@@ -267,9 +264,6 @@
   </model>
 
 
-
-
-
   <!-- Inferiors SubPanel -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
@@ -334,7 +328,6 @@
     </offsets>
   </model>
 
-
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
@@ -385,6 +378,15 @@
     <offsets>
       <x-m>  0.018 </x-m>
       <y-m> -0.321 </y-m>
+      <z-m> -0.255 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch_lights.xml</path>
+    <offsets>
+      <x-m>  0.018 </x-m>
+      <y-m> -0.290 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
   </model>

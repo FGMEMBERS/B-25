@@ -8,8 +8,7 @@
     <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>needle1</object-name>
-   
- <object-name>needle2</object-name>
+    <object-name>needle2</object-name>
     <object-name>vitre</object-name>
   </animation>
 
@@ -43,8 +42,13 @@
     <object-name>needle1</object-name>
     <property>/engines/engine[0]/rpm</property>
     <interpolation>
-      <entry><ind>  400 </ind><dep> 205 </dep></entry>
-      <entry><ind> 3500 </ind><dep> 515 </dep></entry>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  500 </ind><dep>  35 </dep></entry>
+      <entry><ind> 1000 </ind><dep>  70 </dep></entry>
+      <entry><ind> 1500 </ind><dep> 105 </dep></entry>
+      <entry><ind> 1900 </ind><dep> 140 </dep></entry>
+      <entry><ind> 3000 </ind><dep> 225 </dep></entry>
+      <entry><ind> 4500 </ind><dep> 300 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
@@ -52,14 +56,18 @@
       <z>  0 </z>
     </axis>
   </animation>
-
 <animation>
     <type>rotate</type>
     <object-name>needle2</object-name>
     <property>/engines/engine[1]/rpm</property>
     <interpolation>
-      <entry><ind>  400 </ind><dep> 205 </dep></entry>
-      <entry><ind> 3500 </ind><dep> 515 </dep></entry>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  500 </ind><dep>  35 </dep></entry>
+      <entry><ind> 1000 </ind><dep>  70 </dep></entry>
+      <entry><ind> 1500 </ind><dep> 105 </dep></entry>
+      <entry><ind> 1900 </ind><dep> 140 </dep></entry>
+      <entry><ind> 3000 </ind><dep> 225 </dep></entry>
+      <entry><ind> 4500 </ind><dep> 300 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>

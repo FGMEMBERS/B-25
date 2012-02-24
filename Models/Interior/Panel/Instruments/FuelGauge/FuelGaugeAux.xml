@@ -31,10 +31,10 @@
     <object-name>ptrL</object-name>   
     <object-name>ptrR</object-name>
     <emission>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-      <red>   0.50 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -44,10 +44,10 @@
     <property>consumables/fuel/tank[4]/level-gal_us</property>
     <interpolation>
      <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
-     <entry><ind>  25.00 </ind><dep> 20.0 </dep></entry>
-     <entry><ind>  50.00 </ind><dep> 40.0 </dep></entry>
-     <entry><ind> 100.00 </ind><dep> 60.0 </dep></entry>
-     <entry><ind> 150.00 </ind><dep> 80.0 </dep></entry>
+     <entry><ind>  40.00 </ind><dep> 24.2 </dep></entry>
+     <entry><ind>  80.00 </ind><dep> 42.6 </dep></entry>
+     <entry><ind> 120.00 </ind><dep> 60.7 </dep></entry>
+     <entry><ind> 150.00 </ind><dep> 82.1 </dep></entry>
     </interpolation>
     <axis> 
       <x> 1 </x>
@@ -55,9 +55,9 @@
       <z> 0 </z>
     </axis>
     <center>
-      <x-m>  0.00 </x-m>
-      <y-m> -0.02 </y-m>
-      <z-m>  0.00 </z-m>  
+      <x-m>  0.005894 </x-m>
+      <y-m> -0.02495 </y-m>
+      <z-m>  0.003137 </z-m>  
     </center>
   </animation>         
  
@@ -67,10 +67,10 @@
     <property>consumables/fuel/tank[5]/level-gal_us</property>
     <interpolation>
      <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
-     <entry><ind>  25.00 </ind><dep> 20.0 </dep></entry>
-     <entry><ind>  50.00 </ind><dep> 40.0 </dep></entry>
-     <entry><ind> 100.00 </ind><dep> 60.0 </dep></entry>
-     <entry><ind> 150.00 </ind><dep> 80.0 </dep></entry>
+     <entry><ind>  40.00 </ind><dep> 24.2 </dep></entry>
+     <entry><ind>  80.00 </ind><dep> 42.6 </dep></entry>
+     <entry><ind> 120.00 </ind><dep> 60.7 </dep></entry>
+     <entry><ind> 150.00 </ind><dep> 82.1 </dep></entry>
     </interpolation>
     <axis> 
       <x> -1 </x>
@@ -78,9 +78,9 @@
       <z>  0 </z>
     </axis>
     <center>
-      <x-m> 0.00 </x-m>
-      <y-m> 0.02 </y-m>
-      <z-m> 0.00 </z-m>  
+      <x-m> 0.005894 </x-m>
+      <y-m> 0.02495 </y-m>
+      <z-m> 0.003137 </z-m>  
     </center>
   </animation>         
  

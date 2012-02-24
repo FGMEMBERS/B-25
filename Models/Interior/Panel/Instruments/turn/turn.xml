@@ -67,7 +67,12 @@
     <type>rotate</type>
     <object-name>needle</object-name>
     <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
-    <factor>8.0</factor>
+    <factor>2.0</factor>
+    <center>
+      <x-m>  0.006 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.025 </z-m>
+    </center>
     <axis>
       <x> -1 </x>
       <y>  0 </y>

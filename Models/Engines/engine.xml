@@ -13,12 +13,12 @@
 
   <model>
     <name>Bloc1</name>
-    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/B-25/Models/Engines/blocpiston.xml</path>
   </model>
 
   <model>
     <name>Bloc2</name>
-    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/B-25/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 52 </roll-deg>
     </offsets>
@@ -26,7 +26,7 @@
 
   <model>
     <name>Bloc3</name>
-    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/B-25/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 104 </roll-deg>
     </offsets>
@@ -34,7 +34,7 @@
 
   <model>
     <name>Bloc4</name>
-    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/B-25/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 156 </roll-deg>
     </offsets>
@@ -42,7 +42,7 @@
 
   <model>
     <name>Bloc5</name>
-    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/B-25/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 208 </roll-deg>
     </offsets>
@@ -50,7 +50,7 @@
 
   <model>
     <name>Bloc6</name>
-    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/B-25/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 260 </roll-deg>
     </offsets>
@@ -58,7 +58,7 @@
 
   <model>
     <name>Bloc7</name>
-    <path>Aircraft/A-26-Invader/Models/Engines/blocpiston.xml</path>
+    <path>Aircraft/B-25/Models/Engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 312 </roll-deg>
     </offsets>
@@ -83,15 +83,16 @@
 
   <animation>
     <type>range</type>
-    <object-name>LowPoly</object-name>
-    <min-property>sim/rendering/static-lod/detailed</min-property>
+    <object-name>HighPoly</object-name>
+    <min-m>0</min-m>
+    <max-property>/sim/rendering/static-lod/detailed</max-property>
   </animation>
 
   <animation>
     <type>range</type>
-    <object-name>HighPoly</object-name>
-    <min-m>0</min-m>
-    <max-property>sim/rendering/static-lod/detailed</max-property>
+    <object-name>LowPoly</object-name>
+    <min-property>/sim/rendering/static-lod/detailed</min-property>
+    <max-property>/sim/rendering/static-lod/bare</max-property>
   </animation>
 
 </PropertyList>

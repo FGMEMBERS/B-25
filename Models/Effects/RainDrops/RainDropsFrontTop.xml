@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>RainDropsFrontTop.ac</path>
+
+  <animation>
+    <!-- Objets transparents -->
+    <object-name>RD</object-name>
+    <object-name>RD0</object-name>
+  </animation>    
+
+  <animation>
+   <type>timed</type>
+    <object-name>RD</object-name>
+    <object-name>RD0</object-name>
+    <use-personality type="bool">true</use-personality>
+    <branch-duration-sec>2.0</branch-duration-sec>
+    <branch-duration-sec>4.0</branch-duration-sec>
+  </animation>
+
+   <animation>
+    <type>noshadow</type>
+     <object-name>RD</object-name>
+    <object-name>RD0</object-name>
+  </animation>
+
+</PropertyList>
+

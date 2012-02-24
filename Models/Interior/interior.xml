@@ -9,40 +9,27 @@
     <object-name>interieur</object-name>
     <object-name>planchet</object-name>
     <object-name>inttour</object-name>
+    <object-name>inttour.panel</object-name>
     <object-name>supportyokes</object-name>
+    <object-name>Handle1R</object-name>
+    <object-name>Handle2R</object-name>
+    <object-name>Handle1L</object-name>
+    <object-name>Handle2L</object-name>
+    <object-name>Cylinder1R</object-name>
+    <object-name>Cylinder2R</object-name>
+    <object-name>Cylinder1L</object-name>
+    <object-name>Cylinder2L</object-name>
+    <object-name>SpringR</object-name>
+    <object-name>SpringL</object-name>
+    <object-name>FT-220_FT-226_Racks</object-name>
+    <object-name>WindowFrameR</object-name>
+    <object-name>WindowFrameL</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intvitres</object-name>
-    <object-name>WindowsVitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-    <object-name>WindowsVitre</object-name>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>interieur</object-name>
-    <object-name>planchet</object-name>
-    <object-name>inttour</object-name>
-    <object-name>supportyokes</object-name>
-    <emission>
-      <red>   0.002 </red>
-      <green> 0.002 </green>
-      <blue>  0.002 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission>
-  </animation>
-
+    <object-name>WindowsVitreR</object-name>
+    <object-name>WindowsVitreL</object-name>
+  </animation>    
 
   <!-- Sièges -->
   <model>
@@ -107,6 +94,11 @@
       <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/AN-ARC5.xml</path>
+  </model>
+
   <model>
     <path>Aircraft/B-25/Models/Interior/BombControlPanel/BombControlPanel.xml</path>
     <offsets>
@@ -121,7 +113,139 @@
     <path>Aircraft/B-25/Models/Interior/Pedals/all-pedals.xml</path>
   </model>
 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Hydraulics/Hydraulics.xml</path>
+    <offsets>
+      <x-m> -2.325 </x-m>
+      <y-m> -0.375 </y-m>
+      <z-m>  0.675 </z-m>
+    </offsets>
+  </model>
 
+  <animation>
+    <type>pick</type>
+    <object-name>Handle1L</object-name>
+    <object-name>Handle2L</object-name>
+    <object-name>SpringL</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.doorsystem.crewexport();</script>
+      </binding>
+    </action>
+  </animation>
+
+ <animation>
+    <name>IntLeftGlass</name>
+    <object-name>Handle1L</object-name>
+    <object-name>Handle2L</object-name>
+    <object-name>Cylinder1L</object-name>
+    <object-name>WindowFrameL</object-name>
+    <object-name>SpringL</object-name>
+    <object-name>WindowsVitreL</object-name>
+ </animation>
+
+ <animation>
+    <type>translate</type>
+    <object-name>IntLeftGlass</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Handle1R</object-name>
+    <object-name>Handle2R</object-name>
+    <object-name>SpringR</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+     <command>nasal</command>
+      <script>doors.doorsystem.passengerexport();</script>
+      </binding>
+    </action>
+  </animation>
+
+ <animation>
+    <name>IntRightGlass</name>
+    <object-name>Handle1R</object-name>
+    <object-name>Handle2R</object-name>
+    <object-name>Cylinder1R</object-name>
+    <object-name>WindowFrameR</object-name>
+    <object-name>SpringR</object-name>
+    <object-name>WindowsVitreR</object-name>
+ </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntRightGlass</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>intvitres</object-name>
+    <object-name>WindowsVitreR</object-name>
+    <object-name>WindowsVitreL</object-name>
+    <condition>
+       <equals>
+          <property>environment/rain-norm</property>
+          <value></value>
+       </equals>
+      <or>
+       <equals>
+          <property>environment/snow-norm</property>
+          <value></value>
+       </equals>
+      </or>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>WindowsVitreR</object-name>
+    <object-name>WindowsVitreL</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>WindowsVitreR</object-name>
+    <object-name>WindowsVitreL</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>interieur</object-name>
+    <object-name>planchet</object-name>
+    <object-name>inttour</object-name>
+    <object-name>supportyokes</object-name>
+    <emission>
+      <red>   0.002 </red>
+      <green> 0.002 </green>
+      <blue>  0.002 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
 
 </PropertyList>
 

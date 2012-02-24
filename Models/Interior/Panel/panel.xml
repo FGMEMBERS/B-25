@@ -39,7 +39,7 @@
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
       <x-m>  0.014 </x-m>
-      <y-m> -0.373 </y-m>
+      <y-m> -0.363 </y-m>
       <z-m>  0.073 </z-m>
     </offsets>
   </model>
@@ -49,7 +49,7 @@
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
       <x-m>  0.015 </x-m>
-      <y-m> -0.253 </y-m>
+      <y-m> -0.233 </y-m>
       <z-m>  0.073 </z-m>
     </offsets>
   </model>
@@ -69,7 +69,7 @@
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
       <x-m>  0.016 </x-m>
-      <y-m> -0.373 </y-m>
+      <y-m> -0.363 </y-m>
       <z-m> -0.047 </z-m>
     </offsets>
   </model>
@@ -79,7 +79,7 @@
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m>  0.014 </x-m>
-      <y-m> -0.253 </y-m>
+      <y-m> -0.233 </y-m>
       <z-m> -0.047 </z-m>
     </offsets>
   </model>
@@ -87,7 +87,7 @@
   <!-- ADDED  by  JC_SV  -->
   <!-- PDI  -->
   <model>
-    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/pdi/jrb-wbd-pdi.xml</path>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/pdi/pdi.xml</path>
     <offsets>
      <x-m>  0.014 </x-m>
      <y-m> -0.220 </y-m>
@@ -169,7 +169,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/fuelpress/fuel_pressure.xml</path>
     <offsets>
-     <x-m>  0.024 </x-m>
+     <x-m>  0.014 </x-m>
      <y-m>  0.115 </y-m>
      <z-m>  0.125 </z-m>
     </offsets> 
@@ -209,7 +209,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/oilpress/oilpress.xml</path>
     <offsets>
-      <x-m>  0.024 </x-m>
+      <x-m>  0.014 </x-m>
       <y-m>  0.229 </y-m>
       <z-m>  0.038 </z-m>
     </offsets>
@@ -229,7 +229,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/air-temp/airtemp.xml</path>
      <offsets>
-     <x-m>  0.024 </x-m>
+     <x-m>  0.014 </x-m>
      <y-m>  0.229 </y-m>
      <z-m> -0.047 </z-m>
     </offsets> 
@@ -239,7 +239,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGaugeFront.xml</path>
      <offsets>
-     <x-m>  0.025 </x-m>
+     <x-m>  0.015 </x-m>
      <y-m>  0.329 </y-m>
      <z-m>  0.038 </z-m>
     </offsets> 
@@ -249,7 +249,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGaugeRear.xml</path>
      <offsets>
-     <x-m>  0.025 </x-m>
+     <x-m>  0.015 </x-m>
      <y-m>  0.329 </y-m>
      <z-m> -0.047 </z-m>
     </offsets> 
@@ -259,9 +259,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGaugeAux.xml</path>
      <offsets>
-     <x-m>  0.025 </x-m>
+     <x-m>  0.015 </x-m>
      <y-m>  0.329 </y-m>
-     <z-m>  0.190 </z-m>
+     <z-m>  0.180 </z-m>
     </offsets> 
   </model>
 
@@ -269,18 +269,17 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FireDetectorSystem/FireDetectorSystem.xml</path>
      <offsets>
-     <x-m>  0.025 </x-m>
+     <x-m>  0.015 </x-m>
      <y-m>  0.440 </y-m>
      <z-m> -0.047 </z-m>
     </offsets> 
   </model>
-
  
   <!-- FLAPS AND GEAR-->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
     <offsets>
-      <x-m>  0.024 </x-m>
+      <x-m>  0.014 </x-m>
       <y-m>  0.440 </y-m>
       <z-m>  0.038 </z-m>
     </offsets>
@@ -290,7 +289,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/hydra_press/hydraulic.xml</path>
     <offsets>
-      <x-m>  0.024 </x-m>
+      <x-m>  0.014 </x-m>
       <y-m>  0.522 </y-m>
       <z-m>  0.038 </z-m>
     </offsets>
@@ -300,7 +299,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/brake_press/brake_press.xml</path>
     <offsets>
-      <x-m>  0.024 </x-m>
+      <x-m>  0.014 </x-m>
       <y-m>  0.522 </y-m>
       <z-m> -0.048 </z-m>
     </offsets>
@@ -321,5 +320,10 @@
     </offsets>
   </model>
 
+  <!-- RADIO PANEL -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/RadioPanel/RadioPanel.xml</path>
+
+  </model>
 </PropertyList>
 

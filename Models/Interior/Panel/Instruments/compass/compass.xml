@@ -6,11 +6,27 @@
 
   <animation> 
     <object-name>Compass</object-name>
+    <object-name>contour</object-name>
     <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>box</object-name>
     <object-name>knob</object-name>
     <object-name>visses	</object-name>
+
+    <!-- Objects Transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
   </animation>
 
   <animation>

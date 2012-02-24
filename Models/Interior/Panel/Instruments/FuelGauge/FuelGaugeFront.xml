@@ -45,15 +45,15 @@
     <factor>10</factor>
     <interpolation>
      <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
-     <entry><ind>  40.00 </ind><dep> 20.0 </dep></entry>
-     <entry><ind>  80.00 </ind><dep> 40.0 </dep></entry>
-     <entry><ind> 120.00 </ind><dep> 60.5 </dep></entry>
-     <entry><ind> 185.00 </ind><dep> 85.0 </dep></entry>
+     <entry><ind>  40.00 </ind><dep> 22.0 </dep></entry>
+     <entry><ind>  80.00 </ind><dep> 42.0 </dep></entry>
+     <entry><ind> 120.00 </ind><dep> 58.5 </dep></entry>
+     <entry><ind> 184.00 </ind><dep> 85.0 </dep></entry>
     </interpolation>
     <center>
-      <x-m>  0.004151 </x-m>
-      <y-m> -0.033880 </y-m>
-      <z-m>  0.004920 </z-m>  
+      <x-m>  0.005894 </x-m>
+      <y-m> -0.02495 </y-m>
+      <z-m>  0.003137 </z-m>  
     </center>
     <axis> 
       <x> 1 </x>
@@ -68,15 +68,15 @@
     <property>consumables/fuel/tank[1]/level-gal_us</property>
     <interpolation>
      <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
-     <entry><ind>  40.00 </ind><dep> 20.0 </dep></entry>
-     <entry><ind>  80.00 </ind><dep> 40.0 </dep></entry>
-     <entry><ind> 120.00 </ind><dep> 60.5 </dep></entry>
-     <entry><ind> 185.00 </ind><dep> 80.0 </dep></entry>
+     <entry><ind>  40.00 </ind><dep> 22.0 </dep></entry>
+     <entry><ind>  80.00 </ind><dep> 42.0 </dep></entry>
+     <entry><ind> 120.00 </ind><dep> 58.5 </dep></entry>
+     <entry><ind> 185.00 </ind><dep> 85.0 </dep></entry>
     </interpolation>
     <center>
-      <x-m> 0.003891 </x-m>
-      <y-m> 0.033070 </y-m>
-      <z-m> 0.003870 </z-m>  
+      <x-m> 0.005894 </x-m>
+      <y-m> 0.02431 </y-m>
+      <z-m> 0.003137 </z-m>  
     </center>
     <axis> 
       <x> -1 </x>

@@ -42,7 +42,7 @@
   <animation>
     <type>rotate</type>
     <object-name>FuelPres.Needle1</object-name>
-    <property>/engines/engine[0]/est-fuelpress</property>
+    <property>/engines/engine[0]/fuel-psi-norm</property>
     <interpolation>
       <entry><ind>  0 </ind><dep>   0 </dep></entry>
       <entry><ind> 35 </ind><dep> 315 </dep></entry>
@@ -57,7 +57,7 @@
   <animation>
     <type>rotate</type>
     <object-name>FuelPres.Needle2</object-name>
-    <property>/engines/engine[1]/est-fuelpress</property>
+    <property>/engines/engine[1]/fuel-psi-norm</property>
     <interpolation>
       <entry><ind>  0 </ind><dep>   0 </dep></entry>
       <entry><ind> 35 </ind><dep> 315 </dep></entry>

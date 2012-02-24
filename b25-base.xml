@@ -4,7 +4,7 @@
 
   <sim include="Nasal/views.xml">
  
-    <author>BARANGER Emmanuel (3D)</author>
+    <author>BARANGER Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
    
@@ -28,20 +28,22 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        <int type="int" n="0">  0 </int>                                      <!-- 0 immat -->
-        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
-        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
-        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
-        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
-        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
-        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
-        <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
-        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
-        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
-        <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
-        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>  
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
 
@@ -57,10 +59,14 @@
       <title>B 25 Mitchell</title>
       <key>
         <name>d</name>
-        <desc>Open/Close door</desc>
+        <desc>Open/Close Left Window</desc>
+      </key>
+      <title>B 25 Mitchell</title>
+      <key>
+        <name>D</name>
+        <desc>Open/Close Right Window</desc>
       </key>
     </help>
-
     <menubar include="Dialogs/b25-menu.xml"/>
 
   </sim>
@@ -101,6 +107,8 @@
       <file>Aircraft/B-25/Nasal/liveries.nas</file>
       <file>Aircraft/B-25/Nasal/light.nas</file>
       <file>Aircraft/B-25/Nasal/b25.nas</file>
+      <file>Aircraft/B-25/Nasal/electrical.nas</file>
+      <file>Aircraft/B-25/Nasal/hydraulic.nas</file>
     </b25>
   </nasal>
 

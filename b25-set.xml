@@ -6,7 +6,7 @@
   <sim>
 
     <description>B 25 Mitchell</description>
-    <author>BARANGER Emmanuel</author>
+    <author>BARANGER Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM)</author>
 
     <rating>
       <FDM type="int">     3 </FDM>
@@ -16,6 +16,7 @@
     </rating>
 
   </sim>
+
 
 </PropertyList>
 

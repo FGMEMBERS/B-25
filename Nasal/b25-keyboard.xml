@@ -11,5 +11,17 @@
     </binding>
    </key>
 
+  <key n="68">
+    <name>D</name>
+    <desc>Passanger door</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.doorsystem.passengerexport();</script>
+    </binding>
+  </key>
+
+
+
+
 </PropertyList>
 

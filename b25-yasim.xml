@@ -2,6 +2,7 @@
 
 <!-- B 25a Mitchell BARANGER Emmanuel (2009)
      change by Detlef FABER           (2009)
+     change by JC_SV                  (2012)
 
      Wingspan        : 20.60 m    (   67 ft 5 in)
      Lenght          : 16.48 m    (   54 ft 0 in)
@@ -124,6 +125,7 @@
   </vstab>
 
   <!-- Informations : http://en.wikipedia.org/wiki/Wright_R-2600
+
        Engines : Wright R2600
                : Power 1700 ch
                : 14 cylinders
@@ -196,7 +198,7 @@
         retract-time="5"
         spring="1.0"
         damp="1.50">
-        <control-input axis="/controls/flight/rudder" control="CASTERING" src0="-1.0" src1="1.0" dst0="-0.2" dst1="0.2"/>
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.2" dst1="0.2"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-speed control="EXTEND" transition-time="5"/>
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
@@ -232,10 +234,12 @@
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
   </gear>
 
-  <tank x="9.82" y="6.0" z="-0.18" capacity="600.0"/>
-  <tank x="9.82" y="-6.0" z="-0.18" capacity="600.0"/>
+  <tank x="4.29" y=" 2.95" z="-0.18" capacity="1104"/>
+  <tank x="4.29" y="-2.95" z="-0.18" capacity="1104"/>
+  <tank x="4.29" y=" 2.95" z="-0.18" capacity="912"/> <!-- Tank Rear Right -->
+  <tank x="4.29" y="-2.95" z="-0.18" capacity="912"/> <!-- Tank Front Right -->
 
-  <!-- CG Thorique Centre de la corde: x=0.691 y=0.0 z=0.127" -->
+  <!-- Mass displacment -->
   <ballast x="9.0" y="0.0" z="-1.5" mass="3100"/>
 
 </airplane>

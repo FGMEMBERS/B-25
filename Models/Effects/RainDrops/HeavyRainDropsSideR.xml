@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>HeavyRainDropsSideR.ac</path>
+
+  <animation>
+    <!-- Objets transparents -->
+    <object-name>RDSide1R</object-name>
+    <object-name>RDSide2R</object-name>
+    <object-name>RDSide3R</object-name>
+  </animation>    
+
+  <animation>
+   <type>timed</type>
+    <object-name>RDSide1R</object-name>
+    <object-name>RDSide2R</object-name>
+    <object-name>RDSide3R</object-name>
+    <use-personality type="bool">true</use-personality>
+    <branch-duration-sec>1.0</branch-duration-sec>
+    <branch-duration-sec>1.5</branch-duration-sec>
+    <branch-duration-sec>1.0</branch-duration-sec>
+  </animation>
+
+<!-- It seems that this only works alone but not with timed animation enabled
+  <animation>
+    <type>translate</type>
+    <object-name>RDSide1R</object-name>
+    <object-name>RDSide2R</object-name>
+    <object-name>RDSide3R</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 0.25 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+-->
+   <animation>
+    <type>noshadow</type>
+    <object-name>RDSide1R</object-name>
+    <object-name>RDSide2R</object-name>
+    <object-name>RDSide3R</object-name>
+
+
+  </animation>
+
+</PropertyList>
+

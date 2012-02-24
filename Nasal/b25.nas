@@ -19,9 +19,9 @@
 
 
 
-
+##############################################
 ############### ENGINE SYSTEM ################
-
+##############################################
 
 #Engine sensors class 
 # ie: var Eng = Engine.new(engine number);
@@ -60,9 +60,10 @@ var Engine = {
         var cyltemp = me.cyl_temp.getValue();
         var cheat =   me.carb_heat.getValue();
 	var cooling =    (getprop("velocities/airspeed-kt") * 0.1) *2;
-     
+
+        ###################################
         ######### OIL TEMPERATURE #########
-    
+        ###################################
 	cooling += (mx * 5);
 	var tgt  = me.ot_target + mp;
 	var tgt -= cooling;
@@ -73,37 +74,45 @@ var Engine = {
 		if(OT > me.air_temp.getValue()) OT-=0.001; 
 	}
         me.oil_temp.setValue(OT);
-   
+
+        ###################################
         #### CYLINDER HEAT TEMPERATURE ####
-   
-	var thr = getprop("/engines/engine["~eng_num~"]/prop-thrust");
-	var ct = getprop("/engines/engine["~eng_num~"]/cyl-temp");
-	var cp = getprop("/controls/engines/engine["~eng_num~"]/cowl-flaps-norm");
+        ###################################
+	var thr = getprop("/engines/engine[0]/prop-thrust");
+	var ct = getprop("/engines/engine[0]/cyl-temp");
+	var cp = getprop("/controls/engines/engine[0]/cowl-flaps-norm");
 	var as = getprop("/velocities/airspeed-kt");
-	var egt = (getprop("/engines/engine["~eng_num~"]/egt-degf") - 32) * 0.55;
+	var egt = (getprop("/engines/engine[0]/egt-degf") - 32) * 0.55;
 	var et0 = getprop("/environment/temperature-degc");
-	var mp = getprop("/engines/engine["~eng_num~"]/mp-osi");
-	var mix = getprop("/controls/engines/engine["~eng_num~"]/mixture");
-	var visc = getprop("/engines/engine["~eng_num~"]/oil-visc");
+	var mp = getprop("/engines/engine[0]/mp-osi");
+	var mix = getprop("/controls/engines/engine[0]/mixture");
+	var visc = getprop("/engines/engine[0]/oil-visc");
 	var cbt = et0 + 0.85 * mp; #carb temperature
 	var temp = 3.1 * cbt + 0.225 * rpm + 0.5 * egt - 0.0033 * as * as - 0.08 * thr * (1.28 * cp + 0.1) - 20 * mix; #cyl-head temperature
-	interpolate("/engines/engine["~eng_num~"]/cyl-temp", temp * 0.4, 45);
-       
-        ##### CARBURATOR TEMPERATURE ######
-    
-        if(props.globals.getNode("systems/electrical/outputs/carb-heat").getValue() > 8){
-          cheat += 0.01;
-          if(cheat > 40) cheat = 40;
-          setprop("engines/engine["~eng_num~"]/carb-heat", cheat);
-          cbt += cheat;
-        }else{
-          cheat -= 0.05;
-          if(cheat < 0) cheat = 0;
-          setprop("engines/engine["~eng_num~"]/carb-heat", cheat);
-          cbt += cheat;
-        }
-	ctemp = rpm * 0.007;
-	me.carb_temp.setValue(et0 - ctemp + cheat);
+	interpolate("/engines/engine[0]/cyl-temp", temp * 0.4, 45);
+
+	var thr = getprop("/engines/engine[1]/prop-thrust");
+	var ct = getprop("/engines/engine[1]/cyl-temp");
+	var cp = getprop("/controls/engines/engine[1]/cowl-flaps-norm");
+	var as = getprop("/velocities/airspeed-kt");
+	var egt = (getprop("/engines/engine[1]/egt-degf") - 32) * 0.55;
+	var et0 = getprop("/environment/temperature-degc");
+	var mp = getprop("/engines/engine[1]/mp-osi");
+	var mix = getprop("/controls/engines/engine[1]/mixture");
+	var cbt = et0 + 0.85 * mp; #carb temperature
+	var temp = 3.1 * cbt + 0.225 * rpm + 0.5 * egt - 0.0033 * as * as - 0.08 * thr * (1.28 * cp + 0.1) - 20 * mix; #cyl-head temperature
+	interpolate("/engines/engine[1]/cyl-temp", temp * 0.4, 45);
+
+        ###################################
+        ############# MIXTURE #############
+        ###################################
+	me.mixture.setValue(mx);
+    },
+};
+
+EngineLeft = Engine.new(0);
+EngineRight = Engine.new(1);
+
 
 ###############################################
 

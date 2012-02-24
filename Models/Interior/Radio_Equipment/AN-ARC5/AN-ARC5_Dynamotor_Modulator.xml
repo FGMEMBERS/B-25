@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>AN-ARC5_Dynamotor_Modulator.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>ARC5-Dynamotor</object-name>
+    <object-name>ARC5-Modulator</object-name>
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+   <type>material</type>
+
+    <object-name>ARC5-Dynamotor</object-name>
+    <object-name>ARC5-Modulator</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
+

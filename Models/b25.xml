@@ -58,6 +58,8 @@
     <object-name>bolG</object-name>
     <object-name>bolD</object-name>
     <object-name>echappes</object-name>
+    <object-name>tourvitreL</object-name>
+    <object-name>tourvitreR</object-name>
 
     <object-name>roueA</object-name>
     <object-name>roueG</object-name>
@@ -74,6 +76,8 @@
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
+    <object-name>vitreL</object-name>
+    <object-name>vitreR</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
@@ -200,6 +204,8 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitres</object-name>
+    <object-name>vitreL</object-name>
+    <object-name>vitreR</object-name>
     <object-name>vitretourelle</object-name>
     <object-name>vitresoustour</object-name>
   </animation>
@@ -207,6 +213,8 @@
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
+    <object-name>vitreL</object-name>
+    <object-name>vitreR</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurD</object-name>
@@ -215,6 +223,12 @@
     <object-name>vitresoustour</object-name>
     <object-name>cables</object-name>
   </animation>
+
+  <model>
+    <config>
+      <show-glasses type="bool">true</show-glasses>
+    </config>
+  </model>
 
   <!-- Une ombre pour OSG -->
   <model>
@@ -229,6 +243,67 @@
   <!-- Intérieur -->
   <model>
     <path>Aircraft/B-25/Models/Interior/interior.xml</path>
+  </model>
+
+ <!-- Raind Drops Effect -->
+  <model>
+    <condition>
+     <greater-than>
+      <property>environment/rain-norm</property>
+      <value>0.1</value>
+     </greater-than>
+    </condition>
+    <path>Aircraft/B-25/Models/Effects/RainDrops/RainDropsFrontTop.xml</path>
+  </model>
+
+  <model>
+    <condition>
+     <greater-than>
+      <property>environment/rain-norm</property>
+      <value>0.5</value>
+     </greater-than>
+    </condition>
+    <path>Aircraft/B-25/Models/Effects/RainDrops/HeavyRainDropsFrontTop.xml</path>
+  </model>
+
+  <model>
+    <condition>
+     <greater-than>
+      <property>environment/rain-norm</property>
+      <value>0.1</value>
+     </greater-than>
+    </condition>
+    <path>Aircraft/B-25/Models/Effects/RainDrops/RainDropsSideL.xml</path>
+  </model>
+
+  <model>
+    <condition>
+     <greater-than>
+      <property>environment/rain-norm</property>
+      <value>0.5</value>
+     </greater-than>
+    </condition>
+    <path>Aircraft/B-25/Models/Effects/RainDrops/HeavyRainDropsSideL.xml</path>
+  </model>
+
+  <model>
+    <condition>
+     <greater-than>
+      <property>environment/rain-norm</property>
+      <value>0.1</value>
+     </greater-than>
+    </condition>
+    <path>Aircraft/B-25/Models/Effects/RainDrops/RainDropsSideR.xml</path>
+  </model>
+
+  <model>
+    <condition>
+     <greater-than>
+      <property>environment/rain-norm</property>
+      <value>0.5</value>
+     </greater-than>
+    </condition>
+    <path>Aircraft/B-25/Models/Effects/RainDrops/HeavyRainDropsSideR.xml</path>
   </model>
 
   <!-- Les moteurs -->
@@ -1158,6 +1233,42 @@
       <x>  0 </x>
       <y> -1 </y>
       <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>GlassLeft</name>
+    <object-name>vitreL</object-name>
+    <object-name>tourvitreL</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>GlassLeft</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>GlassRight</name>
+    <object-name>vitreR</object-name>
+    <object-name>tourvitreR</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>GlassRight</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

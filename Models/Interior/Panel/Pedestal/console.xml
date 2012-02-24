@@ -6,7 +6,6 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>console</object-name>
     <object-name>ElevatorTrimWheel</object-name>
     <object-name>Starter</object-name>
     <object-name>MagnetoL</object-name>
@@ -51,15 +50,15 @@
     <object-name>manette3</object-name>
     <object-name>manette4</object-name>
 
-    <object-name>RedIDSw</object-name>
-    <object-name>GreenIDSw</object-name>
-    <object-name>AmberIDSw</object-name>
-    <object-name>RPMSwitch1</object-name>
-    <object-name>RPMSwitch2</object-name>
-    <object-name>RPMSwitch3</object-name>
-    <object-name>RPMSwitch4</object-name>
-    <object-name>LandingSwL</object-name>
-    <object-name>LandingSwR</object-name>
+    <object-name>LeftLandingLight</object-name>
+    <object-name>RightLandingLight</object-name>
+    <object-name>FuelBoosterPumpLeft</object-name>
+    <object-name>FuelBoosterPumpRight</object-name>
+    <object-name>PrimerSwitch</object-name>
+    <object-name>Switch</object-name>
+    <object-name>StarterSwitch</object-name>
+    <object-name>LAuxToMainSwitch</object-name>
+    <object-name>RAuxToMainSwitch</object-name>
 
 
     <object-name>SideSwitch1</object-name>
@@ -81,7 +80,6 @@
   </animation>
   <animation>
     <type>material</type>
-    <object-name>console</object-name>
     <object-name>ElevatorTrimWheel</object-name>
     <object-name>Starter</object-name>
     <object-name>MagnetoL</object-name>
@@ -89,6 +87,7 @@
     <object-name>manette1</object-name>
     <object-name>manette2</object-name>
     <object-name>ParkingBrake</object-name>
+    <object-name>ParkingBrakeBase</object-name>
     <object-name>Throttle.Lever.L</object-name>
     <object-name>Throttle.Sphere.L</object-name>
     <object-name>Throttle.Lever.R</object-name>
@@ -125,15 +124,15 @@
     <object-name>GearLever</object-name>
     <object-name>manette3</object-name>
     <object-name>manette4</object-name>
-    <object-name>RedIDSw</object-name>
-    <object-name>GreenIDSw</object-name>
-    <object-name>AmberIDSw</object-name>
-    <object-name>RPMSwitch1</object-name>
-    <object-name>RPMSwitch2</object-name>
-    <object-name>RPMSwitch3</object-name>
-    <object-name>RPMSwitch4</object-name>
-    <object-name>LandingSwL</object-name>
-    <object-name>LandingSwR</object-name>
+    <object-name>LeftLandingLight</object-name>
+    <object-name>RightLandingLight</object-name>
+    <object-name>FuelBoosterPumpLeft</object-name>
+    <object-name>FuelBoosterPumpRight</object-name>
+    <object-name>PrimerSwitch</object-name>
+    <object-name>Switch</object-name>
+    <object-name>StarterSwitch</object-name>
+    <object-name>LAuxToMainSwitch</object-name>
+    <object-name>RAuxToMainSwitch</object-name>
     <emission>
       <red>   0.003 </red>
       <green> 0.003 </green>
@@ -601,23 +600,34 @@
   </animation>
 
   <!-- Parking  Brake  -->
+
+  <animation>
+    <type>translate</type>
+    <object-name>ParkingBrake</object-name>
+    <property>controls/gear/brake-parking[0]</property>
+    <factor> 0.05 </factor>
+     <axis>
+     <x> 1 </x>
+     <y> 0 </y>
+     <z> 0 </z>
+    </axis>
+  </animation>
   <animation>
     <type>rotate</type>
     <object-name>ParkingBrake</object-name>
     <property>controls/gear/brake-parking[0]</property>
-    <factor> 25 </factor>
-    <center>
-      <x-m>  0.719 </x-m>
-      <y-m> -0.021 </y-m>
-      <z-m> -0.119 </z-m>
-    </center>
-    <axis>
-     <x> 0 </x>
-     <y> 1 </y>
+    <factor> 50 </factor>
+     <axis>
+     <x> 1 </x>
+     <y> 0 </y>
      <z> 0 </z>
     </axis>
+    <center>
+      <x-m> -5.561 </x-m>
+      <y-m>  0.160 </y-m>
+      <z-m>  0.063 </z-m>
+    </center>
   </animation>
- 
   <animation>
     <type>pick</type>
     <visible>true</visible>

@@ -1,11 +1,11 @@
 AC3Db
-MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 50 trans 0.85
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
+MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 6
 OBJECT poly
 name "FuelPres.Face"
-loc 0.004151 0 -0
+loc 0.008019 0 -0
 data 13
 FuelPres.Face
 texture "fuel_pressure.png"
@@ -73,7 +73,7 @@ refs 3
 kids 0
 OBJECT poly
 name "FuelPres.Needle1"
-loc 0.005514 0 -0
+loc 0.009382 0 -0
 data 16
 FuelPres.Needle1
 texture "fuel_pressure.png"
@@ -392,7 +392,7 @@ refs 4
 kids 0
 OBJECT poly
 name "FuelPres.Needle2"
-loc 0.005362 0 -0
+loc 0.00923 0 -0
 data 16
 FuelPres.Needle2
 texture "fuel_pressure.png"

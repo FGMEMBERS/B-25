@@ -43,11 +43,11 @@
     <object-name>ptrL</object-name>
     <property>consumables/fuel/tank[2]/level-gal_us</property>
     <interpolation>
-     <entry><ind>  0.000 </ind><dep>  0.0 </dep></entry>
-     <entry><ind> 40.00 </ind><dep> 20.0 </dep></entry>
-     <entry><ind> 80.00 </ind><dep> 50.0 </dep></entry>
-     <entry><ind> 120.00 </ind><dep> 65.0 </dep></entry>
-     <entry><ind> 150.00 </ind><dep> 80.0 </dep></entry>
+     <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
+     <entry><ind>  40.00 </ind><dep> 24.2 </dep></entry>
+     <entry><ind>  80.00 </ind><dep> 42.6 </dep></entry>
+     <entry><ind> 120.00 </ind><dep> 60.7 </dep></entry>
+     <entry><ind> 150.00 </ind><dep> 82.1 </dep></entry>
     </interpolation>
     <axis> 
       <x> 1 </x>
@@ -55,9 +55,9 @@
       <z> 0 </z>
     </axis>
     <center>
-      <x-m>  0.00 </x-m>
-      <y-m> -0.02 </y-m>
-      <z-m>  0.00 </z-m>  
+      <x-m>  0.005894 </x-m>
+      <y-m> -0.02495 </y-m>
+      <z-m>  0.003137 </z-m>  
     </center>
   </animation>         
  
@@ -66,11 +66,11 @@
     <object-name>ptrR</object-name>
     <property>consumables/fuel/tank[3]/level-gal_us</property>
     <interpolation>
-     <entry><ind>  0.000 </ind><dep>  0.0 </dep></entry>
-     <entry><ind> 40.00 </ind><dep> 20.0 </dep></entry>
-     <entry><ind> 80.00 </ind><dep> 50.0 </dep></entry>
-     <entry><ind> 120.00 </ind><dep> 65.0 </dep></entry>
-     <entry><ind> 150.00 </ind><dep> 80.0 </dep></entry>
+     <entry><ind>   0.00 </ind><dep>  0.0 </dep></entry>
+     <entry><ind>  40.00 </ind><dep> 24.2 </dep></entry>
+     <entry><ind>  80.00 </ind><dep> 42.6 </dep></entry>
+     <entry><ind> 120.00 </ind><dep> 60.7 </dep></entry>
+     <entry><ind> 150.00 </ind><dep> 82.1 </dep></entry>
     </interpolation>
     <axis> 
       <x> -1 </x>
@@ -78,9 +78,9 @@
       <z>  0 </z>
     </axis>
     <center>
-      <x-m> 0.00 </x-m>
-      <y-m> 0.02 </y-m>
-      <z-m> 0.00 </z-m>  
+      <x-m> 0.005894 </x-m>
+      <y-m> 0.02495 </y-m>
+      <z-m> 0.003137 </z-m>  
     </center>
   </animation>         
  

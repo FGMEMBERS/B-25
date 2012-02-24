@@ -4,7 +4,8 @@
 
   <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
 
-  <view n="100">
+
+  <view n="105">
     <name>Co pilote</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
@@ -16,6 +17,60 @@
       <x-offset-m archive="y">  0.332 </x-offset-m>	<!-- Right -->
       <y-offset-m archive="y">  0.752 </y-offset-m>	<!-- Up    -->
       <z-offset-m archive="y"> -4.700 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> -10 </pitch-offset-deg>
+      <default-field-of-view-deg>65</default-field-of-view-deg>
+    </config>
+  </view>
+
+  <view n="104">
+    <name>Navigator's Compartment</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y">  0.000 </x-offset-m>	<!-- Right -->
+      <y-offset-m archive="y">  0.662 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y"> -2.900 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg> -10 </pitch-offset-deg>
+      <default-field-of-view-deg>65</default-field-of-view-deg>
+      <heading-offset-deg type="double">215</heading-offset-deg>
+    </config>
+  </view>
+
+<!--
+  <view n="103">
+    <name>Radio Operator's Comparment</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y">  0.000 </x-offset-m>	--><!-- Right -->
+<!--      <y-offset-m archive="y">  0.552 </y-offset-m>	-->   <!-- Up    -->
+<!--      <z-offset-m archive="y">  2.000 </z-offset-m>	-->   <!-- Back  -->   <!--
+      <pitch-offset-deg> -10 </pitch-offset-deg>
+      <default-field-of-view-deg>65</default-field-of-view-deg>
+    </config>
+  </view>
+--> 
+
+  <view n="102">
+    <name>Bombardier's Comparment</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y">  0.000 </x-offset-m>	<!-- Right -->
+      <y-offset-m archive="y">  0.200 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y"> -6.400 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg> -10 </pitch-offset-deg>
       <default-field-of-view-deg>65</default-field-of-view-deg>
     </config>
@@ -36,6 +91,7 @@
       <z-offset-m archive="y"> 8.535 </z-offset-m> <!--Back-->
     </config>
   </view>
+
 
   <view n="0">
     <internal archive="y">true</internal>
