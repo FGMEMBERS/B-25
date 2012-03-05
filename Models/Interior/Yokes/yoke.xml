@@ -10,6 +10,8 @@
     <object-name>Yoke</object-name>
     <object-name>Yoke.Button</object-name>
     <object-name>Yoke.Button.Base</object-name>
+    <object-name>Boot1</object-name>
+    <object-name>Boot2</object-name>
     <object-name>rivets</object-name>
     <!-- Objets transparents -->
   </animation>
@@ -20,6 +22,7 @@
     <object-name>Yoke</object-name>
     <object-name>Yoke.Button</object-name>
     <object-name>Yoke.Button.Base</object-name>
+
     <object-name>rivets</object-name>
     <emission>
       <red>   0.004 </red>
@@ -29,11 +32,11 @@
     </emission>
   </animation>
 
-
-
   <animation>
     <type>material</type>
     <object-name>Column</object-name>
+    <object-name>Boot1</object-name>
+    <object-name>Boot2</object-name>
     <emission>
       <red>   0.002 </red>
       <green> 0.002 </green>
@@ -63,6 +66,23 @@
 
   <animation>
     <type>rotate</type>
+    <object-name>Boot2</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> 30 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m>-0.002 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.107 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
     <object-name>Yoke</object-name>
     <object-name>Yoke.Button</object-name>
     <object-name>Yoke.Button.Base</object-name>
@@ -71,7 +91,7 @@
     <center>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
-      <z-m> 0.530 </z-m>
+      <z-m> 0.500 </z-m>
     </center>
     <axis>
       <x> -1 </x>

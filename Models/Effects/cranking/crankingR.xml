@@ -12,10 +12,18 @@
     <lighting type="bool">false</lighting>
 
     <condition>
-       <property>controls/engines/engine[1]/starter</property>
-       <value>true</value>
+      <and>
+        <greater-than>
+          <property>engines/engine[1]/rpm</property>
+          <value>30</value>
+        </greater-than>
+        <equals>
+          <property>engines/engine[1]/cranking</property>
+          <value>true</value>
+        </equals>
+      </and>
     </condition>
-    
+
     <attach>world</attach>
 
     <placer>

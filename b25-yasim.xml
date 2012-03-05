@@ -236,8 +236,10 @@
 
   <tank x="4.29" y=" 2.95" z="-0.18" capacity="1104"/>
   <tank x="4.29" y="-2.95" z="-0.18" capacity="1104"/>
-  <tank x="4.29" y=" 2.95" z="-0.18" capacity="912"/> <!-- Tank Rear Right -->
-  <tank x="4.29" y="-2.95" z="-0.18" capacity="912"/> <!-- Tank Front Right -->
+  <tank x="4.29" y=" 2.95" z="-0.18" capacity=" 912"/> <!-- Tank Rear Left -->
+  <tank x="4.29" y="-2.95" z="-0.18" capacity=" 912"/> <!-- Tank Rear Right -->
+  <tank x="4.29" y=" 2.95" z="-0.18" capacity=" 912"/> <!-- Tank Aux Left -->
+  <tank x="4.29" y="-2.95" z="-0.18" capacity=" 912"/> <!-- Tank Aux Right -->
 
   <!-- Mass displacment -->
   <ballast x="9.0" y="0.0" z="-1.5" mass="3100"/>

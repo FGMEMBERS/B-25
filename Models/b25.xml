@@ -118,6 +118,8 @@
     <object-name>bolG</object-name>
     <object-name>bolD</object-name>
     <object-name>echappes</object-name>
+    <object-name>tourvitreL</object-name>
+    <object-name>tourvitreR</object-name>
 
     <object-name>roueA</object-name>
     <object-name>roueG</object-name>
@@ -197,6 +199,8 @@
     <object-name>bolG</object-name>
     <object-name>bolD</object-name>
     <object-name>echappes</object-name>
+    <object-name>tourvitreL</object-name>
+    <object-name>tourvitreR</object-name>
   </effect>
 
   <animation>
@@ -328,223 +332,23 @@
   </model>
 
   <!-- Cranking effects -->
-  <!-- Left exterior-->
+  <!-- Left -->
   <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
+    <path>Aircraft/B-25/Models/Effects/cranking/all-crankingL.xml</path>
     <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m> -3.192 </y-m>
-      <z-m>  0.540 </z-m>
+      <x-m> -3.225 </x-m>
+      <y-m> -2.891 </y-m>
+      <z-m> -0.115 </z-m>
     </offsets>
   </model>
 
+  <!-- Right -->
   <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
+    <path>Aircraft/B-25/Models/Effects/cranking/all-crankingR.xml</path>
     <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m> -3.408 </y-m>
-      <z-m>  0.404 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m> -3.594 </y-m>
-      <z-m>  0.077 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m> -3.601 </y-m>
-      <z-m> -0.168 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m> -3.518 </y-m>
-      <z-m> -0.474 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m> -3.395 </y-m>
-      <z-m> -0.610 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Left interior -->
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m> -2.590 </y-m>
-      <z-m>  0.540 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m> -2.381 </y-m>
-      <z-m>  0.412 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m> -2.259 </y-m>
-      <z-m>  0.087 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m> -2.181 </y-m>
-      <z-m> -0.168 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m> -2.259 </y-m>
-      <z-m> -0.465 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingL.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m> -2.387 </y-m>
-      <z-m> -0.610 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Right exterior-->
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m>  3.192 </y-m>
-      <z-m>  0.540 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m>  3.408 </y-m>
-      <z-m>  0.404 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m>  3.594 </y-m>
-      <z-m>  0.077 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m>  3.601 </y-m>
-      <z-m> -0.168 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m>  3.518 </y-m>
-      <z-m> -0.474 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m>  3.395 </y-m>
-      <z-m> -0.610 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Right interior -->
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m>  2.590 </y-m>
-      <z-m>  0.540 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m>  2.381 </y-m>
-      <z-m>  0.412 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m>  2.259 </y-m>
-      <z-m>  0.087 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m>  2.181 </y-m>
-      <z-m> -0.168 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.080 </x-m>
-      <y-m>  2.259 </y-m>
-      <z-m> -0.465 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/B-25/Models/Effects/cranking/crankingR.xml</path>
-    <offsets>
-      <x-m> -3.214 </x-m>
-      <y-m>  2.387 </y-m>
-      <z-m> -0.610 </z-m>
+      <x-m> -3.225 </x-m>
+      <y-m>  2.891 </y-m>
+      <z-m> -0.115 </z-m>
     </offsets>
   </model>
 

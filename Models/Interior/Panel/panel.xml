@@ -310,7 +310,7 @@
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/all-switch.xml</path>
   </model>
 
-  <!-- GUNSIGHT -->
+  <!-- N-3B GUNSIGHT -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/N-3B_Gunsight/N-3B_Gunsight.xml</path>
     <offsets>
@@ -320,10 +320,20 @@
     </offsets>
   </model>
 
+  <!-- Generic Gunsight -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/N-3B_Gunsight/Gunsight.xml</path>
+    <offsets>
+      <x-m>  0.150 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m>  0.335 </z-m>
+    </offsets>
+  </model>
+
   <!-- RADIO PANEL -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/RadioPanel/RadioPanel.xml</path>
-
   </model>
+
 </PropertyList>
 

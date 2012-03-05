@@ -5,7 +5,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/AN-ARC5_RadioReceivers.xml</path>
     <offsets>
-      <x-m> -2.375 </x-m>
+      <x-m> -2.705 </x-m>
       <y-m>  0.500 </y-m>
       <z-m>  0.775 </z-m>
     </offsets>
@@ -13,15 +13,15 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/AN-ARC5_RadioTransmitters.xml</path>
     <offsets>
-      <x-m> -2.000 </x-m>
-      <y-m>  0.280 </y-m>
-      <z-m>  0.760 </z-m>
+      <x-m> -3.320 </x-m>
+      <y-m> -0.450 </y-m>
+      <z-m>  0.775 </z-m>
     </offsets>
   </model>
   <model>
     <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/AN-ARC5_Dynamotor_Modulator.xml</path>
     <offsets>
-      <x-m> -2.700 </x-m>
+      <x-m> -3.000 </x-m>
       <y-m>  0.468 </y-m>
       <z-m>  0.660 </z-m>
     </offsets>

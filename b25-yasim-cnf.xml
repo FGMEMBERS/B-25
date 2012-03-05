@@ -11,7 +11,6 @@ April 2009 BARANGER Emmanuel
   <sim>
 
     <description>B 25 Mitchell (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>b25-yasim</aero>
 
