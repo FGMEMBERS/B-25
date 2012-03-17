@@ -17,6 +17,36 @@
 
   </sim>
 
+  <limits>
+	 <max-flap-extension-speed>
+	  <flaps>0.00</flaps>
+	  <speed>170</speed>
+	 </max-flap-extension-speed>
+	 <max-flap-extension-speed>
+	  <flaps>0.25</flaps>
+	  <speed>170</speed>
+	 </max-flap-extension-speed>
+	 <max-flap-extension-speed>
+	  <flaps>0.50</flaps>
+	  <speed>170</speed>
+	 </max-flap-extension-speed>
+	 <max-flap-extension-speed>
+	  <flaps>0.75</flaps>
+	  <speed>170</speed>
+	 </max-flap-extension-speed>
+	 <max-flap-extension-speed>
+	  <flaps>1.000</flaps>
+	  <speed>170</speed>
+	 </max-flap-extension-speed>
+	 
+	 <vne>345</vne>
+	 
+	 <max-gear-extension-speed>170</max-gear-extension-speed>
+ 
+	 <!-- max-positive-g>4.4</max-positive-g -->
+	 <!-- max-negative-g>-1.76</max-negative-g -->
+ 
+   </limits>
 
 </PropertyList>
 

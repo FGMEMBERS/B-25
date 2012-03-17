@@ -17,7 +17,7 @@
     <offsets>
       <x-m> -7.600 </x-m>
       <y-m> -0.000 </y-m>
-      <z-m>  0.000 </z-m>
+      <z-m> -0.010 </z-m>
       <pitch-deg> -5 </pitch-deg>
     </offsets>
   </model>
@@ -32,7 +32,17 @@
     </offsets>
   </model>
 
-  <!-- Secondary M2s -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_AmmunitionBelt.xml</path>
+    <offsets>
+      <x-m> -7.300 </x-m>
+      <y-m>  0.075 </y-m>
+      <z-m>  0.030 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- SECONDARY M2s -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
     <offsets>
@@ -47,6 +57,25 @@
     <offsets>
       <x-m> -7.400 </x-m>
       <y-m>  0.400 </y-m>
+      <z-m> -0.400 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Secondary Ammunition -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_AmmunitionBelt2.xml</path>
+    <offsets>
+      <x-m> -7.130 </x-m>
+      <y-m>  0.385 </y-m>
+      <z-m> -0.150 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_AmmunitionBelt3.xml</path>
+    <offsets>
+      <x-m> -7.130 </x-m>
+      <y-m>  0.335 </y-m>
       <z-m> -0.400 </z-m>
     </offsets>
   </model>
@@ -69,6 +98,17 @@
       <x-m> -6.816 </x-m>
       <y-m> -0.557 </y-m>
       <z-m> -0.100 </z-m>
+      <heading-deg> 80 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Bombardier Bomb Control  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/BombardierCompartment/BombardierBombControl/BombardierBombCtrl.xml</path>
+    <offsets>
+      <x-m> -6.816 </x-m>
+      <y-m> -0.557 </y-m>
+      <z-m> -0.350 </z-m>
       <heading-deg> 80 </heading-deg>
     </offsets>
   </model>

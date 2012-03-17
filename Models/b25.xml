@@ -18,6 +18,7 @@
     
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
+      var swapMaps();	
     </load>
 
     <unload>
@@ -227,12 +228,6 @@
     <object-name>vitresoustour</object-name>
     <object-name>cables</object-name>
   </animation>
-
-  <model>
-    <config>
-      <show-glasses type="bool">true</show-glasses>
-    </config>
-  </model>
 
   <!-- Une ombre pour OSG -->
   <model>
@@ -1075,6 +1070,12 @@
       <z> 0 </z>
     </axis>
   </animation>
+
+  <!-- Exterior Lights -->
+  <model>
+    <path>Aircraft/B-25/Models/Lights/b25-lights.xml</path>
+  </model>
+
 
 </PropertyList>
 

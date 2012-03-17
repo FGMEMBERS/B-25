@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m>  0.126 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m> -0.159 </y-m>
+      <z-m>  0.006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m> -0.129 </y-m>
+      <z-m>  0.006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m> -0.096 </y-m>
+      <z-m>  0.006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m>  0.091 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m>  0.124 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m> -0.159 </y-m>
+      <z-m> -0.079 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m> -0.135 </y-m>
+      <z-m> -0.079 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m>  0.094 </y-m>
+      <z-m> -0.093 </z-m>
+    </offsets>
+  </model>
+
+  <!-- INDICATORS -->
+  <!-- Bombs Door Open Indicator -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_red.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m> -0.005 </y-m>
+      <z-m>  0.116 </z-m>
+    </offsets>
+  </model>
+  <!-- Pilot's Call Indicator -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_red.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m> -0.156 </y-m>
+      <z-m>  0.074 </z-m>
+    </offsets>
+  </model>
+  <!-- Bombs Nose Fusing Indicator -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_orange.xml</path>
+    <offsets>
+      <x-m>  0.038 </x-m>
+      <y-m>  0.090 </y-m>
+      <z-m>  0.058 </z-m>
+    </offsets>
+  </model>
+</PropertyList>
+

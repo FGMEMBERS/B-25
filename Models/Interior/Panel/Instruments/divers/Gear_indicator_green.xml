@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>indicator_green.ac</path>
+
+  <animation>
+    <object-name>indicator</object-name>
+    <object-name>indicatorLightON</object-name>
+    <object-name>indicatorLightON</object-name>
+  </animation>
+
+  <animation>
+     <object-name>indicatorLightON</object-name>
+     <type>select</type>
+     <condition>
+      <equals>
+      <property>controls/gear/gear-down</property>
+      <value>true</value>
+      </equals>
+     </condition>
+  </animation>
+
+  <animation>
+     <object-name>indicatorLightOFF</object-name>
+     <type>select</type>
+     <condition>
+      <equals>
+      <property>controls/gear/gear-down</property>
+      <value>false</value>
+      </equals>
+     </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>indicatorLightON</object-name>
+    <emission>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>indicator</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>

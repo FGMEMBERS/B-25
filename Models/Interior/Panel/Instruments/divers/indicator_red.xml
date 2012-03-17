@@ -6,12 +6,27 @@
 
   <animation>
     <object-name>indicator</object-name>
-    <object-name>indicatorLight</object-name>
+     <object-name>indicatorLightON</object-name>
+     <object-name>indicatorLightOFF</object-name>
+  </animation>
+
+  <animation>
+     <type>select</type>
+     <object-name>indicatorLightON</object-name>
+	<condition>
+           <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+             <value>0</value>
+             </equals>
+           </and>
+	</condition>
   </animation>
 
   <animation>
     <type>material</type>
-    <object-name>indicatorLight</object-name>
+    <object-name>indicatorLightOFF</object-name>
+    <object-name>indicatorLightON</object-name>
     <emission>
       <red>   0.15 </red>
       <green> 0.15 </green>

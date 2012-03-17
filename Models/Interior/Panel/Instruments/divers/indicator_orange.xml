@@ -6,16 +6,17 @@
 
   <animation>
     <object-name>indicator</object-name>
-    <object-name>indicatorLight</object-name>
+    <object-name>indicatorLightON</object-name>
+    <object-name>indicatorLightOFF</object-name>
   </animation>
 
   <animation>
     <type>material</type>
-    <object-name>indicatorLight</object-name>
+    <object-name>indicatorLightON</object-name>
     <emission>
-      <red>   0.15 </red>
-      <green> 0.15 </green>
-      <blue>  0.15 </blue>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>

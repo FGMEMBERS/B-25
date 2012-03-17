@@ -19,6 +19,9 @@
       <livery>
         <file type="string">default</file>
       </livery>
+      <config>
+	<map type="int">0</map>
+      </config>
     </model>
 
     <sound>
@@ -109,6 +112,8 @@
       <file>Aircraft/B-25/Nasal/b25.nas</file>
       <file>Aircraft/B-25/Nasal/electrical.nas</file>
       <file>Aircraft/B-25/Nasal/hydraulic.nas</file>
+      <file>Aircraft/B-25/Nasal/clipboard.nas</file>
+      <file>Aircraft/Generic/limits.nas</file>
     </b25>
   </nasal>
 

@@ -148,7 +148,7 @@
     <offsets>
       <x-m> -2.325 </x-m>
       <y-m> -0.375 </y-m>
-      <z-m>  0.675 </z-m>
+      <z-m>  0.665 </z-m>
     </offsets>
   </model>
 
@@ -162,6 +162,40 @@
       <x-m> -4.735 </x-m>
       <y-m>  0.644 </y-m>
       <z-m>  0.435 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <condition>
+      <equals>
+         <property>sim/model/config/table-up</property>
+         <value>true</value>
+      </equals>
+    </condition>
+    <path>Aircraft/B-25/Models/Interior/ClipBoard/ClipBoard.xml</path>
+    <offsets>
+      <x-m> -4.770 </x-m>
+      <y-m>  0.500 </y-m>
+      <z-m>  0.465 </z-m>
+      <heading-deg> -10 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <condition>
+      <not-equals>
+         <property>sim/model/config/table-up</property>
+         <value>true</value>
+      </not-equals>
+    </condition>
+    <path>Aircraft/B-25/Models/Interior/ClipBoard/ClipBoard.xml</path>
+    <offsets>
+      <x-m> -5.031 </x-m>
+      <y-m>  0.674 </y-m>
+      <z-m>  0.130 </z-m>
+      <heading-deg> -90 </heading-deg>
+      <roll-deg> 10 </roll-deg>
+      <pitch-deg> 90 </pitch-deg>
     </offsets>
   </model>
 

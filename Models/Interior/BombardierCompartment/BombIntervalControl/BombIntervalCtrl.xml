@@ -8,7 +8,6 @@
     <!-- Objets opaques -->
     <object-name>fond</object-name>
     <object-name>Wheel</object-name>
-    <object-name>Switch</object-name>
     <!-- Objets transparents -->
   </animation>
 
@@ -16,7 +15,6 @@
    <type>material</type>
     <object-name>fond</object-name>
     <object-name>Wheel</object-name>
-    <object-name>Switch</object-name>
     <emission>
       <red>   0.005 </red>
       <green> 0.005 </green>
@@ -24,6 +22,16 @@
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m> -0.088 </x-m>
+      <y-m>  0.048 </y-m>
+      <z-m>  0.041 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
 
 </PropertyList>
 

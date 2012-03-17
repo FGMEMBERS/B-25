@@ -3,12 +3,10 @@
 <PropertyList>
 
   <path>switch.ac</path>
-
   <animation>
     <object-name>fond</object-name>
     <object-name>switch</object-name>
   </animation>
-
   <animation>
     <type>material</type>
     <object-name>fond</object-name>
@@ -25,77 +23,78 @@
     <object-name>fond</object-name>
     <object-name>switch</object-name>
     <visible>true</visible>
-    <action>
-      <button>0</button>
-      <repeatable>false</repeatable>
-      <binding>
-        <command>property-toggle</command>
-        <property>systems/electrical/outputs/instrument-lights</property>
-      </binding>
-    </action>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>property-toggle</command>
+                        <property>systems/electrical/outputs/instrument-lights</property>
+		</binding>
+	</action>
   </animation>
-
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
-    <property>systems/electrical/outputs/instrument-lights</property>
-    <factor> -50 </factor>
+         <property>systems/electrical/outputs/instrument-lights</property>
+    <factor> 40 </factor>
     <axis>
       <x>  0 </x>
-      <y>  1 </y>
+      <y> -1 </y>
       <z>  0 </z>
     </axis>
   </animation>
+<text>
+	<name>LabelText</name>
+	<type type="string">literal</type>
+		<text type="string">Click this switch to turn on the lights
+                                                :
+                                                V</text>
+	<draw-text type="bool">true</draw-text>
+	<font>Helvetica.txf</font>
+		<character-size type="double">0.012</character-size>
+		<character-aspect-ratio type="double">1.0</character-aspect-ratio>
+	<axis-alignment>yz-plane</axis-alignment>
+	<max-height>0.2</max-height>
+	<max-width>0.07</max-width>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+	<alignment>center-center</alignment>
+	<offsets>
+		<x-m> 0.01</x-m>
+		<y-m> 0.015 </y-m>
+		<z-m> 0.08</z-m>
+	</offsets>
+</text>
 
-  <text>
-    <name>LabelText</name>
-    <type type="string">literal</type>
-    <text type="string">Clic this switch to turn on the lights : V</text>
-    <draw-text type="bool">true</draw-text>
-    <font>Helvetica.txf</font>
-    <character-size type="double">0.012</character-size>
-    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
-    <axis-alignment>yz-plane</axis-alignment>
-    <max-height>0.2</max-height>
-    <max-width>0.07</max-width>
-    <font-resolution>
-    <width type="int">32</width>
-    <height type="int">32</height>
-    </font-resolution>
-    <alignment>center-center</alignment>
-    <offsets>
-    <x-m> 0.010 </x-m>
-    <y-m> 0.015 </y-m>
-    <z-m> 0.080 </z-m>
-    </offsets>
-  </text>
+<animation>
+	<type>material</type>
+		<object-name>LabelText</object-name>
+	<emission>
+		<red>1.0</red>
+		<green>0.8</green>
+		<blue>0.0</blue>
+	</emission>
+</animation>
 
-  <animation>
-    <type>material</type>
-    <object-name>LabelText</object-name>
-    <emission>
-      <red>   1.0 </red>
-      <green> 0.8 </green>
-      <blue>  0.0 </blue>
-    </emission>
-  </animation>
+<animation>
+	<type>select</type>
+	<object-name>LabelText</object-name>
+	<condition>
+           <and>
+             <equals>
+		<property>/environment/atmosphere/altitude-half-to-sun</property>
+             <value>0</value>
+             </equals>
+             <equals>
+		<property>/systems/electrical/outputs/instrument-lights</property>
+             <value>0</value>
+             </equals>
+           </and>
+	</condition>
 
-  <animation>
-    <type>select</type>
-    <object-name>LabelText</object-name>
-    <condition>
-      <and>
-        <equals>
-          <property>/environment/atmosphere/altitude-half-to-sun</property>
-          <value>0</value>
-        </equals>
-        <equals>
-          <property>/systems/electrical/outputs/instrument-lights</property>
-          <value>0</value>
-        </equals>
-      </and>
-    </condition>
-  </animation>
+</animation>
+
 
 </PropertyList>
-

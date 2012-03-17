@@ -1,0 +1,26 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "Light"
+loc 0 0 -0
+data 5
+Light
+texture "transparent.png"
+texrep 1 1
+crease 45.000001
+numvert 4
+0.5 0.5 -0
+-0.5 0.5 -0
+-0.5 -0.5 -0
+0.5 -0.5 -0
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.934153616428 0.431560695171
+1 0.56662684679 0.431560575962
+2 0.56662684679 0.064033806324
+3 0.934153616428 0.064033761621
+kids 0

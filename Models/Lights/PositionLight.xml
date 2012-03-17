@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  <path>PositionLight.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Light</object-name>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>Light</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Light</object-name>
+    <condition>
+        <property>/sim/model/lights/tail/state</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Light</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

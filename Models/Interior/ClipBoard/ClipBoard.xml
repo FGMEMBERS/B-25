@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>ClipBoard.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Board</object-name>
+    <object-name>Clip</object-name>
+    <object-name>Map0</object-name>
+    <object-name>Map1</object-name>
+    <object-name>Map2</object-name>
+    <object-name>Map3</object-name>
+    <object-name>Map4</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Clip</object-name>
+    <object-name>Map0</object-name>
+    <object-name>Map1</object-name>
+    <object-name>Map2</object-name>
+    <object-name>Map3</object-name>
+    <object-name>Map4</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>sim/model/config/map</property>
+        <step type="int">1</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Map0</object-name>
+    <condition>		
+      <equals>
+        <property>sim/model/config/map</property>		
+        <value>0</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Map1</object-name>
+    <condition>		
+      <equals>
+        <property>sim/model/config/map</property>		
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Map2</object-name>
+    <condition>		
+      <equals>
+        <property>sim/model/config/map</property>		
+        <value>2</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Map3</object-name>
+    <condition>		
+      <equals>
+        <property>sim/model/config/map</property>		
+        <value>3</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Map4</object-name>
+    <condition>		
+      <equals>
+        <property>sim/model/config/map</property>		
+        <value>4</value>
+      </equals>
+    </condition>
+  </animation>
+
+</PropertyList>
+
