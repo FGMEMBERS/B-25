@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
+
   <path>M2_Browning.ac</path>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>M2_Browning</object-name>
     <!-- Objets transparents -->
   </animation>
+
   <animation>
    <type>material</type>
     <object-name>M2_Browning</object-name>

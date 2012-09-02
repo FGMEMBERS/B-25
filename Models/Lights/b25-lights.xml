@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
   <!-- POSITION LIGHTS -->
@@ -68,12 +68,34 @@
   </model>
 
   <!-- Recognition Light 1 -->
+
   <model>
+    <condition>
+      <equals>
+         <property>/sim/aircraft</property>
+         <value>b25</value>
+      </equals>
+    </condition>
     <path>Aircraft/B-25/Models/Lights/Recognition1.xml</path>
     <offsets>
       <x-m> -2.274 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  1.447 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <condition>
+      <equals>
+         <property>/sim/aircraft</property>
+         <value>b25j</value>
+      </equals>
+    </condition>
+    <path>Aircraft/B-25/Models/Lights/Recognition1.xml</path>
+    <offsets>
+      <x-m> -3.365 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.091 </z-m>
     </offsets>
   </model>
 

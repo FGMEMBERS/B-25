@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -39,7 +39,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-mph</property>
     <interpolation>
       <entry><ind>   0 </ind><dep>   0 </dep></entry>
       <entry><ind>  50 </ind><dep>  20 </dep></entry>

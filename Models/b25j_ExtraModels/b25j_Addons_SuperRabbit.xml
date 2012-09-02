@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>b25j_AddonsSuperRabbit.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>capots2</object-name>
+    <object-name>derives2</object-name>
+    <object-name>directionD2</object-name>
+    <object-name>directionG2</object-name>
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Gouvernes de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>directionG2</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -25 </factor>
+    <axis>
+      <x1-m>  6.719 </x1-m>
+      <y1-m> -3.362 </y1-m>
+      <z1-m>  0.075 </z1-m>
+      <x2-m>  6.749 </x2-m>
+      <y2-m> -3.362 </y2-m>
+      <z2-m>  2.037 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>directionD2</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -25 </factor>
+    <axis>
+      <x1-m> 6.719 </x1-m>
+      <y1-m> 3.362 </y1-m>
+      <z1-m> 0.075 </z1-m>
+      <x2-m> 6.749 </x2-m>
+      <y2-m> 3.362 </y2-m>
+      <z2-m> 2.037 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Transparent Nose Art to be used with Chrome ( reflect-opaque effect ) -->
+  <model>
+    <path>Aircraft/B-25/Models/b25j_ExtraModels/NoseArt.xml</path>
+  </model>
+
+
+</PropertyList>
+

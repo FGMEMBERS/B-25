@@ -10,7 +10,7 @@ data 5
 Boot1
 texture "yoke.png"
 texrep 1 1
-crease 79.999998
+crease 78.999999
 numvert 80
 0.028907 0.121005 -0.029196
 0.031174 0.121005 -0.018746
@@ -521,7 +521,7 @@ data 5
 Boot2
 texture "yoke.png"
 texrep 1 1
-crease 79.999998
+crease 78.999999
 numvert 60
 0.022481 0.026835 -0.043902
 0.00782 0.026835 -0.048667
@@ -980,7 +980,7 @@ data 6
 Column
 texture "yoke.png"
 texrep 1 1
-crease 79.999998
+crease 78.999999
 numvert 329
 0.027263 0.190151 -0.033908
 0.029895 0.190151 -0.021771
@@ -3611,7 +3611,7 @@ data 4
 Yoke
 texture "yoke.png"
 texrep 1 1
-crease 61.000003
+crease 61.000000
 numvert 957
 0.096384 0.444526 -0.00348
 0.096301 0.442857 -0.00348
@@ -10348,7 +10348,7 @@ data 11
 Yoke.Button
 texture "yoke.png"
 texrep 1 1
-crease 30.000001
+crease 30.000000
 numvert 98
 0.088478 0.535211 -0.152484
 0.091137 0.53741 -0.158516
@@ -11097,7 +11097,7 @@ data 16
 Yoke.Button.Base
 texture "yoke.png"
 texrep 1 1
-crease 30.000001
+crease 30.000000
 numvert 98
 0.089274 0.527449 0.161306
 0.093179 0.523976 0.152529
@@ -11846,7 +11846,7 @@ data 6
 rivets
 texture "yoke.png"
 texrep 1 1
-crease 30.000001
+crease 30.000000
 numvert 155
 -0.064913 0.022328 -0.009564
 -0.064873 0.022998 -0.014751

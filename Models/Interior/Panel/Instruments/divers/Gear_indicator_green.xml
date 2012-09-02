@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -15,8 +15,8 @@
      <type>select</type>
      <condition>
       <equals>
-      <property>controls/gear/gear-down</property>
-      <value>true</value>
+      <property>gear/gear/position-norm</property>
+      <value>1</value>
       </equals>
      </condition>
   </animation>
@@ -25,10 +25,10 @@
      <object-name>indicatorLightOFF</object-name>
      <type>select</type>
      <condition>
-      <equals>
-      <property>controls/gear/gear-down</property>
-      <value>false</value>
-      </equals>
+      <not-equals>
+      <property>gear/gear/position-norm</property>
+      <value>1</value>
+      </not-equals>
      </condition>
   </animation>
 

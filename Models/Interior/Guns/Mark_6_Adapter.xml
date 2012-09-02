@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
+
   <path>Mark_6_Adapter.ac</path>
 
   <animation>
@@ -9,6 +10,7 @@
     <object-name>Gunsight</object-name>
     <!-- Objets transparents -->
   </animation>
+
   <animation>
    <type>material</type>
     <object-name>Mark_6_Adapter</object-name>

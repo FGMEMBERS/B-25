@@ -131,4 +131,19 @@ var update_system = func{
       setprop("/controls/engines/engine[1]/cranking",0);
   }
 }
- 
+
+####################### boost  #####################
+var blowerL = getprop("controls/engines/engine[0]/boost");
+
+var shift_blower_up = func {
+	if (blowerL <= 0.7){
+      setprop("/controls/engines/engine[0]/boost", 1);
+	}
+}
+
+var shift_blower_dn = func {
+	if (blowerL >= 1.0){
+      setprop("/controls/engines/engine[0]/boost", 0.7);
+	}
+}
+
