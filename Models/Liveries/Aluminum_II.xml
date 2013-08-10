@@ -7,7 +7,7 @@
     <model>
       <livery>
         <name type="string">Aluminum II</name>
-        <texture>Liveries/Aluminum II.png</texture>
+        <texture>Liveries/Aluminum_II.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
