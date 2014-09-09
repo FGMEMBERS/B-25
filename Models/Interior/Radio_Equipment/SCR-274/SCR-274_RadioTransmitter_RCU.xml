@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>SCR-274_RadioTransmitter_RCU.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>TransmitterCtrolBox</object-name>
+    <object-name>TransmitterSelector1</object-name>
+    <object-name>TransmitterSelector2</object-name>
+    <object-name>TransmitterSwitch</object-name>
+    <object-name>TransmitterButton</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>decreaseL</object-name>
+    <object-name>decreaseR</object-name>
+    <object-name>increaseL</object-name>
+    <object-name>increaseR</object-name>
+  </animation>
+
+
+  <animation>
+   <type>material</type>
+    <object-name>TransmitterCtrolBox</object-name>
+    <object-name>TransmitterSelector1</object-name>
+    <object-name>TransmitterSelector2</object-name>
+    <object-name>TransmitterSwitch</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+   <type>material</type>
+    <object-name>TransmitterButton</object-name>
+    <emission>
+      <red>   0.003 </red>
+      <green> 0.003 </green>
+      <blue>  0.003 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+
+</PropertyList>
+

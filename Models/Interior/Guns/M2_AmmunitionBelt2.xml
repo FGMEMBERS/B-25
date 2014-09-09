@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.063 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.126 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.189 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.252 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

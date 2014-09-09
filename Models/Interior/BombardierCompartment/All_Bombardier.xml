@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/BombardierCompartment/Norden_Bombsight/Norden_Bombsight.xml</path>
+    <offsets>
+      <x-m> -7.000 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.400 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Main M2 Brwoning 0.50 cal  --> 
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
+    <offsets>
+      <x-m> -7.600 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.010 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/Mark_6_Adapter.xml</path>
+    <offsets>
+      <x-m> -7.600 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_AmmunitionBelt.xml</path>
+    <offsets>
+      <x-m> -7.300 </x-m>
+      <y-m>  0.075 </y-m>
+      <z-m>  0.030 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- SECONDARY M2s -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
+    <offsets>
+      <x-m> -7.400 </x-m>
+      <y-m>  0.450 </y-m>
+      <z-m> -0.150 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
+    <offsets>
+      <x-m> -7.400 </x-m>
+      <y-m>  0.400 </y-m>
+      <z-m> -0.400 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Secondary Ammunition -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_AmmunitionBelt2.xml</path>
+    <offsets>
+      <x-m> -7.130 </x-m>
+      <y-m>  0.385 </y-m>
+      <z-m> -0.150 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_AmmunitionBelt3.xml</path>
+    <offsets>
+      <x-m> -7.130 </x-m>
+      <y-m>  0.335 </y-m>
+      <z-m> -0.400 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Bomb Interval Control  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/BombardierCompartment/BombIntervalControl/BombIntervalCtrl.xml</path>
+    <offsets>
+      <x-m> -7.150 </x-m>
+      <y-m> -0.475 </y-m>
+      <z-m> -0.100 </z-m>
+      <heading-deg> -15 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Bombardier Panel  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/BombardierCompartment/BombardierPanel/BombardierPanel.xml</path>
+    <offsets>
+      <x-m> -6.816 </x-m>
+      <y-m> -0.557 </y-m>
+      <z-m> -0.100 </z-m>
+      <heading-deg> 80 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Bombardier Bomb Control  -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/BombardierCompartment/BombardierBombControl/BombardierBombCtrl.xml</path>
+    <offsets>
+      <x-m> -6.816 </x-m>
+      <y-m> -0.557 </y-m>
+      <z-m> -0.350 </z-m>
+      <heading-deg> 80 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

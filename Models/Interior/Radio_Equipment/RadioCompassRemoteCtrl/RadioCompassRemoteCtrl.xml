@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>RadioCompassRemoteCtrl.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>LightButton</object-name>
+    <object-name>AudioButton</object-name>
+    <object-name>TunningLever</object-name>
+    <object-name>Switch</object-name>
+    <object-name>Button1</object-name>
+    <object-name>key1</object-name>
+    <object-name>key2</object-name>
+    <object-name>key3</object-name>
+    <!-- Objets transparents -->
+    <object-name>decrease1</object-name>
+    <object-name>increase1</object-name>
+    <object-name>decrease2</object-name>
+    <object-name>increase2</object-name>
+    <object-name>decrease3</object-name>
+    <object-name>increase3</object-name>
+  </animation>
+
+ <animation>
+   <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>LightButton</object-name>
+    <object-name>AudioButton</object-name>
+    <object-name>TunningLever</object-name>
+    <object-name>Switch</object-name>
+    <object-name>Button1</object-name>
+    <object-name>key1</object-name>
+    <object-name>key2</object-name>
+    <object-name>key3</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>decrease1</object-name>
+    <object-name>increase1</object-name>
+    <object-name>decrease2</object-name>
+    <object-name>increase2</object-name>
+    <object-name>decrease3</object-name>
+    <object-name>increase3</object-name>
+    <visible>false</visible>
+  </animation>
+
+</PropertyList>
+

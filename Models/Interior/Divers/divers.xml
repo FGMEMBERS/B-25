@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>divers.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond1</object-name>
+    <object-name>fond3</object-name>
+    <object-name>fond4</object-name>
+    <object-name>bouton1</object-name>
+    <object-name>bouton2</object-name>
+    <object-name>bouton3</object-name>
+    <object-name>bouton4</object-name>
+    <object-name>bouton5</object-name>
+    <object-name>RPMSwitch1</object-name>
+    <object-name>RPMSwitch2</object-name>
+    <object-name>RPMSwitch3</object-name>
+    <object-name>RPMSwitch4</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+   <type>material</type>
+    <object-name>fond1</object-name>
+    <object-name>fond4</object-name>
+    <object-name>bouton1</object-name>
+    <object-name>bouton4</object-name>
+    <object-name>bouton5</object-name>
+    <object-name>RPMSwitch1</object-name>
+    <object-name>RPMSwitch2</object-name>
+    <object-name>RPMSwitch3</object-name>
+    <object-name>RPMSwitch4</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+   <type>material</type>
+    <object-name>fond3</object-name>
+    <object-name>bouton2</object-name>
+    <object-name>bouton3</object-name>
+    <emission>
+      <red>   0.002 </red>
+      <green> 0.002 </green>
+      <blue>  0.002 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
+

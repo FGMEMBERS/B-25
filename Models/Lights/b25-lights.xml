@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  <!-- POSITION LIGHTS -->
+  <!-- Left Nav Light -->
+  <model>
+    <path>Aircraft/B-25/Models/Lights/NavLightL.xml</path>
+    <offsets>
+      <x-m>  -1.291 </x-m>
+      <y-m> -10.316 </y-m>
+      <z-m>   0.482 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right Nav Light -->
+  <model>
+    <path>Aircraft/B-25/Models/Lights/NavLightR.xml</path>
+    <offsets>
+      <x-m>  -1.291 </x-m>
+      <y-m>  10.316 </y-m>
+      <z-m>   0.482 </z-m>
+    </offsets>
+  </model>
+
+  <model> <!-- Tail Left-->
+    <path>Aircraft/B-25/Models/Lights/PositionLight.xml</path>
+    <offsets>
+      <x-m>  6.450 </x-m>
+      <y-m> -3.505 </y-m>
+      <z-m>  1.643 </z-m>
+    </offsets>
+  </model>
+
+  <model> <!-- Tail Right-->
+    <path>Aircraft/B-25/Models/Lights/PositionLight.xml</path>
+    <offsets>
+      <x-m>  6.450 </x-m>
+      <y-m>  3.505 </y-m>
+      <z-m>  1.643 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- ANTICOLLISION  LIGHTS -->
+  <!-- Strobe Lights  -->
+  <model>
+    <condition>
+        <property>/sim/model/lights/strobe/state</property>
+    </condition>
+    <path>Aircraft/B-25/Models/Lights/StrobeLightL.xml</path>
+    <offsets>
+      <x-m>  -1.291 </x-m>
+      <y-m> -10.336 </y-m>
+      <z-m>   0.482 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <condition>
+        <property>/sim/model/lights/strobe/state</property>
+    </condition>
+    <path>Aircraft/B-25/Models/Lights/StrobeLightR.xml</path>
+    <offsets>
+      <x-m>  -1.291 </x-m>
+      <y-m>  10.336 </y-m>
+      <z-m>   0.482 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Recognition Light 1 -->
+
+  <model>
+    <condition>
+      <equals>
+         <property>/sim/aircraft</property>
+         <value>b25</value>
+      </equals>
+    </condition>
+    <path>Aircraft/B-25/Models/Lights/Recognition1.xml</path>
+    <offsets>
+      <x-m> -2.274 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.447 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <condition>
+      <equals>
+         <property>/sim/aircraft</property>
+         <value>b25j</value>
+      </equals>
+    </condition>
+    <path>Aircraft/B-25/Models/Lights/Recognition1.xml</path>
+    <offsets>
+      <x-m> -3.365 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.091 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FORMATION LIGHTS -->
+  <!-- Formation Lights -->
+  <model>
+    <path>Aircraft/B-25/Models/Lights/FormationLight.xml</path>
+    <offsets>
+      <x-m>  3.179 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.907 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Lights/FormationLight.xml</path>
+    <offsets>
+      <x-m>  4.783 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.795 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Lights/FormationLight.xml</path>
+    <offsets>
+      <x-m>  5.401 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.755 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Lights/FormationLight.xml</path>
+    <offsets>
+      <x-m>  6.251 </x-m>
+      <y-m> -0.990 </y-m>
+      <z-m>  0.635 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Lights/FormationLight.xml</path>
+    <offsets>
+      <x-m>  6.251 </x-m>
+      <y-m> -2.204 </y-m>
+      <z-m>  0.635 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Lights/FormationLight.xml</path>
+    <offsets>
+      <x-m>  6.251 </x-m>
+      <y-m>  0.990 </y-m>
+      <z-m>  0.635 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Lights/FormationLight.xml</path>
+    <offsets>
+      <x-m>  6.251 </x-m>
+      <y-m>  2.204 </y-m>
+      <z-m>  0.635 </z-m>
+    </offsets>
+  </model>
+
+  <!-- LANDING LIGHTS -->
+  <!-- Left Landing Light -->
+  <model>
+    <name>landingL</name>
+    <path>Aircraft/B-25/Models/Lights/LandingLightL.xml</path>
+   <condition>
+          <property>/sim/model/lights/landing/state</property>
+    </condition>
+    <offsets>
+      <x-m>          -2.293 </x-m>
+      <y-m>          -4.980 </y-m>
+      <z-m>           0.350 </z-m>
+      <pitch-deg>    -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>landingPlateL</name>
+    <path>Aircraft/B-25/Models/Lights/LandingLightPlateL.xml</path>
+   <condition>
+          <property>/sim/model/lights/landing/state</property>
+    </condition>
+    <offsets>
+      <x-m>          -2.293 </x-m>
+      <y-m>          -4.980 </y-m>
+      <z-m>           0.350 </z-m>
+      <pitch-deg>    -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+
+  <!-- Right Landing Light -->
+  <model>
+   <name>landingR</name>
+   <path>Aircraft/B-25/Models/Lights/LandingLightR.xml</path>
+   <condition>
+          <property>/sim/model/lights/landing[1]/state</property>
+    </condition>
+
+    <offsets>
+      <x-m>          -2.293 </x-m>
+      <y-m>           4.920 </y-m>
+      <z-m>           0.350 </z-m>
+      <pitch-deg>    -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>landingPlateR</name>
+    <path>Aircraft/B-25/Models/Lights/LandingLightPlateR.xml</path>
+   <condition>
+          <property>/sim/model/lights/landing[1]/state</property>
+   </condition>
+    <offsets>
+      <x-m>          -2.293 </x-m>
+      <y-m>           4.920 </y-m>
+      <z-m>           0.350 </z-m>
+      <pitch-deg>    -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

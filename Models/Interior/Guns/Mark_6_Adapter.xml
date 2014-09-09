@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>Mark_6_Adapter.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Mark_6_Adapter</object-name>
+    <object-name>Gunsight</object-name>
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+   <type>material</type>
+    <object-name>Mark_6_Adapter</object-name>
+    <object-name>Gunsight</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
+

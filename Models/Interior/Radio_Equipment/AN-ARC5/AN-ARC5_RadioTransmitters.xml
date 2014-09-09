@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>AN-ARC5_RadioTransmitters.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>BC-458-A</object-name>
+    <object-name>BC-458-A_Face</object-name>
+    <object-name>BC-459-A</object-name>
+    <object-name>BC-459-A_Face</object-name>
+    <object-name>RadioDial1</object-name>
+    <object-name>RadioDial2</object-name>
+    <object-name>boutons1</object-name>
+    <object-name>boutons2</object-name>
+    <object-name>visses</object-name>
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+   <type>material</type>
+    <object-name>BC-458-A</object-name>
+    <object-name>BC-458-A_Face</object-name>
+    <object-name>BC-459-A</object-name>
+    <object-name>BC-459-A_Face</object-name>
+    <object-name>RadioDial1</object-name>
+    <object-name>RadioDial2</object-name>
+    <object-name>boutons1</object-name>
+    <object-name>boutons2</object-name>
+    <object-name>visses</object-name>
+    <emission>
+      <red>   0.005 </red>
+      <green> 0.005 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- B 25a Mitchell BARANGER Emmanuel (2009)
+     change by Detlef FABER           (2009)
+     change by JC_SV                  (2012)
+     change by Buckaroo (Gary Neely)  (March 2012, major revision)
+
+     Wingspan        : 20.60 m    (   67 ft 5 in)
+     Lenght          : 16.48 m    (   54 ft 0 in)
+     Height          :  4.80 m    (   15 ft 7 in)
+     Empty mass      :  8835 kg   (19477 lb)
+     Cruise speed    :   400 km/h (  247 kts)
+-->
+
+
+<!-- Buckaroo notes:
+
+Flying notes:
+
+The B-25 should be easy and forgiving to fly. The FDM has been tuned to the following procedures taken from the POH.
+
+Taxi: Use differential engine and braking effects to steer on the ground. The B-25 nose wheel is not steerable.
+
+Take-off: Set flaps to 20 degrees, set props for 2600 RPM and throttles to 40 inHg. Release brakes and use differential power and very minimal braking to hold the nose steady until rudders are effective. At 75 kts, rotate until the nosegear is just clear of the ground then let the plane lift itself off, around 115 kts or so. Raise the gear as soon as the plane is clearly airborn. Raise flaps when you have sufficient altitude, 300' or so, or 130 kts; be prepared to correct for pitch changes.
+
+Climb: Hold 139 and 148 kts for climb for proper engine cooling and visibility and for good excess speed in case of engine failure, not a problem in the simulation. (Critical single engine speed is 121 kts.) Reduce power first and then RPM to maintain climb speed. 
+
+Landing: Enter the pattern at 139-148 kts and 800-1000'. Set mixture full-rich and props to 2400 RPM (after first backing off power as necessary). Set flaps to 15 degrees if desired and lower the gear. After the base leg, drop flaps to full and approach at 104-112 kts. Keep the nose pointed at the desired runway touchdown spot. Flare as the runway approaches and reduce power. Close throttles when over the runway. Touchdown with a tail-low attitude on both main gear. Do not make a 3-point landing. Hold the nosegear off the ground to allow the attitude of the plane to help slow the roll, then lower the nose gear to the ground slowly and gently. Do not apply brakes until the nose gear is on the ground.
+
+Stalls: There should be no significant tendency to drop a wing and recovery should be relative easy and rapid. Full-flap stall begins around 12 degrees AoA and 75-80 kts depending on loading.
+
+Power settings: The following recommendations are taken from a B-25 POH using low-octane Grade 91 fuel (common WWII fuel grade). Modern higher octane fuel grades would allow higher-power engine settings, but it's also certain that anyone flying a B-25 now would treat the aircraft and engines very gently and conservatively.
+
+Maximum power control settings:
+
+                      RPM     MP      Mixture
+
+Takeoff               2600    39.5"   full rich
+Max Cruise            2100    29"     full rich
+Min Cruise            1560    26"     cruising lean
+
+For best engine life, these settings are recommended:
+
+Takeoff               2600    39"     full rich       low blower
+Preclimb              2400    34"     full rich       low blower
+
+Climb:
+  SL to 7000'         2250    29"     full rich       low blower
+  7000' to 10,000'    2250    28"     full rich       low blower
+  10,000' to 16,000'  2250    26"     full rich       low blower
+  16,000' to 20,000'  2250    27"     full rich       high blower
+
+Cruise:
+  1000' to 5,000'     1950    26"     full rich       low blower
+  5,000' to 10000'    2050    25"     full rich       low blower
+  SL to 4000'         1560    26"     cruising lean   low blower
+  4000' to 8000'      1600    25"     cruising lean   low blower
+  8000' to 11,000'    1650    24"     cruising lean   low blower
+  15,000'             1750    22"     cruising lean   low blower
+  20,000'             1850    24"     cruising lean   high blower
+
+V-speeds and limits:
+
+Never exceed in dive or glide: 236 KCAS
+Never exceed in level flight or climb: 295 KCAS
+Max flaps: 147 KCAS
+Max gear operation: 147 KCAS
+Max safe wing loading when pulling out of a dive: 3.67G's
+
+-->
+
+
+<!-- Buckaroo notes:
+There are numerous maximum speed references for various B-25 versions and many are not in agreement. This model is indicated above as the early 'A' variant, yet the engines are Wright Twin Cyclone R-2600-13, which were not introduced until the 'C' variant. (The 'B' was used in the Doolittle raid.) The 'A' variant top end has been listed as 315 mph (273 kts) at 15,000 feet, but this seems somewhat optimistic and is hard to confirm. I'm using a a figure of 240 KTAS which is typical of the 'C' and 'J' series. Vne may be 295 KTAS, according to a 'B' model POH. Pilots should note that these are TAS; indicated speeds will read lower depending on altitude and OAT.
+
+Stall speed for a 'J' variant is 79 knots at full flaps. A 'B' variant POH lists power-on full-flap stall down to 81 mph, so absolute stall may be lower than 79 knots. Obviously this will vary with a given aircraft and loading. I'm aiming for a stall of about 75 kts.
+
+Approach/cruise speeds are tweaked for flying results. Throttle and mixture are guesses. Blower should be set to the low setting (not off entirely), which is currently suggested as 0.7. I leave prop pitch at full fine (max RPM) for both approach and cruise as this gives more predictable solver results. In flight you'd want to increase prop pitch for better economy, engine life, and reduced prop noise.
+
+The numbers are tuned for flying with the conservative POH RPM/MP settings. You could exceed these and go faster, but in real life you'd likely be grounded pretty quickly if you did so.
+-->
+
+<airplane mass="19477">
+
+<approach speed="89" aoa="9" fuel="0.2">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle" value="0.3"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+  <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
+  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+  <control-setting axis="/controls/engines/engine[0]/boost" value="0.7"/>
+  <control-setting axis="/controls/engines/engine[1]/boost" value="0.7"/>
+  <control-setting axis="/controls/flight/flaps" value="1"/>
+  <control-setting axis="/controls/gear/gear-down" value="1"/>
+</approach>
+
+<cruise speed="222" alt="15000" fuel="0.5">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="0.5"/>
+  <control-setting axis="/controls/engines/engine[1]/mixture" value="0.5"/>
+  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+  <control-setting axis="/controls/engines/engine[0]/boost" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/boost" value="1.0"/>
+  <control-setting axis="/controls/flight/flaps" value="0"/>
+  <control-setting axis="/controls/gear/gear-down" value="0"/>
+</cruise>
+
+<cockpit x="7.568" y="0.290" z="0.912"/>
+
+
+<!-- Fuselage -->
+
+<!--  Buckaroo notes:
+These drag bodies could be more accurately modeled using a leading cone, a cylindrical midsection, and a trailing cone, however I've found that a single element for each major body gives better results in the solver, making it easier to bring the Lift and Drag results closer together.
+-->
+
+<fuselage ax="7.750"  ay="0" az="-0.005" bx="-8.231" by="0" bz="-0.005" width="1.8" taper="0.1" midpoint="0.2"/>
+
+<!-- Moteur gauche, left nacelle -->
+<!-- Moteur droit, right nacelle-->
+
+<fuselage ax="3.900"  ay="2.891" az="-0.106" bx="-1.800" by="2.891" bz="-0.106" width="1.400" taper="0.1" midpoint="0.3"/>
+<fuselage ax="3.900"  ay="-2.891" az="-0.106" bx="-1.800" by="-2.891" bz="-0.106" width="1.400" taper="0.1" midpoint="0.3"/>
+
+
+<!-- Wing -->
+<!-- Buckaroo notes:
+Airfoils are NACA 23017 (root chord) and NACA 4409-R (tip chord).
+
+The original FDM terminates the wing at the extreme end of the wing tip. This is too generous, since it gives credit for area that isn't there and doesn't account for loss of lift due to tip vortex effects. Wing loading will therefore be lower than it should be, among other effects. I haven't changed this, but a better solution would terminate the FDM wing at the outboard ends of the ailerons.
+
+The original incidence was set at 3 degrees, a reasonable guess if unknown. I couldn't confirm this, and the only source I found that mentioned incidence was an excellent scale R/C model that indicated 2 degrees. Obviously this is not the best reference, scale needs don't necessarily match full-scale requirements, but 2 degrees fits well with diagrams, gives better solver results, and provides adequate take-off/landing visibility and a better cruise AoA, so I'm going with 2.
+
+The dihedral value of 2 was probably someone's guess. The first 9 B-25's had a continuous dihedral from root to wing tip, but this caused stability issues. All subsequent models where built with the gull-wing configuration, having an inboard wing with a nearly 5 degree dihedral while the outboard has a slight negative anhedral configuration of just under half a degree. FDM dihedral should probably be set for best flight characteristics. 2 seems OK for now and flies well enough. If the wing were split into wing and mstab elements, an accurate dihedral could be attempted. (Inboard wing segment dihedral is 4 degrees 38 minutes, outboard is -0 degrees, 21 minutes.)
+
+Twist is also likely a guess. The real wing uses an aerodynamic twist (different airfoils at the root chord and wing tips), so it's difficult to know. Real B-25's have relatively mild stall characteristics and no serious wing drop, and the model does well enough with the original -2 twist.
+
+I added an idrag element, since YASim tends to set a idrag a bit high for a conventional straight wing.
+
+YASim camber for the NACA 23071 is roughly 0.104, and 0.219 for the NACA 4409R. After weighting this heavily toward the root where the greater surface area lies, I chose a camber of 0.133.
+
+For stall characteristics I am using the 23017. The 23xxx series is noted for sharp stalls, but the 23017 variant has a thicker camber to help offset this, so a moderate width and a slightly increased peak from default seemed resonable.
+
+CG range: 20-30% MAC, x= 1.877 to 1.297, 25% = 1.587
+
+YASim calculates lift at approximately one-third chord from the wing leading edge. To bring lift closer to my chosen CG of 25% MAC, I move the FDM wing slightly forward from the physical position of x=0.691 to 0.768.
+
+I substantially reduced aileron lift from a much too responsive 1.6, and generally increased drag values to exceed lift values, especially for flaps.
+-->
+<wing x="0.768" y="0.732" z="0.127"
+      chord="3.838"
+      length="9.548"
+      taper="0.44"
+      sweep="-2"
+      incidence="2"
+      dihedral="2"
+      twist="-2"
+      idrag="0.8"
+      camber="0.133">
+      <stall aoa="14" width="6" peak="1.7"/>
+      <flap0 start="0.023" end="0.527" lift="1.6" drag="1.9"/>
+      <flap1 start="0.536" end="0.925" lift="1.3" drag="1.35"/>
+
+      <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
+      <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+      <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+      <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+      <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+      <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+
+      <control-speed control="FLAP0" transition-time="5"/>
+</wing>
+
+
+<!-- Elevator -->
+<!-- Buckaroo notes:
+A few minor fixes/changes to elevator and rudders, mainly to fix obvious mistakes, make sure the elevator stalls after the wing, tweak elevator authority to give control up to the stall range, and make sure drag values exceed lift.
+-->
+<hstab x="-6.553" y="0" z="0.477"
+       chord="2.233"
+       length="3.349"
+       taper="0.71"
+       camber="0.05">
+       <stall aoa="16" width="4" peak="1.5"/>
+       <flap0 start="0" end="0.95" lift="1.57" drag="1.6"/>
+
+       <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+       <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+       <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+</hstab>
+
+
+<!-- Rudders -->
+<vstab x="-6.677" y="3.358" z="-0.197"
+       chord="1.985"
+       length="2.536"
+       taper="0.74">
+       <stall aoa="14" width="4" peak="1.5"/>
+       <flap0 start="0" end="1" lift="1.3" drag="1.35"/>
+
+       <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+       <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+       <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+</vstab>
+
+<vstab x="-6.677" y="-3.358" z="-0.197"
+       chord="1.985"
+       length="2.536"
+       taper="0.74">
+       <stall aoa="14" width="4" peak="1.5"/>
+       <flap0 start="0" end="1" lift="1.3" drag="1.35"/>
+
+       <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+       <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+       <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+</vstab>
+
+
+<!-- Informations : http://en.wikipedia.org/wiki/Wright_R-2600
+
+     Engines : Wright R2600
+             : Power 1700 ch
+             : 14 cylinders
+             : Displacement 2603.9 (42.67 l)
+             : Masse 2045 lb (930 kg)
+             : RPM 2400 - 2600
+             : Compression 6.9:1
+-->
+
+<!-- Buckaroo notes:
+The above data appears to be for the Wright Twin Cyclone R-2600-13 used in B-25's 'C' and up.
+
+Propellers: Hamilton Standard Hydromatic, hub 23E50, blade 6359A or 6477, wt/mass: 446 lbs, 202 kg
+moment:		540, calculated using mean of rod and disk methods:
+		rod (mR^2)/3 * blades = 202 * 1.94^2 = 760
+		disk (mR^2)/2 = 202 * 1.94^2/2 = 380
+
+Prop RPMs are based on the gearing ratio, which I believe is correct for YASim. Cruise RPM, alt, and power are taken from a POH, cruise speed is really meant for fixed-pitch props; for governed props I simply set it to some typical aircraft cruise speed. Wastegate was previously 56 inHg, but this was certainly incorrect as 44.5" is the absolute top-end in any reference and the POH lists no recommended settings above 39.5". Turbo-multiplier is set to allow the maximum recommended climb inHg up to 15000' on low blower. This setting is important and probably needs more tweaking. Make sure a boost (blower) property is defined and initialized to something like 0.7 (the blower ratio is 7.06:1 at slow speed and 10.06:1 at high speed).
+-->
+
+<!-- Engine left -->
+<propeller x="3.679" y="2.891" z="-0.106"
+           mass="1980"
+           moment="540"
+           radius="1.94"
+
+           min-rpm="366"
+           max-rpm="1463" 
+           gear-ratio="0.5625"
+           cruise-rpm="1350"
+           cruise-power="1500"
+           cruise-speed="200"
+           cruise-alt="6700">
+           <actionpt x="4.063" y="2.891" z="-0.106"/>
+           <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+           <piston-engine eng-power="1700"
+                          eng-rpm="2600"
+                          displacement="2603.9"
+                          compression="6.9"
+                          supercharger="1"
+                          turbo-mul="2.1"
+                          wastegate-mp="44.5">
+                          <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+                          <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+                          <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+                          <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+                          <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
+           </piston-engine>
+</propeller>
+
+<!-- Engine right-->
+<propeller x="3.679" y="-2.891" z="-0.106"
+           mass="1980"
+           moment="540"
+           radius="2"
+
+           min-rpm="366"
+           max-rpm="1463" 
+           gear-ratio="0.5625"
+           cruise-rpm="1350"
+           cruise-power="1500"
+           cruise-speed="200"
+           cruise-alt="6700">
+           <actionpt x="4.063" y="-2.891" z="-0.106"/>
+           <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
+           <piston-engine eng-power="1700"
+                          eng-rpm="2600"
+                          displacement="2603.9"
+                          compression="6.9"
+                          supercharger="1"
+                          turbo-mul="2.1"
+                          wastegate-mp="44.5">
+                          <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+                          <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
+                          <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
+                          <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
+                          <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
+           </piston-engine>
+</propeller>
+
+
+<!-- Buckaroo notes:
+The B-25 nose wheel casters. It is not steerable nor is it coupled to the rudders. Taxi control is via differential engine power and braking.
+
+Compression dimensions should probably be checked against a reference, 0.2 feels a bit generic to me.
+
+Friction, spring and damping values probably need more adjustment. I had issues stopping the wheels from jiggling or rotating while parked. I believe this is a ground interaction issue with YASim, probably the same one that drives helicopter developers insane. The current values work more-or-less, but there may be some slight forward motion at full power with the brakes on.
+-->
+
+<!-- Nose wheel -->
+<gear x="6.118" y="0.000" z="-2.375"
+      compression="0.2"
+      spring="0.7"
+      damp="1.0"
+      sfric="0.8"
+      dfric="0.7"
+      castering="1">
+      <control-input axis="/controls/gear/nosewheel-lock" control="CASTERING" 
+	src0="0" src1="1"
+	dst0="1" dst1="0" />
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="5"/>
+      <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+</gear>
+
+<!-- Left wheel -->
+<gear x="1.028" y="2.953" z="-2.271"
+      compression="0.2"
+      spring="0.7"
+      damp="1.0"
+      sfric="0.8"
+      dfric="0.7">
+      <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+      <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="5"/>
+      <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+</gear>
+
+<!-- Right wheel -->
+<gear x="1.028" y="-2.953" z="-2.271"
+      compression="0.2"
+      spring="0.76"
+      damp="1.0"
+      sfric="0.8"
+      dfric="0.7">
+      <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+      <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+      <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+      <control-speed control="EXTEND" transition-time="5"/>
+      <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+</gear>
+
+
+<!-- Buckaroo notes:
+The original tank positions were all at x="2" y="+/-2.95" z="-0.18". This would place all the tanks at roughly the propeller positions which didn't make any sense. My positions below are loose approximations based on diagrams in a pilot's handbook.
+-->
+<tank x="1.7"   y=" 1.5" z="-0.18" capacity="1104"/>
+<tank x="1.7"   y="-1.5" z="-0.18" capacity="1104"/>
+<tank x="-0.65" y=" 1.5" z="-0.18" capacity="912"/> <!-- Tank Rear Left -->
+<tank x="-0.65" y="-1.5" z="-0.18" capacity="912"/> <!-- Tank Rear Right -->
+<tank x="1.6"   y=" 3.5" z="-0.18" capacity="912"/> <!-- Tank Aux Left -->
+<tank x="1.6"   y="-3.5" z="-0.18" capacity="912"/> <!-- Tank Aux Right -->
+
+
+<!-- Mass displacment -->
+<!-- Buckaroo notes:
+CG range: 20-30% MAC, x= 1.877 to 1.297, 25% = 1.587
+Re-distribute as needed to place CG at roughly 25% MAC.
+-->
+<ballast x="7.0" y="0.0" z="-0.5" mass="4000"/>
+
+</airplane>
+

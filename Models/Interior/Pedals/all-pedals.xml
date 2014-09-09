@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Pilot's pedals -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Pedals/pedalL.xml</path>
+    <offsets>
+      <x-m> -5.580 </x-m>
+      <y-m> -0.464 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Pedals/pedalR.xml</path>
+    <offsets>
+      <x-m> -5.580 </x-m>
+      <y-m> -0.200 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Pedals/pedalL.xml</path>
+    <offsets>
+      <x-m> -5.580 </x-m>
+      <y-m>  0.200 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Pedals/pedalR.xml</path>
+    <offsets>
+      <x-m> -5.580 </x-m>
+      <y-m>  0.464 </y-m>
+      <z-m>  0.055 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

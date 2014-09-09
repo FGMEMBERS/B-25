@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-mph</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  50 </ind><dep>  20 </dep></entry>
+      <entry><ind> 100 </ind><dep>  55 </dep></entry>
+      <entry><ind> 150 </ind><dep>  95 </dep></entry>
+      <entry><ind> 200 </ind><dep> 135 </dep></entry>
+      <entry><ind> 250 </ind><dep> 180 </dep></entry>
+      <entry><ind> 300 </ind><dep> 238 </dep></entry>
+      <entry><ind> 420 </ind><dep> 270 </dep></entry>
+      <entry><ind> 500 </ind><dep> 290 </dep></entry>
+      <entry><ind> 600 </ind><dep> 313 </dep></entry>
+      <entry><ind> 700 </ind><dep> 335 </dep></entry>
+    </interpolation>
+
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y> 
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+</PropertyList>

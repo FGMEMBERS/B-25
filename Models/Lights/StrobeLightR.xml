@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  <path>StrobeLights.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Strobe1</object-name>
+    <object-name>Strobe2</object-name>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>Strobe1</object-name>
+    <object-name>Strobe2</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Strobe1</object-name>
+    <object-name>Strobe2</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+   <type>timed</type>
+    <object-name>Strobe1</object-name>
+    <object-name>Strobe2</object-name>
+    <use-personality type="bool">true</use-personality>
+    <branch-duration-sec>0.50</branch-duration-sec>
+    <branch-duration-sec>0.70</branch-duration-sec>
+  </animation>
+
+</PropertyList>

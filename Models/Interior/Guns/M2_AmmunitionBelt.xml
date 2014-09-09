@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.010 </y-m>
+      <z-m>  0.000 </z-m>
+      <roll-deg> 15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.027 </y-m>
+      <z-m> -0.061 </z-m>
+      <roll-deg> 15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.044 </y-m>
+      <z-m> -0.122 </z-m>
+      <roll-deg> 15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.061 </y-m>
+      <z-m> -0.183 </z-m>
+      <roll-deg> 15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.078 </y-m>
+      <z-m> -0.244 </z-m>
+      <roll-deg> 15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.095 </y-m>
+      <z-m> -0.305 </z-m>
+      <roll-deg> 15 </roll-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.107 </y-m>
+      <z-m> -0.367 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.107 </y-m>
+      <z-m> -0.430 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Ammunition.xml</path>>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.107 </y-m>
+      <z-m> -0.493 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

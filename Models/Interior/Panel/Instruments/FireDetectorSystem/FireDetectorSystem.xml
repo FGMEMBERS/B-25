@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>FireDetectorSystem.ac</path>
+
+  <animation>
+    <object-name>face</object-name>
+    <object-name>RedSwithcLeft</object-name>
+    <object-name>RedSwitchRight</object-name>
+    <object-name>indicatorLightLeft</object-name>
+    <object-name>indicatorLightRight</object-name>
+    <object-name>SwitchBase</object-name>
+    <object-name>Switch</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>RedSwithcLeft</object-name>
+    <object-name>RedSwitchRight</object-name>
+    <object-name>indicatorLightLeft</object-name>
+    <object-name>indicatorLightRight</object-name>
+    <object-name>SwitchBase</object-name>
+    <object-name>Switch</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.003 </red>
+      <green> 0.003 </green>
+      <blue>  0.003 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>indicatorLightLeft</object-name>
+    <object-name>indicatorLightRight</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.15 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

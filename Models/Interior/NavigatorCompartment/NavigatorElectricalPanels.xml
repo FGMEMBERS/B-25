@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>NavigatorElectricalPanels.ac</path>
+
+  <animation>
+    <object-name>Base</object-name>
+    <object-name>indicators</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Base</object-name>
+    <object-name>Indicators</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.003 </red>
+      <green> 0.003 </green>
+      <blue>  0.003 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Indicators</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.15 </blue>
+    </emission>
+  </animation>
+
+  <!--
+   <model>
+    <path>Aircraft/B-25/Models/Interior/NavigatorCompartment/NavigatorElectricalPanels_all-switch.xml</path>
+   </model>
+  -->
+</PropertyList>

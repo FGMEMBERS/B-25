@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- 1 ft  =  0.3048 m
+     1 m = 3.2808399 ft
+-->
+
+<PropertyList>
+
+  <path>N-3B_Gunsight.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>DLens.Frame1</object-name>
+    <object-name>DLens.Frame2</object-name>
+    <object-name>LensSwitch</object-name>
+    <object-name>ball</object-name>
+    <object-name>Reticul</object-name>
+    <object-name>Turn</object-name>
+    <object-name>TurnBase</object-name>
+    <object-name>Knob1</object-name>
+    <object-name>LensSwitch</object-name>
+    <object-name>visses</object-name>
+
+    <object-name>vitre_turn</object-name>
+    <object-name>Plens</object-name>
+    <object-name>Dlens</object-name>
+  </animation>
+
+
+</PropertyList>
+

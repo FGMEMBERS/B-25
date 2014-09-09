@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  <path>BlueLight.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Light</object-name>
+  </animation>
+
+  <animation>
+    <type>billboard</type>
+    <object-name>Light</object-name>
+    <spherical type="bool">true</spherical>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Light</object-name>
+    <condition>
+        <property>/sim/model/lights/formation/state</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Light</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

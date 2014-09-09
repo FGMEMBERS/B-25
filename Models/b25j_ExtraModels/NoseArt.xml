@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>NoseArt.ac</path>
+
+  <animation>
+    <object-name>NoseArt</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>NoseArt</object-name>
+  </animation>
+
+</PropertyList>
+
