@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <keyboard>
+    
+    <key n="100">
+      <name>d</name>
+      <desc>Canopy</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="68">
+      <name>D</name>
+      <desc>Passanger door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </key>
+    
+    <key n="102">
+      <name>f</name>
+      <desc>shift Blower down</desc>
+      <binding> 
+        <command>nasal</command>
+        <script>b25.shift_blower_dn()</script>
+      </binding>
+    </key>
+    
+    <key n="70">
+      <name>F</name>
+      <desc>shift Blower up</desc>
+      <binding>
+        <command>nasal</command>
+        <script>b25.shift_blower_up()</script>
+      </binding>
+    </key>
+    <!-- boost levels: neutral 0.3, low Blower 0.75, high Blower 1.0 -->
+    
+  </keyboard>
+  
+</PropertyList>

@@ -8,47 +8,46 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_red.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.290 </z-m>
+      <x-m> 0.013 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.285 </z-m>
     </offsets>
   </model>
-
 
   <!-- Landing Gear Signal Indicator -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/Gear_indicator_red.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
-      <y-m>  0.430 </y-m>
-      <z-m>  0.154 </z-m>
+      <x-m> 0.013 </x-m>
+      <y-m> 0.430 </y-m>
+      <z-m> 0.154 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/Gear_indicator_green.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
-      <y-m>  0.430 </y-m>
-      <z-m>  0.192 </z-m>
+      <x-m> 0.013 </x-m>
+      <y-m> 0.430 </y-m>
+      <z-m> 0.192 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/Gear_indicator_green.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
-      <y-m>  0.448 </y-m>
-      <z-m>  0.174 </z-m>
+      <x-m> 0.013 </x-m>
+      <y-m> 0.448 </y-m>
+      <z-m> 0.174 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/Gear_indicator_green.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
-      <y-m>  0.412 </y-m>
-      <z-m>  0.174 </z-m>
+      <x-m> 0.013 </x-m>
+      <y-m> 0.412 </y-m>
+      <z-m> 0.174 </z-m>
     </offsets>
   </model>
 
@@ -56,7 +55,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_orange.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.165 </y-m>
       <z-m> -0.005 </z-m>
     </offsets>
@@ -65,32 +64,30 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_orange.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.165 </y-m>
       <z-m> -0.061 </z-m>
     </offsets>
   </model>
 
-
   <!-- Nose Wheel Indicator -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/NoseWheel_Left_indicator_orange.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m>  0.432 </y-m>
-      <z-m>  0.115 </z-m>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.432 </y-m>
+      <z-m> 0.115 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/NoseWheel_Right_indicator_orange.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
-      <y-m>  0.461 </y-m>
-      <z-m>  0.115 </z-m>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.461 </y-m>
+      <z-m> 0.115 </z-m>
     </offsets>
   </model>
-
 
   <!-- Vaccum Adjustment Knob -->
   <model>
@@ -132,30 +129,31 @@
       <z-m> -0.025 </z-m>
     </offsets>
   </model>
+  
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_orange.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m>  0.035 </y-m>
       <z-m> -0.050 </z-m>
     </offsets>
   </model>
+  
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_blue.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m>  0.035 </y-m>
       <z-m> -0.075 </z-m>
     </offsets>
   </model>
 
-
   <!-- SUBPANEL -->
-  <!-- Supérieur Subpanel-->
+  <!-- Supérieur Subpanel -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/CircuitBreakerYellow.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.614 </y-m>
       <z-m> -0.185 </z-m>
     </offsets>
@@ -164,7 +162,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/CircuitBreakerYellow.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.586 </y-m>
       <z-m> -0.185 </z-m>
     </offsets>
@@ -173,7 +171,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/CircuitBreakerYellow.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.556 </y-m>
       <z-m> -0.185 </z-m>
     </offsets>
@@ -182,7 +180,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/CircuitBreakerYellow.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.527 </y-m>
       <z-m> -0.185 </z-m>
     </offsets>
@@ -191,7 +189,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/CircuitBreakerYellow.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.503 </y-m>
       <z-m> -0.185 </z-m>
     </offsets>
@@ -200,7 +198,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/CircuitBreakerYellow.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.477 </y-m>
       <z-m> -0.185 </z-m>
     </offsets>
@@ -209,7 +207,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/CircuitBreakerYellow.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.448 </y-m>
       <z-m> -0.185 </z-m>
     </offsets>
@@ -219,7 +217,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_red.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.407 </y-m>
       <z-m> -0.161 </z-m>
     </offsets>
@@ -228,7 +226,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_white.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.407 </y-m>
       <z-m> -0.203 </z-m>
     </offsets>
@@ -260,21 +258,17 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/indicator_red.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.013 </x-m>
       <y-m> -0.239 </y-m>
       <z-m> -0.150 </z-m>
     </offsets>
   </model>
 
-
-
-
-
   <!-- Inferiors SubPanel -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.614 </y-m>
       <z-m> -0.256 </z-m>
     </offsets>
@@ -283,7 +277,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.588 </y-m>
       <z-m> -0.256 </z-m>
     </offsets>
@@ -292,7 +286,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.568 </y-m>
       <z-m> -0.256 </z-m>
     </offsets>
@@ -301,7 +295,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.0168 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.518 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -310,7 +304,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.499 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -319,7 +313,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch_position.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.478 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -328,17 +322,16 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch_anticol.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.455 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
   </model>
 
-
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.433 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -347,7 +340,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.407 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -356,7 +349,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.385 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -365,7 +358,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.366 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -374,7 +367,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.344 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -383,27 +376,25 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.321 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
   </model>
 
-
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch_lights.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.290 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
   </model>
 
-
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
-      <x-m>  0.018 </x-m>
+      <x-m>  0.015 </x-m>
       <y-m> -0.261 </y-m>
       <z-m> -0.255 </z-m>
     </offsets>
@@ -430,4 +421,3 @@
   </model>
 
 </PropertyList>
-

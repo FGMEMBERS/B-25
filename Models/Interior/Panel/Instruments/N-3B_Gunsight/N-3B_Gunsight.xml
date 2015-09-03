@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- 1 ft  =  0.3048 m
-     1 m = 3.2808399 ft
--->
+<!-- 1 ft  =  0.3048 m 
+     1 m = 3.2808399 ft -->
 
 <PropertyList>
 
@@ -21,11 +20,21 @@
     <object-name>LensSwitch</object-name>
     <object-name>visses</object-name>
 
-    <object-name>vitre_turn</object-name>
     <object-name>Plens</object-name>
     <object-name>Dlens</object-name>
   </animation>
 
-
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/B-25/Models/Effects/Glass/glass</inherits-from>
+    <object-name>Plens</object-name>
+    <object-name>Dlens</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Plens</object-name>
+    <object-name>Dlens</object-name>
+  </effect>
+  
 </PropertyList>
-

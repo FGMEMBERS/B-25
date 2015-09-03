@@ -7,6 +7,55 @@
       <label>B 25J Mitchell</label>
       <enabled type="bool">true</enabled>
       <item>
+        <label>Autostart</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/electric/battery-switch</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/electric/engine/generator</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/systems/electrical/outputs/instrument-lights</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/lights/beacon/state</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/lights/tail/state</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/lights/strobe/state</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/lights/recognition/state</property>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/engines/engine[0]/magnetos</property>
+          <value>3</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/engines/engine[1]/magnetos</property>
+          <value>3</value>
+        </binding>
+        <binding>
+          <command>nasal</command>
+          <script>controls.startEngine(0,0)</script>
+        </binding>
+        <binding>
+          <command>nasal</command>
+          <script>gui.popupTip("Press 's' to start")</script>
+        </binding>
+      </item>
+      <item>
         <label>Select Livery</label>
         <binding>
           <command>nasal</command>
@@ -17,4 +66,3 @@
   </default>
 
 </PropertyList>
-

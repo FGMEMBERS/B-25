@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
+  
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
@@ -74,4 +75,3 @@
   </model>
 
 </PropertyList>
-

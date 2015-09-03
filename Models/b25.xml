@@ -3,77 +3,45 @@
 <PropertyList>
 
   <model>
+    <path>Aircraft/B-25/Models/main_Default.xml</path>
     <condition>
       <not-equals>
         <property>sim/model/livery/name</property>
         <value>Super Rabbit Chrome</value>
       </not-equals>
     </condition>
-    <path>Aircraft/B-25/Models/main_Default.xml</path>
   </model>
 
   <model>
+    <path>Aircraft/B-25/Models/main_Chrome.xml</path>
     <condition>
       <equals>
         <property>sim/model/livery/name</property>
         <value>Super Rabbit Chrome</value>
       </equals>
     </condition>
-    <path>Aircraft/B-25/Models/main_Chrome.xml</path>
-  </model>
-
-  <!-- B 25 J -->
-  <animation>
-    <type>select</type>
-    <object-name>SideGunsBase</object-name>
-    <object-name>vitreJ</object-name>
-    <condition>
-      <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
-      </equals>
-    </condition>
-  </animation>
-
-  <!-- B 25 A -->
-  <animation>
-    <type>select</type>
-    <object-name>antenne</object-name>
-    <object-name>tourelle</object-name>
-    <object-name>soustour</object-name>
-    <object-name>rearcache</object-name>
-    <object-name>cables</object-name>
-    <object-name>vitretourelle</object-name>
-    <object-name>vitresoustour</object-name>
-    <condition>
-      <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25a</value>
-      </equals>
-    </condition>
-  </animation>
-
-  <!-- Side Guns for this model -->
-  <model>
-    <condition>
-      <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
-      </equals>
-    </condition>
-    <path>Aircraft/B-25/Models/Interior/Guns/SideGuns.xml</path>
   </model>
 
   <!-- b25 addons -->
   <model>
+    <path>Aircraft/B-25/Models/b25j_ExtraModels/b25j_Addons_SuperRabbit.xml</path>
     <condition>
       <equals>
         <property>sim/model/livery/name</property>
         <value>Super Rabbit Chrome</value>
       </equals>
     </condition>
-    <path>Aircraft/B-25/Models/b25j_ExtraModels/b25j_Addons_SuperRabbit.xml</path>
+  </model>
+  
+  <!-- Side Guns for this model -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Guns/SideGuns.xml</path>
+    <condition>
+      <equals>
+        <property>sim/multiplay/generic/string[1]</property>
+        <value>b25j</value>
+      </equals>
+    </condition>
   </model>
 
 </PropertyList>
-

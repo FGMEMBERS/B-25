@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="b25j-jsbsim-cnf.xml"> -->
-<PropertyList include="b25j-yasim-cnf.xml">
-
+<PropertyList include="b25-base.xml">
+  
   <sim>
 
     <description>B-25J Mitchell (YASim)</description>
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-
+    
+    <flight-model>yasim</flight-model>
+    <aero>b25j-yasim</aero>
+    
+    <variant-of>b25</variant-of>
+    
     <rating>
-      <FDM type="int">     3 </FDM>
-      <systems type="int"> 3 </systems>
-      <cockpit type="int"> 3 </cockpit>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 4 </cockpit>
       <model type="int">   4 </model>
     </rating>
 
-    <variant-of>b25</variant-of>
+    <startup>
+      <splash-texture>Aircraft/B-25/Splashs/b25j-splash.png</splash-texture>
+    </startup>
+    
+    <multiplay>
+      <generic>
+        <string n="1" type="string">b25j</string>
+      </generic>
+    </multiplay>
+    
+    <menubar include="Dialogs/b25j-menu.xml"/>
+    
   </sim>
 
 </PropertyList>

@@ -28,13 +28,16 @@ Thanks
 
 Jacques Brault who accepted that I use pieces of the texture of this B25 for X-Plane that can be found here:
 http://forums.x-plane.org/index.php?autocom=downloads&showfile=4157
+JC_SV for his big work on the interior and panl
 
 ===============
 BARANGER Emmanuel
-May, 03, 2009. 
-Mau, 05, 2009.
+May, 03, 2009
+May, 05, 2009
+August, 24, 2015
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 
@@ -67,12 +70,14 @@ Remerciements
 
 Jacques BRAULT qui a accepté que j'utilise des morceaux de la texture de son B25 pour X-Plane que l'on peut trouver ici :
 http://forums.x-plane.org/index.php?autocom=downloads&showfile=4157
+JC_SV pour son énorme travail sur l'intérieur et le tableau de bord
 
 ===============
 BARANGER Emmanuel
-03 Mai 2009.
-05 Mai 2009.
+03 Mai 2009
+05 Mai 2009
+24 Août 2015
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
-

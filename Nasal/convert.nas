@@ -8,4 +8,3 @@ settimer(convertSpeed, 0.1);
 }
 
 setlistener("sim/signals/fdm-initialized", convertSpeed);
-

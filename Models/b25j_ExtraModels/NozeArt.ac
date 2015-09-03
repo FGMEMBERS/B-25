@@ -1,15 +1,15 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 1
 OBJECT poly
-name "NoseArt"
+name "NozeArt"
 loc 0.099641 -0.005059 -0
 data 7
-NoseArt
+NozeArt
 texture "SuperRabbitTransp.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 84
 -5.258524 0.521193 0.68085
 -5.741645 0.498984 0.635982

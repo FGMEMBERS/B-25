@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>rainglass.ac</path>
+  
+  <animation>
+    <!-- Objets transparents -->
+    <object-name>Rainintvitres1</object-name>
+    <object-name>RainWindowsVitreL1</object-name>
+    <object-name>RainWindowsVitreR1</object-name>
+    <object-name>RainintvitreJ1</object-name>
+    <object-name>Rainvitresoustour1</object-name>
+    
+    <object-name>Rainintvitres2</object-name>
+    <object-name>RainWindowsVitreL2</object-name>
+    <object-name>RainWindowsVitreR2</object-name>
+    <object-name>RainintvitreJ2</object-name>
+    <object-name>Rainvitresoustour2</object-name>
+    
+    <object-name>Rainintvitres3</object-name>
+    <object-name>RainWindowsVitreL3</object-name>
+    <object-name>RainWindowsVitreR3</object-name>
+    <object-name>RainintvitreJ3</object-name>
+    <object-name>Rainvitresoustour3</object-name>
+  </animation>    
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Rainintvitres1</object-name>
+    <object-name>RainWindowsVitreL1</object-name>
+    <object-name>RainWindowsVitreR1</object-name>
+    <object-name>RainintvitreJ1</object-name>
+    <object-name>Rainvitresoustour1</object-name>
+    
+    <object-name>Rainintvitres2</object-name>
+    <object-name>RainWindowsVitreL2</object-name>
+    <object-name>RainWindowsVitreR2</object-name>
+    <object-name>RainintvitreJ2</object-name>
+    <object-name>Rainvitresoustour2</object-name>
+    
+    <object-name>Rainintvitres3</object-name>
+    <object-name>RainWindowsVitreL3</object-name>
+    <object-name>RainWindowsVitreR3</object-name>
+    <object-name>RainintvitreJ3</object-name>
+    <object-name>Rainvitresoustour3</object-name>
+  </effect>
+  
+  <animation>
+    <name>ensemble1</name>
+    <object-name>Rainintvitres1</object-name>
+    <object-name>RainWindowsVitreL1</object-name>
+    <object-name>RainWindowsVitreR1</object-name>
+    <object-name>RainintvitreJ1</object-name>
+    <object-name>Rainvitresoustour1</object-name>
+  </animation>
+  
+  <animation>
+    <name>ensemble2</name>
+    <object-name>Rainintvitres2</object-name>
+    <object-name>RainWindowsVitreL2</object-name>
+    <object-name>RainWindowsVitreR2</object-name>
+    <object-name>RainintvitreJ2</object-name>
+    <object-name>Rainvitresoustour2</object-name>
+  </animation>
+  
+  <animation>
+    <name>ensemble3</name>
+    <object-name>Rainintvitres3</object-name>
+    <object-name>RainWindowsVitreL3</object-name>
+    <object-name>RainWindowsVitreR3</object-name>
+    <object-name>RainintvitreJ3</object-name>
+    <object-name>Rainvitresoustour3</object-name>
+  </animation>
+  
+  <animation>
+    <type>timed</type>
+    <object-name>ensemble1</object-name>
+    <object-name>ensemble2</object-name>
+    <object-name>ensemble3</object-name>
+    <use-personality type="bool">true</use-personality>
+    <branch-duration-sec>0.1</branch-duration-sec>
+    <branch-duration-sec>0.1</branch-duration-sec>
+    <branch-duration-sec>0.1</branch-duration-sec>
+  </animation>
+  
+  <!-- B 25 J -->
+  <animation>
+    <type>select</type>
+    <object-name>RainintvitreJ1</object-name>
+    <object-name>RainintvitreJ2</object-name>
+    <object-name>RainintvitreJ3</object-name>
+    <object-name>Rainvitresoustour1</object-name>
+    <object-name>Rainvitresoustour2</object-name>
+    <object-name>Rainvitresoustour3</object-name>
+    <condition>
+      <equals>
+        <property>sim/multiplay/generic/string[1]</property>
+        <value>b25j</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <!-- Animation windows -->
+  <animation>
+    <type>translate</type>
+    <object-name>RainWindowsVitreL1</object-name>
+    <object-name>RainWindowsVitreL2</object-name>
+    <object-name>RainWindowsVitrel3</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RainWindowsVitreR1</object-name>
+    <object-name>RainWindowsVitreR2</object-name>
+    <object-name>RainWindowsVitreR3</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

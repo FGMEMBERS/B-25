@@ -14,10 +14,10 @@
     <type>material</type>
     <object-name>indicatorLightON</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.5 </red>
       <green> 0.5 </green>
       <blue>  0.5 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -25,10 +25,10 @@
     <type>material</type>
     <object-name>indicator</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.005 </red>
       <green> 0.005 </green>
       <blue>  0.005 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 

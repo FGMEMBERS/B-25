@@ -13,18 +13,12 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/B-25/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -52,7 +46,7 @@
     </interpolation>
     <center>
       <x-m>  0.005894 </x-m>
-      <y-m> -0.02495 </y-m>
+      <y-m> -0.024950 </y-m>
       <z-m>  0.003137 </z-m>  
     </center>
     <axis> 
@@ -75,7 +69,7 @@
     </interpolation>
     <center>
       <x-m> 0.005894 </x-m>
-      <y-m> 0.02431 </y-m>
+      <y-m> 0.024310 </y-m>
       <z-m> 0.003137 </z-m>  
     </center>
     <axis> 
@@ -86,4 +80,3 @@
   </animation>         
  
 </PropertyList>
-

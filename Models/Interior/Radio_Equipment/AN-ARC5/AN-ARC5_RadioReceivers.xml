@@ -2,73 +2,34 @@
 
 <PropertyList>
 
-  <path>AN-ARC5_RadioReceivers.ac</path>
-
-  <animation>
-    <!-- Objets opaques -->
-    <object-name>BC-453-A</object-name>
-    <object-name>BC-454-A</object-name>
-    <object-name>BC-455-A</object-name>
-    <object-name>RadioDial1</object-name>
-    <object-name>RadioDial2</object-name>
-    <object-name>RadioDial3</object-name>
-    <object-name>RadioKnob1</object-name>
-    <object-name>RadioKnob2</object-name>
-    <object-name>RadioKnob3</object-name>
-    <object-name>boutons1</object-name>
-    <object-name>boutons2</object-name>
-    <object-name>boutons3</object-name>
-    <object-name>fond</object-name>
-    <object-name>fond1</object-name>
-    <object-name>fond2</object-name>
-    <object-name>fond3</object-name>
-    <object-name>fond4</object-name>
-    <object-name>fond5</object-name>
-    <object-name>switch</object-name>
-    <object-name>switch1</object-name>
-    <object-name>switch2</object-name>
-    <object-name>switch3</object-name>
-    <object-name>switch4</object-name>
-    <object-name>switch5</object-name>
-    <object-name>visses</object-name>
-    <!-- Objets transparents -->
-  </animation>
-
-  <animation>
-   <type>material</type>
-    <object-name>BC-453-A</object-name>
-    <object-name>BC-454-A</object-name>
-    <object-name>BC-455-A</object-name>
-    <object-name>RadioDial1</object-name>
-    <object-name>RadioDial2</object-name>
-    <object-name>RadioDial3</object-name>
-    <object-name>RadioKnob1</object-name>
-    <object-name>RadioKnob2</object-name>
-    <object-name>RadioKnob3</object-name>
-    <object-name>boutons1</object-name>
-    <object-name>boutons2</object-name>
-    <object-name>boutons3</object-name>
-    <object-name>fond</object-name>
-    <object-name>fond1</object-name>
-    <object-name>fond2</object-name>
-    <object-name>fond3</object-name>
-    <object-name>fond4</object-name>
-    <object-name>fond5</object-name>
-    <object-name>switch</object-name>
-    <object-name>switch1</object-name>
-    <object-name>switch2</object-name>
-    <object-name>switch3</object-name>
-    <object-name>switch4</object-name>
-    <object-name>switch5</object-name>
-    <object-name>visses</object-name> 
-    <emission>
-      <red>   0.005 </red>
-      <green> 0.005 </green>
-      <blue>  0.005 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission>
-  </animation>
-
-
+  <!-- BC-453-A -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/RadioReceivers.xml</path>
+    <offsets>
+      <x-m> -0.10658 </x-m>
+      <y-m> -0.09641 </y-m>
+      <z-m> -0.00273 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- BC-455-A -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/RadioReceivers.xml</path>
+    <offsets>
+      <x-m>  0.01552 </x-m>
+      <y-m> -0.09564 </y-m>
+      <z-m> -0.00273 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- BC-455-A -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/RadioReceivers.xml</path>
+    <offsets>
+      <x-m>  0.13656 </x-m>
+      <y-m> -0.09558 </y-m>
+      <z-m> -0.00273 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-

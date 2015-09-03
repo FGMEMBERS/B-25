@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 12
 OBJECT poly
@@ -7,9 +7,9 @@ name "RPMSwitch1"
 loc 0 0 0.000482
 data 10
 RPMSwitch1
-texture "colors.png"
-texrep 1 1
-crease 30.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 37
 -0.209635 -0.018414 0.613817
 -0.210394 -0.019153 0.615098
@@ -298,9 +298,9 @@ name "RPMSwitch2"
 loc 0 0 0.001096
 data 10
 RPMSwitch2
-texture "colors.png"
-texrep 1 1
-crease 30.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 37
 -0.209757 -0.00286 0.612866
 -0.210515 -0.002217 0.614198
@@ -589,9 +589,9 @@ name "RPMSwitch3"
 loc 0 0 0.001096
 data 10
 RPMSwitch3
-texture "colors.png"
-texrep 1 1
-crease 30.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 37
 -0.209342 0.030985 0.612949
 -0.210101 0.031652 0.614269
@@ -880,9 +880,9 @@ name "RPMSwitch4"
 loc 0 0 0.000482
 data 10
 RPMSwitch4
-texture "colors.png"
-texrep 1 1
-crease 30.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 37
 -0.209328 0.081789 0.612682
 -0.210087 0.081267 0.614066
@@ -1171,9 +1171,9 @@ name "bouton1"
 loc 0.055236 0 -0
 data 7
 bouton1
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 193
 0.125621 -0.152884 0.669491
 0.125803 -0.152881 0.66764
@@ -2687,9 +2687,9 @@ name "bouton2"
 loc 0.055236 0 -0
 data 7
 bouton2
-texture "colors.png"
-texrep 1 1
-crease 44.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 193
 0.078084 -0.153242 0.669491
 0.078265 -0.153239 0.667639
@@ -4203,9 +4203,9 @@ name "bouton3"
 loc 0.055236 0 -0
 data 7
 bouton3
-texture "colors.png"
-texrep 1 1
-crease 44.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 193
 0.033047 -0.153242 0.669491
 0.033229 -0.15324 0.667639
@@ -5719,9 +5719,9 @@ name "bouton4"
 loc 0.025081 -0.00718 -0
 data 7
 bouton4
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 65
 0.050358 0.028872 0.648912
 0.050468 0.027737 0.64891
@@ -6211,9 +6211,9 @@ name "bouton5"
 loc 0.025081 -0.00718 -0
 data 7
 bouton5
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 65
 0.050636 0.059338 0.648945
 0.050746 0.058203 0.648944
@@ -6703,9 +6703,9 @@ name "fond1"
 loc 0.055236 0 -0
 data 5
 fond1
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 24
 0.166746 -0.206669 0.686592
 0.009576 -0.206671 0.686316
@@ -6905,9 +6905,9 @@ name "fond3"
 loc 0.025081 -0.00718 -0
 data 5
 fond3
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 24
 0.073251 0.00853 0.690554
 0.07321 0.079959 0.690632
@@ -7107,9 +7107,9 @@ name "fond4"
 loc 0 0 -0
 data 5
 fond4
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers2.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 24
 -0.187785 -0.055792 0.683892
 -0.187835 0.101378 0.684065

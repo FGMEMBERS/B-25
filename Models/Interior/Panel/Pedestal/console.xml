@@ -74,11 +74,17 @@
     <object-name>Acrylic</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/B-25/Models/Effects/Glass/glass</inherits-from>
     <object-name>Acrylic</object-name>
-  </animation>
-
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Acrylic</object-name>
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>ElevatorTrimWheel</object-name>
@@ -133,14 +139,12 @@
     <object-name>LAuxToMainSwitch</object-name>
     <object-name>RAuxToMainSwitch</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.003 </red>
       <green> 0.003 </green>
       <blue>  0.003 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-
-
 
   <!-- Left Throttle  -->
   <animation>
@@ -599,7 +603,6 @@
   </animation>
 
   <!-- Parking  Brake  -->
-
   <animation>
     <type>translate</type>
     <object-name>ParkingBrake</object-name>
@@ -611,6 +614,7 @@
      <z> 0 </z>
     </axis>
   </animation>
+  
   <animation>
     <type>rotate</type>
     <object-name>ParkingBrake</object-name>
@@ -627,6 +631,7 @@
       <z-m>  0.063 </z-m>
     </center>
   </animation>
+  
   <animation>
     <type>pick</type>
     <visible>true</visible>
@@ -869,8 +874,7 @@
     </action>
   </animation>
 
-<!-- Landing Ligts -->
-
+  <!-- Landing Ligts -->
   <animation>
     <type>material</type>
     <object-name>LeftLandingLight</object-name>
@@ -886,16 +890,16 @@
     <type>pick</type>
     <object-name>LeftLandingLight</object-name>
     <visible>true</visible>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-toggle</command>
- 		        <property>/sim/model/lights/landing/state</property>
-		</binding>
-	</action>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/sim/model/lights/landing/state</property>
+      </binding>
+    </action>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>LeftLandingLight</object-name>
@@ -917,20 +921,20 @@
     <type>pick</type>
     <object-name>RightLandingLight</object-name>
     <visible>true</visible>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>property-toggle</command>
- 		        <property>/sim/model/lights/landing[1]/state</property>
-		</binding>
-	</action>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/sim/model/lights/landing[1]/state</property>
+      </binding>
+    </action>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>RightLandingLight</object-name>
- 	<property>/sim/model/lights/landing[1]/state</property>
+    <property>/sim/model/lights/landing[1]/state</property>
     <factor> 40 </factor>
     <center>
       <x-m> -0.126 </x-m>
@@ -943,57 +947,56 @@
       <z>  0 </z>
     </axis>
   </animation>
-
-<text>
-	<name>LabelText</name>
-	<type type="string">literal</type>
-		<text type="string">Click switch to turn on Landing lights---} </text>
-	<draw-text type="bool">true</draw-text>
-	<font>Helvetica.txf</font>
-		<character-size type="double">0.012</character-size>
-		<character-aspect-ratio type="double">1.0</character-aspect-ratio>
-	<axis-alignment>yz-plane</axis-alignment>
-	<max-height>0.4</max-height>
-	<max-width>0.1</max-width>
-	<font-resolution>
-		<width type="int">32</width>
-		<height type="int">32</height>
-	</font-resolution>
-	<alignment>center-center</alignment>
-	<offsets>
-           <x-m> -0.126 </x-m>
-           <y-m> -0.130 </y-m>
-           <z-m>  0.240 </z-m>
-	</offsets>
-</text>
-
-<animation>
-	<type>material</type>
-		<object-name>LabelText</object-name>
-	<emission>
-		<red>1.0</red>
-		<green>0.8</green>
-		<blue>0.0</blue>
-	</emission>
-</animation>
-
-<animation>
-	<type>select</type>
-	<object-name>LabelText</object-name>
-	<condition>
-           <and>
-             <equals>
-		<property>/environment/atmosphere/altitude-half-to-sun</property>
-             <value>0</value>
-             </equals>
-             <equals>
-		<property>/systems/electrical/outputs/instrument-lights</property>
-             <value>0</value>
-             </equals>
-           </and>
-	</condition>
-
-</animation>
-
+  
+  <text>
+    <name>LabelText</name>
+    <type type="string">literal</type>
+    <text type="string">Click switch to turn on Landing lights---} </text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.012</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.4</max-height>
+    <max-width>0.1</max-width>
+    <font-resolution>
+      <width type="int">32</width>
+      <height type="int">32</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m> -0.126 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </text>
+  
+  <animation>
+    <type>material</type>
+    <object-name>LabelText</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>LabelText</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>/environment/atmosphere/altitude-half-to-sun</property>
+          <value>0</value>
+        </equals>
+        <equals>
+          <property>/systems/electrical/outputs/instrument-lights</property>
+          <value>0</value>
+        </equals>
+      </and>
+    </condition>
+    
+  </animation>
+  
 </PropertyList>
-

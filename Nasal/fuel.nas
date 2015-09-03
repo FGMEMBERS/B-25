@@ -64,9 +64,9 @@ var fuel_update = func{
 
   for(var i=0; i < size(TANKS); i=i+1){
     if(getprop("controls/fuel/tank["~i~"]/fuel_selector")){
-		#print("At least one tank is selected");
+    #print("At least one tank is selected");
       if(props.globals.getNode("controls/fuel/tank["~i~"]/to_engine").getValue() == 0){
-		#print("Engine Left consume fuel from tank "~i);
+    #print("Engine Left consume fuel from tank "~i);
         var ConsumedFuelEng0 = props.globals.getNode("engines/engine/fuel-flow-gph").getValue() / 3600;
         var TankQty = props.globals.getNode("consumables/fuel/tank["~i~"]/level-gal_us").getValue();
         var NewQty = TankQty - ConsumedFuelEng0;
@@ -74,7 +74,7 @@ var fuel_update = func{
         fuel_pressure(i,0);
       }
       if(props.globals.getNode("controls/fuel/tank["~i~"]/to_engine").getValue() == 1){
-		#print("Engine Right consume fuel from tank "~i);
+    #print("Engine Right consume fuel from tank "~i);
         var ConsumedFuelEng1 = props.globals.getNode("engines/engine[1]/fuel-flow-gph").getValue() / 3600;
         var TankQty = props.globals.getNode("consumables/fuel/tank["~i~"]/level-gal_us").getValue();
         var NewQty = TankQty - ConsumedFuelEng1;
@@ -82,7 +82,7 @@ var fuel_update = func{
         fuel_pressure(i,1);
       }
       if(props.globals.getNode("controls/fuel/tank["~i~"]/to_engine").getValue() == 2){
-		#print("Engine Left and Right consume fuel from tank "~i);
+    #print("Engine Left and Right consume fuel from tank "~i);
         var ConsumedFuelEng0 = props.globals.getNode("engines/engine/fuel-flow-gph").getValue() / 3600;
         var ConsumedFuelEng1 = props.globals.getNode("engines/engine[1]/fuel-flow-gph").getValue() / 3600;
         var TankQty = props.globals.getNode("consumables/fuel/tank["~i~"]/level-gal_us").getValue();

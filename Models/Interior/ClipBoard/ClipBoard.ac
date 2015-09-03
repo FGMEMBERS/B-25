@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 7
 OBJECT poly
@@ -8,8 +8,8 @@ loc -0.004972 0.001991 -0.002326
 data 5
 Board
 texture "clipboard.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 -0.054857 -0.006068 -0.056914
 -0.054857 -0.002648 -0.056918
@@ -62,8 +62,8 @@ loc -0.057788 0.001866 -0.000536
 data 4
 Clip
 texture "clipboard.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 230
 -0.025772 -0.000638 0.007101
 -0.025804 -0.000638 0.000904
@@ -1494,8 +1494,8 @@ loc 0.004316 0.005161 0.00598
 data 4
 Map0
 texture "clipboard.png"
-texrep 1 1
-crease 44.000000
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 -0.056629 -0.003705 -0.054473
 0.037203 -0.003705 -0.054473
@@ -1516,8 +1516,8 @@ loc 0.004316 0.005161 0.00598
 data 4
 Map1
 texture "clipboard.png"
-texrep 1 1
-crease 44.000000
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 -0.056629 -0.003705 -0.054473
 0.037203 -0.003705 -0.054473
@@ -1538,8 +1538,8 @@ loc 0.004316 0.005161 0.00598
 data 4
 Map2
 texture "clipboard.png"
-texrep 1 1
-crease 44.000000
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 -0.056629 -0.003705 -0.054473
 0.037203 -0.003705 -0.054473
@@ -1560,8 +1560,8 @@ loc 0.004316 0.005161 0.00598
 data 4
 Map3
 texture "clipboard.png"
-texrep 1 1
-crease 44.000000
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 -0.056629 -0.003705 -0.054473
 0.037203 -0.003705 -0.054473
@@ -1582,8 +1582,8 @@ loc 0.004316 0.005161 0.00598
 data 4
 Map4
 texture "clipboard.png"
-texrep 1 1
-crease 44.000000
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 -0.056629 -0.003705 -0.054473
 0.037203 -0.003705 -0.054473

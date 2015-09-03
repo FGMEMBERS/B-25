@@ -46,9 +46,8 @@
 
   <!-- Transparent Nose Art to be used with Chrome ( reflect-opaque effect ) -->
   <model>
-    <path>Aircraft/B-25/Models/b25j_ExtraModels/NoseArt.xml</path>
+    <path>Aircraft/B-25/Models/b25j_ExtraModels/NozeArt.xml</path>
   </model>
 
 
 </PropertyList>
-

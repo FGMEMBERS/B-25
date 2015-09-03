@@ -2,40 +2,24 @@
 
 <PropertyList>
 
-  <path>AN-ARC5_RadioTransmitters.ac</path>
-
-  <animation>
-    <!-- Objets opaques -->
-    <object-name>BC-458-A</object-name>
-    <object-name>BC-458-A_Face</object-name>
-    <object-name>BC-459-A</object-name>
-    <object-name>BC-459-A_Face</object-name>
-    <object-name>RadioDial1</object-name>
-    <object-name>RadioDial2</object-name>
-    <object-name>boutons1</object-name>
-    <object-name>boutons2</object-name>
-    <object-name>visses</object-name>
-    <!-- Objets transparents -->
-  </animation>
-
-  <animation>
-   <type>material</type>
-    <object-name>BC-458-A</object-name>
-    <object-name>BC-458-A_Face</object-name>
-    <object-name>BC-459-A</object-name>
-    <object-name>BC-459-A_Face</object-name>
-    <object-name>RadioDial1</object-name>
-    <object-name>RadioDial2</object-name>
-    <object-name>boutons1</object-name>
-    <object-name>boutons2</object-name>
-    <object-name>visses</object-name>
-    <emission>
-      <red>   0.005 </red>
-      <green> 0.005 </green>
-      <blue>  0.005 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission>
-  </animation>
-
+  <!-- BC-458-A -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/RadioTransmitters.xml</path>
+    <offsets>
+      <x-m> 0.05992 </x-m>
+      <y-m> 0.08650 </y-m>
+      <z-m> 0.03669 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- BC-459-A -->
+  <model>
+    <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/RadioTransmitters.xml</path>
+    <offsets>
+      <x-m> -0.06169 </x-m>
+      <y-m>  0.08752 </y-m>
+      <z-m>  0.03669 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-

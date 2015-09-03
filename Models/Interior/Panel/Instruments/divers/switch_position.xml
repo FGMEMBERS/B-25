@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>switch.ac</path>
-
+  
   <animation>
     <object-name>fond</object-name>
     <object-name>switch</object-name>
   </animation>
-
+  
   <animation>
     <type>material</type>
     <object-name>fond</object-name>
@@ -19,7 +19,7 @@
       <blue>  0.25 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>fond</object-name>
@@ -30,7 +30,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>sim/model/lights/beacon/state</property>
+        <property>/sim/model/lights/beacon/state</property>
       </binding>
       <binding>
         <command>property-toggle</command>
@@ -38,11 +38,11 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
-        <property>sim/model/lights/beacon/state</property>
+    <property>sim/model/lights/beacon/state</property>
     <factor> 40 </factor>
     <axis>
       <x>  0 </x>
@@ -50,12 +50,12 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <text>
     <name>LabelText</name>
     <type type="string">literal</type>
     <text type="string">Click to turn on Position lights
-                                               ---}</text>
+      ---}</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.012</character-size>
@@ -74,7 +74,7 @@
       <z-m> 0.04 </z-m>
     </offsets>
   </text>
-
+  
   <animation>
     <type>material</type>
     <object-name>LabelText</object-name>
@@ -84,7 +84,7 @@
       <blue>  0.0 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>LabelText</object-name>
@@ -101,5 +101,5 @@
       </and>
     </condition>
   </animation>
-
+  
 </PropertyList>

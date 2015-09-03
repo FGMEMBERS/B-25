@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>switch.ac</path>
-
+  
   <animation>
     <object-name>fond</object-name>
     <object-name>switch</object-name>
   </animation>
-
+  
   <animation>
     <type>material</type>
     <object-name>fond</object-name>
@@ -19,22 +19,22 @@
       <blue>  0.25 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>fond</object-name>
     <object-name>switch</object-name>
     <visible>true</visible>
     <action>
-		  <button>0</button>
-		  <repeatable>false</repeatable>
-		  <binding>
-			  <command>property-toggle</command>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
         <property>systems/electrical/outputs/instrument-lights</property>
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>rotate</type>
     <object-name>switch</object-name>
@@ -46,13 +46,13 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <text>
     <name>LabelText</name>
     <type type="string">literal</type>
     <text type="string">Click this switch to turn on the lights
-                                                :
-                                                V</text>
+      :
+      V</text>
     <draw-text type="bool">true</draw-text>
     <font>Helvetica.txf</font>
     <character-size type="double">0.012</character-size>
@@ -71,7 +71,7 @@
       <z-m> 0.080 </z-m>
     </offsets>
   </text>
-
+  
   <animation>
     <type>material</type>
     <object-name>LabelText</object-name>
@@ -81,7 +81,7 @@
       <blue>  0.0 </blue>
     </emission>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>LabelText</object-name>
@@ -98,5 +98,5 @@
       </and>
     </condition>
   </animation>
-
+  
 </PropertyList>

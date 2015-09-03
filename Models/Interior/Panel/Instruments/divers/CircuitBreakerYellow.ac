@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite.004" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 2
 OBJECT poly
@@ -7,9 +7,9 @@ name "indicator"
 loc 0.077362 -0.198919 -0.461646
 data 9
 indicator
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 36
 -0.077297 0.20407 0.465347
 -0.0773 0.205635 0.462409
@@ -222,9 +222,9 @@ name "indicatorLight"
 loc 0.070512 -0.198919 -0.461646
 data 14
 indicatorLight
-texture "colors.png"
-texrep 1 1
-crease 45.000000
+texture "divers.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 13
 -0.056653 0.199399 0.460956
 -0.056642 0.19426 0.459766

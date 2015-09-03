@@ -14,12 +14,11 @@
    <type>material</type>
     <object-name>SideGuns</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.005 </red>
       <green> 0.005 </green>
       <blue>  0.005 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
 </PropertyList>
-

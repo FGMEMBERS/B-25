@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <particlesystem>
     <name>tyre-smoke-n</name>
     <texture>smoke.png</texture>
     <emissive>false</emissive>
     <lighting>false</lighting>
-
+    
     <condition>
       <and>
-        <property>/gear/gear[0]/wow</property>
+        <!-- /gear/gear[0]/wow -->
+        <property>sim/multiplay/generic/float[8]</property>
         <greater-than>
-          <property>/gear/gear[0]/rollspeed-ms</property>
+          <!-- /gear/gear[0]/rollspeed-ms -->
+          <property>sim/multiplay/generic/float[11]</property>
           <value>15</value>
         </greater-than>
       </and>
     </condition>
-
+    
     <attach>world</attach>
-
+    
     <placer>
       <type>point</type>
     </placer>
-
+    
     <shooter>
       <theta-min-deg>  45 </theta-min-deg>
       <theta-max-deg>  85 </theta-max-deg>
@@ -42,16 +44,16 @@
         <z-min-deg-sec> -15 </z-min-deg-sec>
       </rotation-speed>
     </shooter>
-
+    
     <counter>
       <particles-per-sec>
         <value>150</value>
         <spread>0</spread>
       </particles-per-sec>
     </counter>
-
+    
     <align>billboard</align>
-
+    
     <particle>
       <start>
         <color>
@@ -75,13 +77,13 @@
       <mass-kg>  0.025 </mass-kg>
       <radius-m> 0.175 </radius-m>
     </particle>
-
+    
     <program>
       <fluid>   air  </fluid>
       <gravity> true </gravity>
       <wind>    true </wind>
     </program>
-
+    
   </particlesystem>
-
+  
 </PropertyList>
