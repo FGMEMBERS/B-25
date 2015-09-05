@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 7
 OBJECT poly
@@ -7,9 +7,9 @@ name "bougies"
 loc 0 0 -0
 data 7
 bougies
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 789
 0.124695 0.466336 -0.082517
 0.124695 0.456297 -0.086934
@@ -6005,9 +6005,9 @@ name "caches"
 loc 0 0 -0
 data 6
 caches
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 1146
 -0.118796 0.557542 0.222143
 -0.118524 0.555232 0.222594
@@ -15247,9 +15247,9 @@ name "cames"
 loc 0 0 -0
 data 5
 cames
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 1135
 0.089091 0.290131 -0.009932
 0.088478 0.290197 -0.007948
@@ -23021,9 +23021,9 @@ name "ecrous"
 loc 0 0 -0
 data 6
 ecrous
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 2256
 -0.103386 0.577656 0.028962
 -0.109238 0.567241 0.031217
@@ -40152,9 +40152,9 @@ name "pistons"
 loc 0 0 -0
 data 7
 pistons
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 9595
 -0.095535 0.262264 0.03042
 -0.090745 0.264818 0.015937
@@ -108538,9 +108538,9 @@ name "souflets"
 loc 0 0 -0
 data 8
 souflets
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 2984
 0.090229 0.276606 -0.088044
 0.089239 0.276051 -0.089785
@@ -130809,9 +130809,9 @@ name "tuyaux"
 loc 0 0 -0
 data 6
 tuyaux
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 2912
 -0.116998 0.541446 0.171637
 -0.118041 0.541995 0.171733

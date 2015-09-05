@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <title>B 25 Mitchell</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close Left Window</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close Right Window</desc>
+  </key>
+  <key>
+    <name>C/c</name>
+    <desc>close/open Cowlflaps</desc>
+  </key>
+  <key>
+    <name>F/f</name>
+    <desc>shift Blower</desc>
+  </key>
+  <text>
+    TAXI: Use differential engine and braking effects to steer on the ground. Keys:  , (Left Brake) and . (Right Brake). The B-25 nose wheel is not steerable.
+    
+    TAKE-OFF: Set flaps to 20 degrees, set props for 2600 RPM and throttles to 40 inHg. Release brakes and use differential power and very minimal braking to hold the nose steady until rudders are effective. At 75 kts (86 mph), raise the nosegear off the ground then let the plane lift itself off, around 115 kts (132 mph) or so. Raise the gear as soon as the plane is clearly airborne. Raise flaps when you have sufficient altitude, 300' or so, or 130 kts (149 mph); be prepared to correct for pitch changes.
+    
+    CLIMB: Hold 139 and 148 kts (160-170 mph)for climb for proper engine cooling and visibility and for good excess speed in case of engine failure, not a problem in the simulation. (Critical single engine speed is 121 kts. = 155 mph) Reduce power first and then RPM to maintain climb speed. 
+    
+    LANDING: Enter the pattern at 139-148 kts (160-170 mph) and 800-1000'. Set mixture full-rich and props to 2400 RPM (after first backing off power as necessary). Set flaps to 15 degrees if desired and lower the gear. After the base leg, drop flaps to full and approach at 104-112 kts (119-129 mph). Keep the nose pointed at the desired runway touchdown spot. Flare as the runway approaches and reduce power. Close throttles when over the runway. Touchdown with a tail-low attitude on both main gear. Do not make a 3-point landing. Hold the nosegear off the ground to allow the attitude of the plane to help slow the roll, then lower the nose gear to the ground slowly and gently. Do not apply brakes until the nose gear is on the ground.
+    
+    STALLS: There should be no significant tendency to drop a wing and recovery should be relative easy and rapid. Full-flap stall begins around 12 degrees AoA and 75-80 kts (86-92 mph) depending on loading.
+    
+    POWER SETTINGS: The following recommendations are taken from a B-25 POH using low-octane Grade 91 fuel (common WWII fuel grade). Modern higher octane fuel grades would allow higher-power engine settings, but it's also certain that anyone flying a B-25 now would treat the aircraft and engines very gently and conservatively.
+    
+    MAXIMUM POWER CONTROL SETTINGS:
+    
+    RPM     MP      Mixture
+    
+    Takeoff               2600    39.5"   full rich
+    Max Cruise            2100    29"     full rich
+    Min Cruise            1560    26"     cruising lean
+    
+    For best engine life, these settings are recommended:
+    
+    Takeoff               2600    39"     full rich       low blower
+    Preclimb              2400    34"     full rich       low blower
+    
+    Climb:
+    SL to 7000'         2250    29"     full rich       low blower
+    7000' to 10,000'    2250    28"     full rich       low blower
+    10,000' to 16,000'  2250    26"     full rich       low blower
+    16,000' to 20,000'  2250    27"     full rich       high blower
+    
+    Cruise:
+    1000' to 5,000'     1950    26"     full rich       low blower
+    5,000' to 10000'    2050    25"     full rich       low blower
+    SL to 4000'         1560    26"     cruising lean   low blower
+    4000' to 8000'      1600    25"     cruising lean   low blower
+    8000' to 11,000'    1650    24"     cruising lean   low blower
+    15,000'             1750    22"     cruising lean   low blower
+    20,000'             1850    24"     cruising lean   high blower
+    
+    V-speeds and limits:
+    
+    Never exceed in dive or glide: 236 KCAS (271 mph)
+    Never exceed in level flight or climb: 295 KCAS (339 mph)
+    Max flaps: 147 KCAS (170 mph)
+    Max gear operation: 147 KCAS (170 mph)
+    Max safe wing loading when pulling out of a dive: 3.67G's
+  </text>
+  
+</PropertyList>

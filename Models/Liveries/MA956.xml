@@ -7,17 +7,12 @@
     <model>
       <livery>
         <name type="string">684 Sqn RAF</name>
-        <texture>Liveries/MA956.png</texture>
+        <texture>Liveries/2048x2048/MA956.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
-        <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
-        </emission>
       </livery>
     </model>
 

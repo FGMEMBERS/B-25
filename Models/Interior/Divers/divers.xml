@@ -34,10 +34,10 @@
     <object-name>RPMSwitch3</object-name>
     <object-name>RPMSwitch4</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.005 </red>
       <green> 0.005 </green>
       <blue>  0.005 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -47,12 +47,11 @@
     <object-name>bouton2</object-name>
     <object-name>bouton3</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.002 </red>
       <green> 0.002 </green>
       <blue>  0.002 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
 </PropertyList>
-

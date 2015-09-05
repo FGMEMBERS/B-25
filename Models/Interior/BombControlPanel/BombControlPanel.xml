@@ -5,19 +5,17 @@
   <path>BombControlPanel.ac</path>
 
   <animation>
-    <object-name>face</object-name>
-    <object-name>indicatorLightLeft</object-name>
+    <object-name>Cube</object-name>
     <object-name>indicatorLightRight</object-name>
-    <object-name>Plate</object-name>
     <object-name>RedSwithcLeft</object-name>
+    <object-name>RedSwitchRight</object-name>
 
   </animation>
 
   <animation>
     <type>material</type>
-    <object-name>face</object-name>
-    <object-name>Plate</object-name>
-    <object-name>RedSwitchLeft</object-name>
+    <object-name>Cube</object-name>
+    <object-name>indicatorLightRight</object-name>
     <emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.003 </red>
@@ -28,8 +26,9 @@
 
   <animation>
     <type>material</type>
-    <object-name>indicatorLightLeft</object-name>
     <object-name>indicatorLightRight</object-name>
+    <object-name>RedSwithcLeft</object-name>
+    <object-name>RedSwitchRight</object-name>
     <emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.15 </red>

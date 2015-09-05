@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <path>RadioPanel.ac</path>
-
+  
   <animation>
     <object-name>ADF_Label</object-name>
     <object-name>AuxTranspLabel</object-name>
@@ -49,7 +49,7 @@
     <object-name>Knob_NAV02</object-name>
     <object-name>Knob_NAV03</object-name>
   </animation>
-
+  
   <params>
     <comm-serviceable>instrumentation/comm[0]/serviceable</comm-serviceable>
     <nav-serviceable>instrumentation/nav[0]/serviceable</nav-serviceable>
@@ -78,7 +78,7 @@
     <dimming>instrumentation/comm[0]/dimming-norm</dimming>
     <nav-electrical>/systems/electrical/outputs/nav[0]</nav-electrical>
   </params>
-
+  
   <animation>
     <type>material</type>
     <object-name>Digit_COMM01</object-name>
@@ -117,7 +117,7 @@
       <blue>  0.25 </blue>
     </emission>
   </animation>
-
+  
   <!-- COMM DISPLAY -->
   <animation>
     <type>textranslate</type>
@@ -132,7 +132,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM02</object-name>
@@ -146,7 +146,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM03</object-name>
@@ -160,7 +160,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM04</object-name>
@@ -174,7 +174,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM05</object-name>
@@ -188,7 +188,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM11</object-name>
@@ -202,7 +202,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM12</object-name>
@@ -216,7 +216,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM13</object-name>
@@ -230,7 +230,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM14</object-name>
@@ -244,7 +244,7 @@
       <z> 0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_COMM15</object-name>
@@ -258,47 +258,50 @@
       <z> 0 </z>
     </axis>
   </animation>
-
-	<!-- NAV DISPLAY -->
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_NAV01</object-name>
-	<property alias="../../params/nav-frq-selected"/>
-	<step>100</step>
-	<factor>0.001</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_NAV02</object-name>
-	<property alias="../../params/nav-frq-selected"/>
-	<step>10</step>
-	<factor>0.01</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_NAV03</object-name>
-	<property alias="../../params/nav-frq-selected"/>
-	<step>1</step>
-	<factor>0.1</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
+  
+  <!-- NAV DISPLAY -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_NAV01</object-name>
+    <property alias="../../params/nav-frq-selected"/>
+    <step>100</step>
+    <factor>0.001</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_NAV02</object-name>
+    <property alias="../../params/nav-frq-selected"/>
+    <step>10</step>
+    <factor>0.01</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_NAV03</object-name>
+    <property alias="../../params/nav-frq-selected"/>
+    <step>1</step>
+    <factor>0.1</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_NAV04</object-name>
@@ -307,11 +310,12 @@
     <factor>1</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_NAV05</object-name>
@@ -320,11 +324,12 @@
     <factor>10</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_NAV11</object-name>
@@ -333,11 +338,12 @@
     <factor>0.001</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_NAV12</object-name>
@@ -346,92 +352,97 @@
     <factor>0.01</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_NAV13</object-name>
-	<property alias="../../params/nav-frq-standby"/>
-	<step>1</step>
-	<factor>0.1</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_NAV14</object-name>
-	<property alias="../../params/nav-frq-standby"/>
-	<step>0.1</step>
-	<factor>1</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_NAV15</object-name>
-	<property alias="../../params/nav-frq-standby"/>
-	<step>0.01</step>
-	<factor>10</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-
-
-	<!-- ADF DISPLAY -->
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_ADF1</object-name>
-	<property alias="../../params/adf-frq-selected"/>
-	<step>10000</step>
-	<factor>0.00001</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_ADF2</object-name>
-	<property alias="../../params/adf-frq-selected"/>
-	<step>1000</step>
-	<factor>0.0001</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_ADF3</object-name>
-	<property alias="../../params/adf-frq-selected"/>
-	<step>100</step>
-	<factor>0.001</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_NAV13</object-name>
+    <property alias="../../params/nav-frq-standby"/>
+    <step>1</step>
+    <factor>0.1</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_NAV14</object-name>
+    <property alias="../../params/nav-frq-standby"/>
+    <step>0.1</step>
+    <factor>1</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_NAV15</object-name>
+    <property alias="../../params/nav-frq-standby"/>
+    <step>0.01</step>
+    <factor>10</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- ADF DISPLAY -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_ADF1</object-name>
+    <property alias="../../params/adf-frq-selected"/>
+    <step>10000</step>
+    <factor>0.00001</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_ADF2</object-name>
+    <property alias="../../params/adf-frq-selected"/>
+    <step>1000</step>
+    <factor>0.0001</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_ADF3</object-name>
+    <property alias="../../params/adf-frq-selected"/>
+    <step>100</step>
+    <factor>0.001</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_ADF4</object-name>
@@ -440,11 +451,12 @@
     <factor>0.01</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_ADF5</object-name>
@@ -453,13 +465,13 @@
     <factor>0.1</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
-
-<!-- AUX TRANSP --> 
+  
+  <!-- AUX TRANSP --> 
   <animation>
     <type>textranslate</type>
     <object-name>Digit_AUXTRANSP01</object-name>
@@ -468,11 +480,12 @@
     <factor>0.001</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
+  
   <animation>
     <type>textranslate</type>
     <object-name>Digit_AUXTRANSP02</object-name>
@@ -481,189 +494,190 @@
     <factor>0.01</factor>
     <bias>0.0001</bias>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_AUXTRANSP03</object-name>
-	<property alias="../../params/dme-frq-selected"/>
-	<step>1</step>
-	<factor>0.1</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_AUXTRANSP04</object-name>
-	<property alias="../../params/dme-frq-selected"/>
-	<step>0.1</step>instrumentation/comm[0]/frequencies/selected-mhz
-	<factor>1</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-<animation>
-	<type>textranslate</type>
-	<object-name>Digit_AUXTRANSP05</object-name>
-	<property alias="../../params/dme-frq-selected"/>
-	<step>0.01</step>
-	<factor>10</factor>
-	<bias>0.0001</bias>
-	<axis>
-		<x>1</x>
-		<y>0</y>
-		<z>0</z>
-	</axis>
-</animation>
-
-
-	<!-- ACTIONS COMM RADIO -->
-
-<!-- COMM FREQ SELECTED -->
-<animation>
-	<type>pick</type>
-	<object-name>increase_COMM1</object-name>
-	<visible>false</visible>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/selected-mhz</property>
-			<step type="double">1</step>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>decrease_COMM1</object-name>
-	<visible>false</visible>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/selected-mhz</property>
-                        <step type="double">1</step>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>Knob_COMM02</object-name>
-	<visible>true</visible>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/selected-mhz</property>
-                        <step type="double">0.01</step>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>Knob_COMM02</object-name>
-	<visible>true</visible>
-	<action>
-		<button>1</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/selected-mhz</property>
-                        <step type="double">-0.01</step>
-		</binding>
-	</action>
-</animation>
-
-
-<!-- COMM FREQ STANDBY -->
-<animation>
-	<type>pick</type>
-	<object-name>increase_COMM2</object-name>
-	<visible>false</visible>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/standby-mhz</property>
-                        <step type="double">1</step>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>decrease_COMM2</object-name>
-	<visible>false</visible>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/standby-mhz</property>
-                        <step type="double">1</step>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>Knob_COMM12</object-name>
-	<visible>true</visible>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/standby-mhz</property>
-                        <step type="double">0.01</step>
-		</binding>
-	</action>
-</animation>
-<animation>
-	<type>pick</type>
-	<object-name>Knob_COMM12</object-name>
-	<visible>true</visible>
-	<action>
-		<button>1</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/comm/frequencies/standby-mhz</property>
-                        <step type="double">-0.01</step>
-		</binding>
-	</action>
-</animation>
-
-	<!-- ACTIONS NAV RADIO -->
-
-<!-- NAV FREQ SELECTED -->
-<animation>
-	<type>pick</type>
-	<object-name>increase_NAV1</object-name>
-	<visible>false</visible>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<binding>
-			<command>property-adjust</command>
-			<property>instrumentation/nav/frequencies/selected-mhz</property>
-                        <step type="double">1</step>
-		</binding>
-	</action>
-</animation>
-
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_AUXTRANSP03</object-name>
+    <property alias="../../params/dme-frq-selected"/>
+    <step>1</step>
+    <factor>0.1</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_AUXTRANSP04</object-name>
+    <property alias="../../params/dme-frq-selected"/>
+    <step>0.1</step>instrumentation/comm[0]/frequencies/selected-mhz
+    <factor>1</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>Digit_AUXTRANSP05</object-name>
+    <property alias="../../params/dme-frq-selected"/>
+    <step>0.01</step>
+    <factor>10</factor>
+    <bias>0.0001</bias>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- ACTIONS COMM RADIO -->
+  
+  <!-- COMM FREQ SELECTED -->
+  <animation>
+    <type>pick</type>
+    <object-name>increase_COMM1</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/selected-mhz</property>
+        <step type="double">1</step>
+      </binding>
+    </action>
+  </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>decrease_COMM1</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/selected-mhz</property>
+        <step type="double">1</step>
+      </binding>
+    </action>
+  </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>Knob_COMM02</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/selected-mhz</property>
+        <step type="double">0.01</step>
+      </binding>
+    </action>
+  </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>Knob_COMM02</object-name>
+    <visible>true</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/selected-mhz</property>
+        <step type="double">-0.01</step>
+      </binding>
+    </action>
+  </animation>
+  
+  <!-- COMM FREQ STANDBY -->
+  <animation>
+    <type>pick</type>
+    <object-name>increase_COMM2</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/standby-mhz</property>
+        <step type="double">1</step>
+      </binding>
+    </action>
+  </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>decrease_COMM2</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/standby-mhz</property>
+        <step type="double">1</step>
+      </binding>
+    </action>
+  </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>Knob_COMM12</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/standby-mhz</property>
+        <step type="double">0.01</step>
+      </binding>
+    </action>
+  </animation>
+  <animation>
+    <type>pick</type>
+    <object-name>Knob_COMM12</object-name>
+    <visible>true</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/comm/frequencies/standby-mhz</property>
+        <step type="double">-0.01</step>
+      </binding>
+    </action>
+  </animation>
+  
+  <!-- ACTIONS NAV RADIO -->
+  
+  <!-- NAV FREQ SELECTED -->
+  <animation>
+    <type>pick</type>
+    <object-name>increase_NAV1</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/nav/frequencies/selected-mhz</property>
+        <step type="double">1</step>
+      </binding>
+    </action>
+  </animation>
+  
   <animation>
     <type>pick</type>
     <object-name>decrease_NAV1</object-name>
@@ -678,7 +692,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>Knob_NAV02</object-name>
@@ -693,7 +707,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>Knob_NAV02</object-name>
@@ -708,7 +722,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <!-- NAV FREQ STANDBY -->
   <animation>
     <type>pick</type>
@@ -724,7 +738,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>decrease_NAV2</object-name>
@@ -739,7 +753,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>Knob_NAV12</object-name>
@@ -754,7 +768,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>Knob_NAV12</object-name>
@@ -769,7 +783,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <!-- ACTIONS ADF RADIO -->
   <animation>
     <type>pick</type>
@@ -785,7 +799,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>decrease_ADF</object-name>
@@ -800,7 +814,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>Knob_ADF02</object-name>
@@ -815,7 +829,7 @@
       </binding>
     </action>
   </animation>
-
+  
   <animation>
     <type>pick</type>
     <object-name>Knob_ADF02</object-name>
@@ -830,10 +844,10 @@
       </binding>
     </action>
   </animation>
-
+  
   <!-- ALL RADIO PANEL SWITCHES -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/RadioPanel/RadioPanel_all-switch.xml</path>
   </model>
-
+  
 </PropertyList>

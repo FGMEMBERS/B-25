@@ -6,7 +6,7 @@
     <path>Aircraft/B-25/Models/Interior/BombardierCompartment/Norden_Bombsight/Norden_Bombsight.xml</path>
     <offsets>
       <x-m> -7.000 </x-m>
-      <y-m> -0.000 </y-m>
+      <y-m>  0.000 </y-m>
       <z-m> -0.400 </z-m>
     </offsets>
   </model>
@@ -16,7 +16,7 @@
     <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
     <offsets>
       <x-m> -7.600 </x-m>
-      <y-m> -0.000 </y-m>
+      <y-m>  0.000 </y-m>
       <z-m> -0.010 </z-m>
       <pitch-deg> -5 </pitch-deg>
     </offsets>
@@ -26,7 +26,7 @@
     <path>Aircraft/B-25/Models/Interior/Guns/Mark_6_Adapter.xml</path>
     <offsets>
       <x-m> -7.600 </x-m>
-      <y-m> -0.000 </y-m>
+      <y-m>  0.000 </y-m>
       <z-m>  0.000 </z-m>
       <pitch-deg> -5 </pitch-deg>
     </offsets>
@@ -114,4 +114,3 @@
   </model>
 
 </PropertyList>
-

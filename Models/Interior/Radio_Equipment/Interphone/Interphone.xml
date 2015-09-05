@@ -12,7 +12,6 @@
     </offsets>
   </model>
 
-
   <model>
     <path>Aircraft/B-25/Models/Interior/Radio_Equipment/Interphone/Radio_Filter_Unit.xml</path>
     <offsets>
@@ -53,6 +52,4 @@
     </offsets>
   </model>
 
-
 </PropertyList>
-

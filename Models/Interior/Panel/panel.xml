@@ -13,14 +13,25 @@
     <object-name>Acrylic</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/B-25/Models/Effects/Glass/glass</inherits-from>
+    <object-name>Acrylic</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Acrylic</object-name>
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>panel</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.003 </red>
       <green> 0.003 </green>
       <blue>  0.003 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -28,7 +39,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.015 </x-m>
+      <x-m>  0.008 </x-m>
       <y-m> -0.481 </y-m>
       <z-m>  0.073 </z-m>
     </offsets>
@@ -38,7 +49,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.011 </x-m>
       <y-m> -0.363 </y-m>
       <z-m>  0.073 </z-m>
     </offsets>
@@ -48,7 +59,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.015 </x-m>
+      <x-m>  0.012 </x-m>
       <y-m> -0.233 </y-m>
       <z-m>  0.073 </z-m>
     </offsets>
@@ -58,7 +69,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.009 </x-m>
       <y-m> -0.481 </y-m>
       <z-m> -0.047 </z-m>
     </offsets>
@@ -68,7 +79,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
+      <x-m>  0.011 </x-m>
       <y-m> -0.363 </y-m>
       <z-m> -0.047 </z-m>
     </offsets>
@@ -78,7 +89,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.008 </x-m>
       <y-m> -0.233 </y-m>
       <z-m> -0.047 </z-m>
     </offsets>
@@ -89,7 +100,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/pdi/pdi.xml</path>
     <offsets>
-     <x-m>  0.014 </x-m>
+     <x-m>  0.013 </x-m>
      <y-m> -0.220 </y-m>
      <z-m>  0.200 </z-m>
     </offsets> 
@@ -97,9 +108,9 @@
 
   <!-- RRC  -->
   <model>
-    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/rrc/rcc.xml</path>
+    <path>Aircraft/B-25/Models/Interior/Panel/Instruments/rrc/rrc.xml</path>
      <offsets>
-     <x-m>  0.014 </x-m>
+     <x-m>  0.008 </x-m>
      <y-m> -0.100 </y-m>
      <z-m>  0.215 </z-m>
     </offsets> 
@@ -109,7 +120,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vacuum/vacuum.xml</path>
      <offsets>
-     <x-m>  0.014 </x-m>
+     <x-m>  0.010 </x-m>
      <y-m> -0.100 </y-m>
      <z-m>  0.130 </z-m>
     </offsets> 
@@ -119,7 +130,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/clock/clock.xml</path>
      <offsets>
-     <x-m>  0.014 </x-m>
+     <x-m>  0.009 </x-m>
      <y-m> -0.100 </y-m>
      <z-m>  0.055 </z-m>
     </offsets> 
@@ -129,9 +140,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vor/vor.xml</path>
     <offsets>
-     <x-m>  0.014 </x-m>
-     <y-m> -0.000 </y-m>
-     <z-m>  0.215 </z-m>
+     <x-m> 0.011 </x-m>
+     <y-m> 0.000 </y-m>
+     <z-m> 0.215 </z-m>
     </offsets> 
   </model>
 
@@ -139,9 +150,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/vor/vor2.xml</path>
      <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m> -0.000 </y-m>
-      <z-m>  0.125 </z-m>
+      <x-m> 0.011 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.125 </z-m>
     </offsets> 
   </model>
 
@@ -149,9 +160,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
      <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m> -0.000 </y-m>
-      <z-m>  0.038 </z-m>
+      <x-m> 0.008 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.038 </z-m>
     </offsets> 
   </model>
 
@@ -159,9 +170,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/manifold/manifold.xml</path>
     <offsets>
-     <x-m>  0.014 </x-m>
-     <y-m>  0.115 </y-m>
-     <z-m>  0.215 </z-m>
+     <x-m> 0.008 </x-m>
+     <y-m> 0.115 </y-m>
+     <z-m> 0.215 </z-m>
     </offsets> 
   </model>
 
@@ -169,9 +180,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/fuelpress/fuel_pressure.xml</path>
     <offsets>
-     <x-m>  0.014 </x-m>
-     <y-m>  0.115 </y-m>
-     <z-m>  0.125 </z-m>
+     <x-m> 0.008 </x-m>
+     <y-m> 0.115 </y-m>
+     <z-m> 0.125 </z-m>
     </offsets> 
   </model>
 
@@ -179,9 +190,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m>  0.115 </y-m>
-      <z-m>  0.038 </z-m>
+      <x-m> 0.009 </x-m>
+      <y-m> 0.115 </y-m>
+      <z-m> 0.038 </z-m>
     </offsets>
   </model>
   
@@ -189,9 +200,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/cyl/cyl.xml</path>
     <offsets>
-     <x-m>  0.014 </x-m>
-     <y-m>  0.229 </y-m>
-     <z-m>  0.125 </z-m>
+     <x-m> 0.010 </x-m>
+     <y-m> 0.229 </y-m>
+     <z-m> 0.125 </z-m>
     </offsets> 
   </model>
 
@@ -199,9 +210,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
-     <x-m>  0.014 </x-m>
-     <y-m>  0.229 </y-m>
-     <z-m>  0.209 </z-m>
+     <x-m> 0.008 </x-m>
+     <y-m> 0.229 </y-m>
+     <z-m> 0.209 </z-m>
     </offsets> 
   </model>
 
@@ -209,9 +220,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/oilpress/oilpress.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m>  0.229 </y-m>
-      <z-m>  0.038 </z-m>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.229 </y-m>
+      <z-m> 0.038 </z-m>
     </offsets>
   </model>
 
@@ -219,7 +230,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/carb/carb.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.009 </x-m>
       <y-m>  0.115 </y-m>
       <z-m> -0.047 </z-m>
     </offsets>
@@ -229,7 +240,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/air-temp/airtemp.xml</path>
      <offsets>
-     <x-m>  0.014 </x-m>
+     <x-m>  0.010 </x-m>
      <y-m>  0.229 </y-m>
      <z-m> -0.047 </z-m>
     </offsets> 
@@ -239,9 +250,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGaugeFront.xml</path>
      <offsets>
-     <x-m>  0.015 </x-m>
-     <y-m>  0.329 </y-m>
-     <z-m>  0.038 </z-m>
+     <x-m> 0.008 </x-m>
+     <y-m> 0.329 </y-m>
+     <z-m> 0.038 </z-m>
     </offsets> 
   </model>
 
@@ -249,7 +260,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGaugeRear.xml</path>
      <offsets>
-     <x-m>  0.015 </x-m>
+     <x-m>  0.008 </x-m>
      <y-m>  0.329 </y-m>
      <z-m> -0.047 </z-m>
     </offsets> 
@@ -259,9 +270,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FuelGauge/FuelGaugeAux.xml</path>
      <offsets>
-     <x-m>  0.015 </x-m>
-     <y-m>  0.329 </y-m>
-     <z-m>  0.180 </z-m>
+     <x-m> 0.008 </x-m>
+     <y-m> 0.329 </y-m>
+     <z-m> 0.180 </z-m>
     </offsets> 
   </model>
 
@@ -269,7 +280,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/FireDetectorSystem/FireDetectorSystem.xml</path>
      <offsets>
-     <x-m>  0.015 </x-m>
+     <x-m>  0.009 </x-m>
      <y-m>  0.440 </y-m>
      <z-m> -0.047 </z-m>
     </offsets> 
@@ -279,9 +290,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m>  0.440 </y-m>
-      <z-m>  0.038 </z-m>
+      <x-m> 0.009 </x-m>
+      <y-m> 0.440 </y-m>
+      <z-m> 0.038 </z-m>
     </offsets>
   </model>
 
@@ -289,9 +300,9 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/hydra_press/hydraulic.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
-      <y-m>  0.522 </y-m>
-      <z-m>  0.038 </z-m>
+      <x-m> 0.010 </x-m>
+      <y-m> 0.522 </y-m>
+      <z-m> 0.038 </z-m>
     </offsets>
   </model>
 
@@ -299,7 +310,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/brake_press/brake_press.xml</path>
     <offsets>
-      <x-m>  0.014 </x-m>
+      <x-m>  0.010 </x-m>
       <y-m>  0.522 </y-m>
       <z-m> -0.048 </z-m>
     </offsets>
@@ -324,7 +335,7 @@
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/N-3B_Gunsight/Gunsight.xml</path>
     <offsets>
-      <x-m>  0.150 </x-m>
+      <x-m>  0.030 </x-m>
       <y-m> -0.230 </y-m>
       <z-m>  0.335 </z-m>
     </offsets>
@@ -333,7 +344,11 @@
   <!-- RADIO PANEL -->
   <model>
     <path>Aircraft/B-25/Models/Interior/Panel/Instruments/RadioPanel/RadioPanel.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
   </model>
 
 </PropertyList>
-

@@ -26,7 +26,9 @@
     <object-name>TunelTubes</object-name>
     <object-name>FT-220_FT-226_Racks</object-name>
     <object-name>FT-220_FT-226_Rac_II</object-name>
-
+    <object-name>IntSideGunsBase</object-name>
+    <object-name>intsoustour</object-name>
+      
     <object-name>inttour1</object-name>
     <object-name>inttour2</object-name>
     <object-name>inttour3</object-name>
@@ -37,30 +39,27 @@
     <object-name>intvitres</object-name>
     <object-name>WindowsVitreR</object-name>
     <object-name>WindowsVitreL</object-name>
-
     <object-name>intvitreJ</object-name>
+    <object-name>intvitresoustour</object-name>
   </animation>    
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/B-25/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>WindowsVitreR</object-name>
     <object-name>WindowsVitreL</object-name>
-
-    <object-name>intvitreJ</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitresoustour</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>WindowsVitreR</object-name>
     <object-name>WindowsVitreL</object-name>
-
-    <object-name>intvitreJ</object-name>
-  </animation>
-
+    <object-name>intvitresoustour</object-name>
+  </effect>
+  
   <effect>
     <inherits-from>Aircraft/B-25/Models/Effects/Reflect/reflect-opaque</inherits-from>
     <object-name>Handle1R</object-name>
@@ -75,6 +74,8 @@
   <animation>
     <type>select</type>
     <object-name>intrearcache</object-name>
+    <object-name>intsoustour</object-name>
+    <object-name>intvitresoustour</object-name>
     <condition>
       <equals>
         <property>sim/multiplay/generic/string[1]</property>
@@ -86,6 +87,7 @@
   <!-- B 25 J -->
   <animation>
     <type>select</type>
+    <object-name>IntSideGunsBase</object-name>
     <object-name>inttour1</object-name>
     <object-name>inttour2</object-name>
     <object-name>inttour3</object-name>
@@ -139,7 +141,7 @@
       <x-m> -5.612 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.412 </z-m>
-      <pitch-deg>   -5 </pitch-deg>
+      <pitch-deg> -5 </pitch-deg>
     </offsets>
   </model>
 
@@ -243,8 +245,8 @@
       <y-m>  0.674 </y-m>
       <z-m>  0.130 </z-m>
       <heading-deg> -90 </heading-deg>
-      <roll-deg> 10 </roll-deg>
-      <pitch-deg> 90 </pitch-deg>
+      <roll-deg>     10 </roll-deg>
+      <pitch-deg>    90 </pitch-deg>
     </offsets>
   </model>
 
@@ -259,7 +261,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.doorsystem.crewexport();</script>
+        <script>doors.crew.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -277,7 +279,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntLeftGlass</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 0.40 </factor>
     <axis>
       <x> 1 </x>
@@ -297,7 +299,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.doorsystem.passengerexport();</script>
+        <script>doors.passenger.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -315,7 +317,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntRightGlass</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> 0.40 </factor>
     <axis>
       <x> 1 </x>
@@ -344,4 +346,3 @@
   </animation>
 
 </PropertyList>
-

@@ -16,19 +16,17 @@
     <!-- Objets transparents -->
   </animation>
 
-
   <animation>
     <type>material</type>
     <object-name>Yoke</object-name>
     <object-name>Yoke.Button</object-name>
     <object-name>Yoke.Button.Base</object-name>
-
     <object-name>rivets</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.004 </red>
       <green> 0.004 </green>
       <blue>  0.004 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -38,14 +36,12 @@
     <object-name>Boot1</object-name>
     <object-name>Boot2</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.002 </red>
       <green> 0.002 </green>
       <blue>  0.002 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
-
-
 
   <!-- Let's animate Yokes (JC_SV) -->
   <animation>
@@ -69,16 +65,16 @@
     <object-name>Boot2</object-name>
     <property>controls/flight/elevator</property>
     <factor> 30 </factor>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
     <center>
       <x-m>-0.002 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.107 </z-m>
     </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
   </animation>
 
   <animation>
@@ -101,4 +97,3 @@
   </animation>
 
 </PropertyList>
-

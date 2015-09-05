@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 50 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 3
 OBJECT poly
@@ -7,9 +7,9 @@ name "bloc"
 loc 0 0 -0
 data 4
 bloc
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 515
 -0.191061 -0.188928 -0.188928
 -0.191061 -0.14844 -0.222156
@@ -4245,9 +4245,9 @@ name "echappes"
 loc 0 0 -0
 data 8
 echappes
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 1408
 0.038768 -0.011873 -0.506877
 0.038768 -0.009329 -0.504789
@@ -12384,9 +12384,9 @@ name "moteurlow"
 loc 0 0 -0
 data 9
 moteurlow
-texture "colors.png"
-texrep 1 1
-crease 30.000001
+texture "engine.png"
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 13850
 0.04564 0.105335 -0.581297
 0.053458 0.10914 -0.578175

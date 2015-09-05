@@ -10,6 +10,7 @@
       <z-m>  0.775 </z-m>
     </offsets>
   </model>
+  
   <model>
     <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/AN-ARC5_RadioTransmitters.xml</path>
     <offsets>
@@ -18,6 +19,7 @@
       <z-m>  0.775 </z-m>
     </offsets>
   </model>
+  
   <model>
     <path>Aircraft/B-25/Models/Interior/Radio_Equipment/AN-ARC5/AN-ARC5_Dynamotor_Modulator.xml</path>
     <offsets>
@@ -28,4 +30,3 @@
   </model>
 
 </PropertyList>
-
