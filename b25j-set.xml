@@ -19,6 +19,21 @@
       <model type="int">   4 </model>
     </rating>
 
+    <tags>
+      <tag>bomber</tag>
+      <tag>1940s</tag>
+      <tag>1950s</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+      <tag>ww2</tag>
+      <tag>ifr</tag>
+      <tag>retractable-gear</tag>
+      <tag>piston</tag>
+      <tag>propeller</tag>
+      <tag>radial</tag>
+      <tag>twin-engine</tag>
+    </tags>
+
     <startup>
       <splash-texture>Aircraft/B-25/Splashs/b25j-splash.png</splash-texture>
     </startup>
