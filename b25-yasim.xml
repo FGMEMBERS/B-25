@@ -357,16 +357,15 @@
          values work more-or-less, but there may be some slight forward motion at full power with the brakes on.
   -->
 
-  <!-- Nose wheel
-  castering="1"
-  <control-input axis="/controls/gear/nosewheel-lock" control="CASTERING" src0="0" src1="1" dst0="1" dst1="0" /> -->
+  <!-- Nose wheel -->
   <gear x="6.118" y="0.000" z="-2.375"
         compression="0.2"
         spring="0.7"
+        castering="1"
         damp="1.0"
         sfric="0.8"
         dfric="0.7">
-        <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1" src1="1" dst0="-0.8" dst1="0.8"/>
+    <control-input axis="/controls/gear/tailwheel-lock" control="CASTERING" src0="0" src1="1" dst0="1" dst1="0"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
       
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>

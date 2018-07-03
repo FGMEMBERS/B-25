@@ -80,7 +80,7 @@ var Engine = {
         #### CYLINDER HEAD TEMPERATURE ####
         ###################################
         var thr = me.eng.getChild ("prop-thrust").getValue();
-        var ct = me.eng.getChild ("cyl-temp").getValue();
+        var ct = me.cyl-temp.getValue();
         var cp = me.control.getChild ("cowl-flaps-norm").getValue ();
         var as = getprop("/velocities/airspeed-kt");
         var egt = (me.egt.getValue() - 32) * 0.55;
@@ -90,7 +90,7 @@ var Engine = {
         var visc = me.eng.getChild ("oil-visc").getValue();
         var cbt = et0 + 0.85 * mp; #carb temperature
         var temp = 3.1 * cbt + 0.225 * rpm + 0.5 * egt - 0.0033 * as * as - 0.08 * thr * (1.28 * cp + 0.1) - 20 * mix; #cyl-head temperature
-        interpolate("/engines/engine[0]/cyl-temp", temp * 0.4, 45);
+        interpolate(me.cyl-temp, temp * 0.4, 45);
 
         ###################################
         ############# MIXTURE #############
@@ -105,6 +105,12 @@ var Engine = {
     shift_blower_down : func () {
        interpolate (me.blower, 0.7, 3);
     },
+
+    toggle_blower : func () {
+       print (me.eng.getPath () ~ ": blower position=" ~ me.blower.getValue());
+       if (me.blower.getValue () < 0.8) { me.shift_blower_up (); }
+       else { me.shift_blower_down (); }
+    }
 };
 
 EngineLeft = Engine.new(0);

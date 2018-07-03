@@ -996,7 +996,76 @@
         </equals>
       </and>
     </condition>
-    
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>SCBooster.LeverL</object-name>
+    <object-name>SCBooster.SphereL</object-name>
+    <property>controls/engines/engine[0]/boost</property>
+    <interpolation>
+      <entry><ind>0.7</ind><dep>-8</dep></entry>
+      <entry><ind>1.0</ind><dep>13</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>0.059</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>SCBooster.LeverL</object-name>
+    <object-name>SCBooster.SphereL</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>b25.EngineLeft.toggle_blower();</script>
+      </binding>
+    </action>
   </animation>
   
+  <animation>
+    <type>rotate</type>
+    <object-name>SCBooster.LeverR</object-name>
+    <object-name>SCBooster.SphereR</object-name>
+    <property>controls/engines/engine[1]/boost</property>
+    <interpolation>
+      <entry><ind>0.7</ind><dep>-8</dep></entry>
+      <entry><ind>1.0</ind><dep>13</dep></entry>
+    </interpolation>
+    <center>
+      <x-m>0.059</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>SCBooster.LeverR</object-name>
+    <object-name>SCBooster.SphereR</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>b25.EngineRight.toggle_blower();</script>
+      </binding>
+    </action>
+  </animation>
+
 </PropertyList>
