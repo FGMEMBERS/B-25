@@ -68,7 +68,7 @@
     <path>Aircraft/B-25/Models/Lights/Recognition1.xml</path>
     <condition>
       <equals>
-        <property>/sim/aircraft</property>
+        <property>sim/aircraft</property>
         <value>b25</value>
       </equals>
     </condition>
@@ -83,7 +83,7 @@
     <path>Aircraft/B-25/Models/Lights/Recognition1.xml</path>
     <condition>
       <equals>
-        <property>/sim/aircraft</property>
+        <property>sim/aircraft</property>
         <value>b25j</value>
       </equals>
     </condition>
@@ -164,7 +164,7 @@
   <model>
     <path>Aircraft/B-25/Models/Lights/light-cone.xml</path>
     <condition>
-      <property>/sim/model/lights/landing/state</property>
+      <property>sim/model/lights/landing/state</property>
     </condition>
     <offsets>
       <x-m>       -2.293 </x-m>
@@ -189,7 +189,7 @@
   <model>
     <path>Aircraft/B-25/Models/Lights/light-cone.xml</path>
     <condition>
-      <property>/sim/model/lights/landing[1]/state</property>
+      <property>sim/model/lights/landing[1]/state</property>
     </condition>
     <offsets>
       <x-m>       -2.293 </x-m>

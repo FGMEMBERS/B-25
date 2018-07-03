@@ -139,7 +139,7 @@
     <object-name>LAuxToMainSwitch</object-name>
     <object-name>RAuxToMainSwitch</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.003 </red>
       <green> 0.003 </green>
       <blue>  0.003 </blue>
@@ -174,7 +174,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/throttle</property>
+        <property>controls/engines/engine[0]/throttle</property>
         <step type="double">0.05</step>
       </binding>          
     </action>
@@ -189,7 +189,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/throttle</property>
+        <property>controls/engines/engine[0]/throttle</property>
         <step type="double">-0.05</step>
       </binding>          
     </action>
@@ -223,7 +223,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[1]/throttle</property>
+        <property>controls/engines/engine[1]/throttle</property>
         <step type="double">0.05</step>
       </binding>          
     </action>
@@ -238,7 +238,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[1]/throttle</property>
+        <property>controls/engines/engine[1]/throttle</property>
         <step type="double">-0.05</step>
       </binding>          
     </action>
@@ -272,7 +272,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <property>controls/engines/engine[0]/propeller-pitch</property>
         <step type="double">0.05</step>
       </binding>          
     </action>
@@ -287,7 +287,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/propeller-pitch</property>
+        <property>controls/engines/engine[0]/propeller-pitch</property>
         <step type="double">-0.05</step>
       </binding>          
     </action>
@@ -321,7 +321,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[1]/propeller-pitch</property>
+        <property>controls/engines/engine[1]/propeller-pitch</property>
         <step type="double">0.05</step>
       </binding>          
     </action>
@@ -336,7 +336,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[1]/propeller-pitch</property>
+        <property>controls/engines/engine[1]/propeller-pitch</property>
         <step type="double">-0.05</step>
       </binding>          
     </action>
@@ -370,7 +370,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/mixture</property>
+        <property>controls/engines/engine[0]/mixture</property>
         <step type="double">0.05</step>
       </binding>          
     </action>
@@ -385,7 +385,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/mixture</property>
+        <property>controls/engines/engine[0]/mixture</property>
         <step type="double">-0.05</step>
       </binding>          
     </action>
@@ -419,7 +419,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[1]/mixture</property>
+        <property>controls/engines/engine[1]/mixture</property>
         <step type="double">0.05</step>
       </binding>          
     </action>
@@ -434,7 +434,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[1]/mixture</property>
+        <property>controls/engines/engine[1]/mixture</property>
         <step type="double">-0.05</step>
       </binding>          
     </action>
@@ -467,7 +467,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/flight/elevator-trim</property>
+        <property>controls/flight/elevator-trim</property>
         <step type="double">0.05</step>
       </binding>
     </action>
@@ -482,7 +482,7 @@
       <repeatable>true</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/flight/elevator-trim</property>
+        <property>controls/flight/elevator-trim</property>
         <step type="double">-0.05</step>
       </binding>
     </action>
@@ -515,7 +515,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/flight/rudder-trim</property>
+        <property>controls/flight/rudder-trim</property>
         <step type="double">-0.05</step>
       </binding>
     </action>
@@ -530,7 +530,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/flight/rudder-trim</property>
+        <property>controls/flight/rudder-trim</property>
         <step type="double">0.05</step>
       </binding>
     </action>
@@ -581,7 +581,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/flight/aileron-trim</property>
+        <property>controls/flight/aileron-trim</property>
         <step type="double">-0.05</step>
       </binding>
     </action>
@@ -596,7 +596,7 @@
      <repeatable>false</repeatable>
      <binding>
        <command>property-adjust</command>
-       <property>/controls/flight/aileron-trim</property>
+       <property>controls/flight/aileron-trim</property>
        <step type="double">0.05</step>
      </binding>
     </action>
@@ -641,7 +641,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/gear/brake-parking[0]</property>
+        <property>controls/gear/brake-parking[0]</property>
       </binding>
     </action>
   </animation>

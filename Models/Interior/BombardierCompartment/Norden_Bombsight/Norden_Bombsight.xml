@@ -23,7 +23,7 @@
    <object-name>NordenMount</object-name>
    <object-name>Norden_Knobs_1</object-name>
    <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.005 </red>
       <green> 0.005 </green>
       <blue>  0.005 </blue>
@@ -35,7 +35,7 @@
    <object-name>Norden_Knobs_0</object-name>
    <object-name>NordenLens</object-name>
    <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.002 </red>
       <green> 0.002 </green>
       <blue>  0.002 </blue>

@@ -28,7 +28,7 @@
     <object-name>face</object-name>
     <object-name>needle</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -38,7 +38,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ball</object-name>
-    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <min>-1.1</min>
     <max>1.1</max>
     <interpolation>
@@ -60,7 +60,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
+    <property>instrumentation/turn-indicator/indicated-turn-rate</property>
     <factor>2.0</factor>
     <center>
       <x-m>  0.006 </x-m>

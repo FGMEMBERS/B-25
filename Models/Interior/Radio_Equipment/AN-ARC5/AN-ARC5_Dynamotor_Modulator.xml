@@ -16,7 +16,7 @@
     <object-name>ARC5-Dynamotor</object-name>
     <object-name>ARC5-Modulator</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.005 </red>
       <green> 0.005 </green>
       <blue>  0.005 </blue>

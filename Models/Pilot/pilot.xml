@@ -78,7 +78,7 @@
   <animation>
     <type>rotate</type>
     <object-name>piedG</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>controls/flight/rudder</property>
     <factor> 25 </factor>
     <center>
       <x-m> -0.451 </x-m>
@@ -95,7 +95,7 @@
   <animation>
     <type>rotate</type>
     <object-name>piedD</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>controls/flight/rudder</property>
     <factor> -25 </factor>
     <center>
       <x-m> -0.451 </x-m>

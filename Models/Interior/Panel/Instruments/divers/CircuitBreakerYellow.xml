@@ -16,7 +16,7 @@
       <red>   0.01 </red>
       <green> 0.01 </green>
       <blue>  0.01 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -27,7 +27,7 @@
       <red>   0.005 </red>
       <green> 0.005 </green>
       <blue>  0.005 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 

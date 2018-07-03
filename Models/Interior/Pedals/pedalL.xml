@@ -15,7 +15,7 @@
   <animation>
     <type>rotate</type>
     <object-name>pedal</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>controls/flight/rudder</property>
     <factor> 15 </factor>
     <center>
       <x-m>  0.0359 </x-m>

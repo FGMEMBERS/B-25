@@ -37,7 +37,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Needle</object-name>
-    <property>/orientation/heading-magnetic-deg</property>
+    <property>orientation/heading-magnetic-deg</property>
     <axis>
      <x> -1 </x>
      <y>  0 </y>
@@ -48,7 +48,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Bug</object-name>
-    <property>/instrumentation/magnetic-compass/bug-heading-deg</property>
+    <property>instrumentation/magnetic-compass/bug-heading-deg</property>
     <axis>
       <x> -1 </x>
       <y>  0 </y>

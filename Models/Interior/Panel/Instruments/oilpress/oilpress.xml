@@ -36,7 +36,7 @@
   <animation>
     <type>rotate</type>
     <object-name>OilPres.Needle1</object-name>
-    <property>/engines/engine[0]/est-oilpress</property>
+    <property>engines/engine[0]/est-oilpress</property>
     <interpolation>
       <entry><ind>  0 </ind><dep>   0 </dep></entry>
       <entry><ind> 35 </ind><dep> 315 </dep></entry>
@@ -51,7 +51,7 @@
   <animation>
     <type>rotate</type>
     <object-name>OilPres.Needle2</object-name>
-    <property>/engines/engine[1]/est-oilpress</property>
+    <property>engines/engine[1]/est-oilpress</property>
     <interpolation>
       <entry><ind>  0 </ind><dep>   0 </dep></entry>
       <entry><ind> 35 </ind><dep> 315 </dep></entry>

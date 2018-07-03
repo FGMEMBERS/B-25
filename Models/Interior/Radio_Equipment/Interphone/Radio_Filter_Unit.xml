@@ -17,7 +17,7 @@
     <object-name>fond</object-name>
     <object-name>bouton2</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.002 </red>
       <green> 0.002 </green>
       <blue>  0.002 </blue>

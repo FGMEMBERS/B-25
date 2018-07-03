@@ -88,11 +88,11 @@
     <condition>
       <and>
         <equals>
-          <property>/environment/atmosphere/altitude-half-to-sun</property>
+          <property>environment/atmosphere/altitude-half-to-sun</property>
           <value>0</value>
         </equals>
         <equals>
-          <property>/systems/electrical/outputs/instrument-lights</property>
+          <property>systems/electrical/outputs/instrument-lights</property>
           <value>0</value>
         </equals>
       </and>

@@ -70,8 +70,6 @@
   
   <controls include="Systems/controls.xml"/>
 
-  <engines include="Systems/engines.xml"/>
-
   <nasal>
     <doors>
       <file>Aircraft/B-25/Nasal/doors.nas</file>

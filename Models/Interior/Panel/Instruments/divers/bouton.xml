@@ -22,7 +22,7 @@
     <type>material</type>
     <object-name>bouton</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.01 </red>
       <green> 0.01 </green>
       <blue>  0.01 </blue>
