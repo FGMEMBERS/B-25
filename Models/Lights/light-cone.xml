@@ -3,7 +3,7 @@
 <PropertyList>
   
   <path>light-cone.ac</path>
-  
+  <nopreview/>
   <animation>
     <object-name>Cone</object-name>
     <object-name>Cone-texture</object-name>

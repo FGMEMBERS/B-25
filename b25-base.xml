@@ -84,7 +84,6 @@
       <file>Aircraft/B-25/Nasal/hydraulic.nas</file>
       <file>Aircraft/B-25/Nasal/clipboard.nas</file>
       <file>Aircraft/B-25/Nasal/convert.nas</file>
-      <file>Aircraft/B-25/Nasal/blower.nas</file>
       <file>Aircraft/Generic/limits.nas</file>
     </b25>
   </nasal>

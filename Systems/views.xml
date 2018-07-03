@@ -16,7 +16,7 @@
       <y-offset-m archive="y">  0.750 </y-offset-m>	<!-- Up    -->
       <z-offset-m archive="y"> -4.700 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg> -10 </pitch-offset-deg>
-      <default-field-of-view-deg> 72 </default-field-of-view-deg>
+      <default-field-of-view-deg>72</default-field-of-view-deg>
     </config>
   </view>
 
@@ -33,7 +33,7 @@
       <z-offset-m archive="y"> -2.400 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg> -15 </pitch-offset-deg>
       <heading-offset-deg type="double"> -35 </heading-offset-deg>
-      <default-field-of-view-deg> 65 </default-field-of-view-deg>
+      <default-field-of-view-deg>65</default-field-of-view-deg>
     </config>
   </view>
 
@@ -68,7 +68,7 @@
       <y-offset-m archive="y">  0.350 </y-offset-m>	<!-- Up    -->
       <z-offset-m archive="y"> -6.000 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg> -10 </pitch-offset-deg>
-      <default-field-of-view-deg> 65 </default-field-of-view-deg>
+      <default-field-of-view-deg>65</default-field-of-view-deg>
     </config>
   </view>
 
@@ -84,7 +84,7 @@
       <y-offset-m archive="y"> 5.032 </y-offset-m> <!--Up-->
       <z-offset-m archive="y"> 8.535 </z-offset-m> <!--Back-->
       <pitch-offset-deg> -5 </pitch-offset-deg>
-      <default-field-of-view-deg type="double"> 30 </default-field-of-view-deg>
+      <default-field-of-view-deg type="double">30</default-field-of-view-deg>
     </config>
   </view>
 
@@ -95,7 +95,7 @@
       <y-offset-m archive="y">  0.825 </y-offset-m>	<!-- Up    -->
       <z-offset-m archive="y"> -4.700 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg> -10 </pitch-offset-deg>
-      <default-field-of-view-deg> 72 </default-field-of-view-deg>
+      <default-field-of-view-deg>72</default-field-of-view-deg>
     </config>
   </view>
 

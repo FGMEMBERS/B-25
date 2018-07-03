@@ -895,7 +895,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/sim/model/lights/landing/state</property>
+        <property>sim/model/lights/landing/state</property>
       </binding>
     </action>
   </animation>
@@ -903,7 +903,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LeftLandingLight</object-name>
-        <property>/sim/model/lights/landing/state</property>
+        <property>sim/model/lights/landing/state</property>
     <factor> 40 </factor>
     <center>
       <x-m> -0.126 </x-m>
@@ -912,7 +912,7 @@
     </center>
     <axis>
       <x>  0 </x>
-      <y>  1 </y>
+      <y>  -1 </y>
       <z>  0 </z>
     </axis>
   </animation>
@@ -926,7 +926,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>property-toggle</command>
-        <property>/sim/model/lights/landing[1]/state</property>
+        <property>sim/model/lights/landing[1]/state</property>
       </binding>
     </action>
   </animation>
@@ -934,7 +934,7 @@
   <animation>
     <type>rotate</type>
     <object-name>RightLandingLight</object-name>
-    <property>/sim/model/lights/landing[1]/state</property>
+    <property>sim/model/lights/landing[1]/state</property>
     <factor> 40 </factor>
     <center>
       <x-m> -0.126 </x-m>
@@ -943,7 +943,7 @@
     </center>
     <axis>
       <x>  0 </x>
-      <y>  1 </y>
+      <y>  -1 </y>
       <z>  0 </z>
     </axis>
   </animation>
@@ -987,11 +987,11 @@
     <condition>
       <and>
         <equals>
-          <property>/environment/atmosphere/altitude-half-to-sun</property>
+          <property>environment/atmosphere/altitude-half-to-sun</property>
           <value>0</value>
         </equals>
         <equals>
-          <property>/systems/electrical/outputs/instrument-lights</property>
+          <property>systems/electrical/outputs/instrument-lights</property>
           <value>0</value>
         </equals>
       </and>
