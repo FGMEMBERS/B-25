@@ -8,7 +8,7 @@
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
     
     <flight-model>yasim</flight-model>
-    <aero>b25j-yasim</aero>
+    <aero>b25-yasim</aero>
     
     <variant-of>b25</variant-of>
     

@@ -271,9 +271,9 @@
        The above data appears to be for the Wright Twin Cyclone R-2600-13 used in B-25's 'C' and up.
 
        Propellers: Hamilton Standard Hydromatic, hub 23E50, blade 6359A or 6477, wt/mass: 446 lbs, 202 kg
-       moment:    540, calculated using mean of rod and disk methods:
-                  rod (mR^2)/3 * blades = 202 * 1.94^2 = 760
-                  disk (mR^2)/2 = 202 * 1.94^2/2 = 380
+       (i.e. 67.3 kg per blade)
+       moment:    calculated using mean of rod method:
+                  rod (mR^2)/3 * blades = 202/3 * 1.94^2 = 253.8
 
        Prop RPMs are based on the gearing ratio, which I believe is correct for YASim. Cruise RPM, alt, and 
        power are taken from a POH, cruise speed is really meant for fixed-pitch props; for governed props I 
@@ -287,8 +287,8 @@
 
   <!-- Engine left -->
   <propeller x="3.679" y="2.891" z="-0.106"
-             mass="1980"
-             moment="540"
+             mass="2491"
+             moment="253.8"
              radius="1.94"
              min-rpm="366"
              max-rpm="1463" 
@@ -296,7 +296,9 @@
              cruise-rpm="1350"
              cruise-power="1500"
              cruise-speed="200"
-             cruise-alt="6700">
+             cruise-alt="6700"
+             takeoff-power="1700"
+             takeoff-rpm="1463">
              <actionpt x="4.063" y="2.891" z="-0.106"/>
              <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
              <piston-engine eng-power="1700"
@@ -316,8 +318,8 @@
 
   <!-- Engine right-->
   <propeller x="3.679" y="-2.891" z="-0.106"
-             mass="1980"
-             moment="540"
+             mass="2491"
+             moment="253.8"
              radius="1.94"
              min-rpm="366"
              max-rpm="1463" 
@@ -325,7 +327,9 @@
              cruise-rpm="1350"
              cruise-power="1500"
              cruise-speed="200"
-             cruise-alt="6700">
+             cruise-alt="6700"
+             takeoff-power="1700"
+             takeoff-rpm="1463">
              <actionpt x="4.063" y="-2.891" z="-0.106"/>
              <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
              <piston-engine eng-power="1700"
@@ -365,11 +369,9 @@
         damp="1.0"
         sfric="0.8"
         dfric="0.7">
-    <control-input axis="/controls/gear/tailwheel-lock" control="CASTERING" src0="0" src1="1" dst0="1" dst1="0"/>
+        <control-input axis="/controls/gear/tailwheel-lock" control="CASTERING" src0="0" src1="1" dst0="1" dst1="0"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-      
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
-      
         <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
@@ -383,9 +385,7 @@
         <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-      
         <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
-      
         <control-speed control="EXTEND" transition-time="5"/>
   </gear>
 
@@ -399,12 +399,9 @@
         <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
-                
         <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
-        
         <control-speed control="EXTEND" transition-time="5"/>
   </gear>
-
 
   <!-- Buckaroo notes:
 
@@ -425,6 +422,6 @@
     CG range: 20-30% MAC, x= 1.877 to 1.297, 25% = 1.587
     Re-distribute as needed to place CG at roughly 25% MAC.
   -->
-  <ballast x="7.0" y="0" z="-0.5" mass="4000"/>
+  <ballast x="7.0" y="0" z="-0.5" mass="3600"/>
 
 </airplane>

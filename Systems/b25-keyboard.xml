@@ -21,26 +21,26 @@
         <script>doors.passenger.toggle();</script>
       </binding>
     </key>
-    
-    <key n="102">
-      <name>f</name>
-      <desc>shift Blower down</desc>
-      <binding> 
-        <command>nasal</command>
-        <script>b25.shift_blower_dn()</script>
-      </binding>
+
+    <key n="115">
+      <name>s</name>
+      <mod-alt>
+        <desc>Toggle superchargers</desc>
+        <binding>
+          <command>property-cycle</command>
+          <property>controls/engines/engine[0]/boost</property>
+          <value>0.7</value>
+          <value>1.0</value>
+        </binding>
+        <binding>
+          <command>property-cycle</command>
+          <property>controls/engines/engine[1]/boost</property>
+          <value>0.7</value>
+          <value>1.0</value>
+        </binding>
+      </mod-alt>
     </key>
-    
-    <key n="70">
-      <name>F</name>
-      <desc>shift Blower up</desc>
-      <binding>
-        <command>nasal</command>
-        <script>b25.shift_blower_up()</script>
-      </binding>
-    </key>
-    <!-- boost levels: neutral 0.3, low Blower 0.75, high Blower 1.0 -->
-    
+
   </keyboard>
   
 </PropertyList>

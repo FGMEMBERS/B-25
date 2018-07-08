@@ -48,7 +48,6 @@ var Engine = {
         m.fuel_out =      m.eng.initNode("out-of-fuel",0,"BOOL");
         m.fuel_switch =   props.globals.initNode("controls/fuel/switch-position",-1,"INT");
         m.hpump =         props.globals.initNode("systems/hydraulics/pump-psi["~eng_num~"]",0,"DOUBLE");
-        m.blower =        m.control.initNode ("boost", 1, "DOUBLE", 0.3);
   return m;
     },
 #### update ####
@@ -96,20 +95,6 @@ var Engine = {
         ############# MIXTURE #############
         ###################################
         me.mixture.setValue(mx);
-    },
-
-    shift_blower_up : func () {
-       interpolate (me.blower, 1.0, 3);
-    },
-
-    shift_blower_down : func () {
-       interpolate (me.blower, 0.7, 3);
-    },
-
-    toggle_blower : func () {
-       print (me.eng.getPath () ~ ": blower position=" ~ me.blower.getValue());
-       if (me.blower.getValue () < 0.8) { me.shift_blower_up (); }
-       else { me.shift_blower_down (); }
     }
 };
 
@@ -133,14 +118,4 @@ var update_system = func{
       setprop("/controls/engines/engine[1]/starter",0);
       setprop("/controls/engines/engine[1]/cranking",0);
   }
-}
-
-var shift_blower_up = func {
-  EngineLeft.shift_blower_up ();
-  EngineRight.shift_blower_up ();
-}
-
-var shift_blower_dn = func {
-  EngineLeft.shift_blower_down ();
-  EngineRight.shift_blower_down ();
 }

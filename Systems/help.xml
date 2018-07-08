@@ -17,8 +17,8 @@
     <desc>close/open Cowlflaps</desc>
   </key>
   <key>
-    <name>F/f</name>
-    <desc>shift Blower</desc>
+    <name>Alt+S</name>
+    <desc>Toggle superchargers (blowers) between low speed and high speed</desc>
   </key>
   <text>
     TAXI: Use differential engine and braking effects to steer on the ground. Keys:  , (Left Brake) and . (Right Brake). The B-25 nose wheel is not steerable.

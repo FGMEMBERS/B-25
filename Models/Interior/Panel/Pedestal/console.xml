@@ -1027,8 +1027,10 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
-        <command>nasal</command>
-        <script>b25.EngineLeft.toggle_blower();</script>
+        <command>property-cycle</command>
+        <property>controls/engines/engine[0]/boost</property>
+        <value>0.7</value>
+        <value>1.0</value>
       </binding>
     </action>
   </animation>
@@ -1062,8 +1064,10 @@
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
-        <command>nasal</command>
-        <script>b25.EngineRight.toggle_blower();</script>
+        <command>property-cycle</command>
+        <property>controls/engines/engine[1]/boost</property>
+        <value>0.7</value>
+        <value>1.0</value>
       </binding>
     </action>
   </animation>
