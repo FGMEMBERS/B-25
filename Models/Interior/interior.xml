@@ -87,7 +87,7 @@
   <!-- B 25 J -->
   <animation>
     <type>select</type>
-    <object-name>IntSideGunsBase</object-name>
+    <object-name>Dorsal_Turret_Interior</object-name>
     <object-name>inttour1</object-name>
     <object-name>inttour2</object-name>
     <object-name>inttour3</object-name>
@@ -98,6 +98,22 @@
         <value>b25j</value>
       </equals>
     </condition>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Dorsal_Turret_Interior</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <center>
+      <x-m> -2.470 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.350 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
   </animation>
 
   <animation>
