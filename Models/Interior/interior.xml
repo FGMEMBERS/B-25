@@ -78,8 +78,8 @@
     <object-name>intvitresoustour</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25a</value>
+        <property>sim/model/variant</property>
+        <value>0</value>
       </equals>
     </condition>
   </animation>
@@ -94,8 +94,8 @@
     <object-name>intvitreJ</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
   </animation>

@@ -38,8 +38,8 @@
     <path>Aircraft/B-25/Models/Interior/Guns/SideGuns.xml</path>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
   </model>
@@ -49,8 +49,8 @@
     <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
     <offsets>
@@ -65,8 +65,8 @@
     <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
     <offsets>
@@ -82,8 +82,8 @@
     <object-name>Dorsal_Turret</object-name>
     <condition>
       <equals>
-	<property>sim/multiplay/generic/string[1]</property>
-	<value>b25j</value>
+	<property>sim/model/variant</property>
+	<value>1</value>
       </equals>
     </condition>
   </animation>

@@ -38,12 +38,6 @@
       <splash-texture>Aircraft/B-25/Splashs/b25j-splash.png</splash-texture>
     </startup>
     
-    <multiplay>
-      <generic>
-        <string n="1" type="string">b25j</string>
-      </generic>
-    </multiplay>
-    
     <menubar include="Dialogs/b25j-menu.xml"/>
     
     <view n="106">
@@ -79,6 +73,7 @@
     </view>
 
     <model>
+      <variant type="int">1</variant>
       <turret>
 	<pitch type="double">0</pitch>
 	<heading type="double">0</heading>

@@ -35,13 +35,11 @@
     <startup>
       <splash-texture>Aircraft/B-25/Splashs/b25-splash.png</splash-texture>
     </startup>
-    
-    <multiplay>
-      <generic>
-        <string n="1" type="string">b25a</string>
-      </generic>
-    </multiplay>
-    
+
+    <model>
+      <variant type="int">0</variant>
+    </model>
+
     <menubar include="Dialogs/b25-menu.xml"/>
     
   </sim>
