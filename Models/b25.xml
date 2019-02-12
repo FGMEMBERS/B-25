@@ -2,6 +2,24 @@
 
 <PropertyList>
 
+  <nasal>
+    <load><![CDATA[
+    var r = cmdarg();
+    print ("B-25 loading for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
+    var livery_update = aircraft.livery_update.new("Aircraft/B-25/Models/Liveries", 10);
+    if (r.getNode ("sim/model/variant").getValue () == 1) {
+      r.getNode ("sim/model/turret[0]/heading", 1).alias (r.getNode ("sim/multiplay/generic/float[14]"));
+      r.getNode ("sim/model/turret[0]/pitch"  , 1).alias (r.getNode ("sim/multiplay/generic/float[15]"));
+      print ("B-25J loaded for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
+    }
+    ]]></load>
+    <unload><![CDATA[
+    r = cmdarg();
+    print ("B-25 unloading for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
+    livery_update.stop();
+    ]]></unload>
+  </nasal>
+
   <model>
     <path>Aircraft/B-25/Models/main_Default.xml</path>
     <condition>

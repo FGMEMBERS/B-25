@@ -5,7 +5,7 @@
   <sim include="Systems/views.xml">
 
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    <aircraft-version>0.1</aircraft-version>
+    <aircraft-version>2.0</aircraft-version>
     <status>Alpha</status>
    
     <fuel-fraction>0.8</fuel-fraction>
@@ -42,9 +42,9 @@
         <float n="5"  alias="/engines/engine[0]/cranking"/>
         <float n="6"  alias="/engines/engine[1]/rpm"/>
         <float n="7"  alias="/engines/engine[1]/cranking"/>
-        <float n="8"  alias="/gear/gear[0]/wow/"/>
-        <float n="9"  alias="/gear/gear[1]/wow/"/>
-        <float n="10" alias="/gear/gear[2]/wow/"/>
+        <float n="8"  alias="/gear/gear[0]/wow"/>
+        <float n="9"  alias="/gear/gear[1]/wow"/>
+        <float n="10" alias="/gear/gear[2]/wow"/>
         <float n="11" alias="/gear/gear[0]/rollspeed-ms"/>
         <float n="12" alias="/gear/gear[1]/rollspeed-ms"/>
         <float n="13" alias="/gear/gear[2]/rollspeed-ms"/>

@@ -79,6 +79,13 @@
 	<heading type="double">0</heading>
       </turret>
     </model>
+
+    <multiplay n="0">
+      <generic>
+        <float n="14" alias="/sim/model/turret[0]/heading"/>
+        <float n="15" alias="/sim/model/turret[0]/pitch"/>
+      </generic>
+    </multiplay>
   </sim>
 
   <nasal>
