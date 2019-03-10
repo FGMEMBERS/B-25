@@ -5,7 +5,7 @@
   <sim include="Systems/views.xml">
 
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    <aircraft-version>2.0</aircraft-version>
+    <aircraft-version>2.0.1</aircraft-version>
     <status>Alpha</status>
    
     <fuel-fraction>0.8</fuel-fraction>
