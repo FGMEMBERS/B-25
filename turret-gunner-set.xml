@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+
+B-25J: turret gunner model
+
+Copyright (c) 2019 Ludovic Brenta <ludovic@ludovic-brenta.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+************************************************************************
+-->
+<PropertyList include="b25-base.xml">
+  <nasal>
+    <turrets>
+      <file>Aircraft/B-25/Nasal/turrets.nas</file>
+    </turrets>
+    <dual_control_tools>
+      <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
+    </dual_control_tools>
+    <aircraft_dual_control>
+      <file>Aircraft/B-25/Nasal/b25-dual-control.nas</file>
+    </aircraft_dual_control>
+    <dual_control>
+      <file>Aircraft/Generic/DualControl/copilot-dual-control.nas</file>
+    </dual_control>
+  </nasal>
+  <sim>
+    <description>B-25 turret gunner</description>
+    <long-description>
+      Control the turret of a B-25J flown by another pilot (the
+      Captain) over the multiplayer network.  Start in a location near
+      a B-25J then go to the B-25 menu and "Select Captain".  The
+      captain must similarly select you as the turret gunner.
+    </long-description>
+    <flight-model>null</flight-model>
+    <variant-of>b25</variant-of>
+    <menubar>
+      <default>
+        <menu n="10">
+          <label>B-25J Mitchell</label>
+          <enabled type="bool">true</enabled>
+          <item>
+            <label>Select Captain</label>
+            <binding>
+              <command>nasal</command>
+              <script>
+                dual_control_tools.copilot_dialog.show(aircraft_dual_control.pilot_type);
+              </script>
+            </binding>
+          </item>
+        </menu>
+      </default>
+    </menubar>
+    <model>
+      <path>Aircraft/B-25/Models/turret-gunner.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <turret>
+	<heading type="double">0</heading>
+	<pitch type="double">0</pitch>
+      </turret>
+    </model>
+    <multiplay>
+      <generic>
+        <float n="14" alias="/sim/model/turret/heading"/>
+        <float n="15" alias="/sim/model/turret/pitch"/>
+      </generic>
+    </multiplay>
+    <remote>
+      <pilot-callsign type="string"/> <!-- work around a bug in dual-control-tools.nas, which should create this node as necessary -->
+    </remote>
+    <view n="0">
+      <name>Turret_Gunner_View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+	<from-model type="bool">true</from-model>
+	<from-model-idx type="int">0</from-model-idx>
+	<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+	<x-offset-m archive="y">  0.000 </x-offset-m>	<!-- Right -->
+	<y-offset-m archive="y">  1.350 </y-offset-m>	<!-- Up    -->
+	<z-offset-m archive="y"> -2.400 </z-offset-m>	<!-- Back  -->
+	<pitch-offset-deg> -15 </pitch-offset-deg>
+	<default-field-of-view-deg>65</default-field-of-view-deg>
+        <limits>
+          <enabled type="bool">false</enabled>
+        </limits>
+      </config>
+    </view>
+  </sim>
+</PropertyList>

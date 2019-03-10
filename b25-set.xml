@@ -5,33 +5,6 @@
   <sim>
 
     <description>B-25 Mitchell (YASim)</description>
-    <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    
-    <flight-model>yasim</flight-model>
-    <aero>b25-yasim</aero>
-    
-    <rating>
-      <FDM type="int">     4 </FDM>
-      <systems type="int"> 4 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   4 </model>
-    </rating>
-
-    <tags>
-      <tag>bomber</tag>
-      <tag>1940s</tag>
-      <tag>1950s</tag>
-      <tag>1960s</tag>
-      <tag>1970s</tag>
-      <tag>ww2</tag>
-      <tag>ifr</tag>
-      <tag>retractable-gear</tag>
-      <tag>piston</tag>
-      <tag>propeller</tag>
-      <tag>radial</tag>
-      <tag>twin-engine</tag>
-    </tags>
-
     <startup>
       <splash-texture>Aircraft/B-25/Splashs/b25-splash.png</splash-texture>
     </startup>
@@ -41,7 +14,7 @@
     </model>
 
     <menubar include="Dialogs/b25-menu.xml"/>
-    
+
   </sim>
 
 </PropertyList>

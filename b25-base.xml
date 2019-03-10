@@ -5,8 +5,32 @@
   <sim include="Systems/views.xml">
 
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    <aircraft-version>2.0.1</aircraft-version>
-    <status>Alpha</status>
+    <aircraft-version>2.1</aircraft-version>
+    <status>production</status>
+    <rating>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+    <tags>
+      <tag>bomber</tag>
+      <tag>1940s</tag>
+      <tag>1950s</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+      <tag>ww2</tag>
+      <tag>ifr</tag>
+      <tag>retractable-gear</tag>
+      <tag>piston</tag>
+      <tag>propeller</tag>
+      <tag>radial</tag>
+      <tag>twin-engine</tag>
+    </tags>
+
+    <flight-model>yasim</flight-model>
+    <aero>b25-yasim</aero>
    
     <fuel-fraction>0.8</fuel-fraction>
   
@@ -22,7 +46,6 @@
     </sound>
 
     <multiplay>
-      <chat_display>1</chat_display>
       <generic> 
         <int   n="0"  type="int">  0 </int>                                         <!-- 0 immat -->
         <int   n="1"  type="int">  0 </int>                                         <!-- 1 immat -->
