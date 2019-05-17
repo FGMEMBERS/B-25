@@ -14,15 +14,10 @@
     <condition>
       <and>
         <greater-than>
-          <!-- engines/engine[1]/rpm -->
-          <property>sim/multiplay/generic/float[6]</property>
+          <property>engines/engine[1]/rpm</property>
           <value>30</value>
         </greater-than>
-        <equals>
-          <!-- engines/engine[1]/cranking -->
-          <property>sim/multiplay/generic/float[7]</property>
-          <value>true</value>
-        </equals>
+        <property>engines/engine[1]/cranking</property>
       </and>
     </condition>
 

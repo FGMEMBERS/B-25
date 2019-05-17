@@ -5,7 +5,7 @@
   <sim include="Systems/views.xml">
 
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    <aircraft-version>2.1</aircraft-version>
+    <aircraft-version>2.1.1</aircraft-version>
     <status>production</status>
     <rating>
       <FDM type="int">     4 </FDM>
@@ -46,7 +46,13 @@
     </sound>
 
     <multiplay>
-      <generic> 
+      <generic>
+        <bool n="0" type="bool" alias="/engines/engine[0]/cranking"/>
+        <bool n="1" type="bool" alias="/engines/engine[1]/cranking"/>
+        <bool n="2" type="bool" alias="/gear/gear[0]/wow"/>
+        <bool n="3" type="bool" alias="/gear/gear[1]/wow"/>
+        <bool n="4" type="bool" alias="/gear/gear[2]/wow"/>
+        
         <int   n="0"  type="int">  0 </int>                                         <!-- 0 immat -->
         <int   n="1"  type="int">  0 </int>                                         <!-- 1 immat -->
         <int   n="2"  type="int">  0 </int>                                         <!-- 2 immat -->
@@ -61,16 +67,11 @@
         <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
         <float n="2"  alias="/position/gear-agl-m"> 0 </float>                       <!-- altitude for MP shadow -->
         <float n="3"  alias="/position/altitude-ft"> 0 </float>                      <!-- altitude for Smoke/Trail -->
-        <float n="4"  alias="/engines/engine[0]/rpm"/>
-        <float n="5"  alias="/engines/engine[0]/cranking"/>
-        <float n="6"  alias="/engines/engine[1]/rpm"/>
-        <float n="7"  alias="/engines/engine[1]/cranking"/>
-        <float n="8"  alias="/gear/gear[0]/wow"/>
-        <float n="9"  alias="/gear/gear[1]/wow"/>
-        <float n="10" alias="/gear/gear[2]/wow"/>
+        <float n="4" alias="/gear/gear[0]/caster-angle-deg"/>
         <float n="11" alias="/gear/gear[0]/rollspeed-ms"/>
         <float n="12" alias="/gear/gear[1]/rollspeed-ms"/>
         <float n="13" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- float[14,15] reserved for the turret in the J variant -->
         <!-- For Bombable -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>
         <string n="9" type="string" />

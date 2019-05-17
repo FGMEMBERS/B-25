@@ -7,9 +7,18 @@
     var r = cmdarg();
     print ("B-25 loading for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
     var livery_update = aircraft.livery_update.new("Aircraft/B-25/Models/Liveries", 10);
+    r.initNode ("engines/engine[0]/cranking", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[0]"));
+    r.initNode ("engines/engine[1]/cranking", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[1]"));
+    r.initNode ("gear/gear[0]/wow", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[2]"));
+    r.initNode ("gear/gear[1]/wow", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[3]"));
+    r.initNode ("gear/gear[2]/wow", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[4]"));
+    r.initNode ("gear/gear[0]/caster-angle-deg", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[4]"));
+    r.initNode ("gear/gear[0]/rollspeed-ms", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[11]"));
+    r.initNode ("gear/gear[1]/rollspeed-ms", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[12]"));
+    r.initNode ("gear/gear[2]/rollspeed-ms", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[13]"));
     if (r.getNode ("sim/model/variant").getValue () == 1) {
-      r.getNode ("sim/model/turret[0]/heading", 1).alias (r.getNode ("sim/multiplay/generic/float[14]"));
-      r.getNode ("sim/model/turret[0]/pitch"  , 1).alias (r.getNode ("sim/multiplay/generic/float[15]"));
+      r.initNode ("sim/model/turret[0]/heading", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[14]"));
+      r.initNode ("sim/model/turret[0]/pitch"  , 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[15]"));
       print ("B-25J loaded for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
     }
     ]]></load>
