@@ -277,7 +277,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.crew.toggle();</script>
+        <script>doors.left_window.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -295,7 +295,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntLeftGlass</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/model/door-positions/window[0]/position-norm</property>
     <factor> 0.40 </factor>
     <axis>
       <x> 1 </x>
@@ -315,7 +315,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.passenger.toggle();</script>
+        <script>doors.right_window.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -333,7 +333,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntRightGlass</object-name>
-    <property>sim/model/door-positions/passenger/position-norm</property>
+    <property>sim/model/door-positions/window[1]/position-norm</property>
     <factor> 0.40 </factor>
     <axis>
       <x> 1 </x>

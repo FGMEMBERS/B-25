@@ -6,22 +6,13 @@
     
     <key n="100">
       <name>d</name>
-      <desc>Canopy</desc>
+      <desc>Toggle bomb bay doors</desc>
       <binding>
         <command>nasal</command>
-        <script>doors.crew.toggle();</script>
+        <script>doors.bombs.toggle();</script>
       </binding>
     </key>
     
-    <key n="68">
-      <name>D</name>
-      <desc>Passanger door</desc>
-      <binding>
-        <command>nasal</command>
-        <script>doors.passenger.toggle();</script>
-      </binding>
-    </key>
-
     <key n="115">
       <name>s</name>
       <mod-alt>
@@ -41,6 +32,14 @@
       </mod-alt>
     </key>
 
+    <key n="68">
+      <name>D</name>
+      <desc>Toggle crew door</desc>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </key>
   </keyboard>
   
 </PropertyList>

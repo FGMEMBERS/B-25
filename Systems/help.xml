@@ -6,11 +6,11 @@
   <line>______________________________________________</line>
   <key>
     <name>d</name>
-    <desc>Open/Close Left Window</desc>
+    <desc>Open/Close Bomb Bay Doors</desc>
   </key>
   <key>
     <name>D</name>
-    <desc>Open/Close Right Window</desc>
+    <desc>Open/Close Crew Door</desc>
   </key>
   <key>
     <name>C/c</name>
