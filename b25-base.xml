@@ -5,7 +5,7 @@
   <sim include="Systems/views.xml">
 
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    <aircraft-version>2.2</aircraft-version>
+    <aircraft-version>2.2.1</aircraft-version>
     <status>production</status>
     <rating>
       <FDM type="int">     4 </FDM>
