@@ -14,7 +14,7 @@
     <object-name>fond</object-name>
     <object-name>switch</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.004 </red>
       <green> 0.004 </green>
       <blue>  0.004 </blue>

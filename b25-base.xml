@@ -5,8 +5,32 @@
   <sim include="Systems/views.xml">
 
     <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    <aircraft-version>0.1</aircraft-version>
-    <status>Alpha</status>
+    <aircraft-version>2.2.1</aircraft-version>
+    <status>production</status>
+    <rating>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+    <tags>
+      <tag>bomber</tag>
+      <tag>1940s</tag>
+      <tag>1950s</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+      <tag>ww2</tag>
+      <tag>ifr</tag>
+      <tag>retractable-gear</tag>
+      <tag>piston</tag>
+      <tag>propeller</tag>
+      <tag>radial</tag>
+      <tag>twin-engine</tag>
+    </tags>
+
+    <flight-model>yasim</flight-model>
+    <aero>b25-yasim</aero>
    
     <fuel-fraction>0.8</fuel-fraction>
   
@@ -22,8 +46,13 @@
     </sound>
 
     <multiplay>
-      <chat_display>1</chat_display>
-      <generic> 
+      <generic>
+        <bool n="0" type="bool" alias="/engines/engine[0]/cranking"/>
+        <bool n="1" type="bool" alias="/engines/engine[1]/cranking"/>
+        <bool n="2" type="bool" alias="/gear/gear[0]/wow"/>
+        <bool n="3" type="bool" alias="/gear/gear[1]/wow"/>
+        <bool n="4" type="bool" alias="/gear/gear[2]/wow"/>
+        
         <int   n="0"  type="int">  0 </int>                                         <!-- 0 immat -->
         <int   n="1"  type="int">  0 </int>                                         <!-- 1 immat -->
         <int   n="2"  type="int">  0 </int>                                         <!-- 2 immat -->
@@ -34,20 +63,17 @@
         <int   n="7"  type="int">  0 </int>                                         <!-- 7  -->
         <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!-- 8 nav-lights -->
         <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>         <!-- 9 strobe-lights -->
-        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
-        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="0"  alias="/sim/model/door-positions/window[0]/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/window[1]/position-norm"/>
         <float n="2"  alias="/position/gear-agl-m"> 0 </float>                       <!-- altitude for MP shadow -->
         <float n="3"  alias="/position/altitude-ft"> 0 </float>                      <!-- altitude for Smoke/Trail -->
-        <float n="4"  alias="/engines/engine[0]/rpm"/>
-        <float n="5"  alias="/engines/engine[0]/cranking"/>
-        <float n="6"  alias="/engines/engine[1]/rpm"/>
-        <float n="7"  alias="/engines/engine[1]/cranking"/>
-        <float n="8"  alias="/gear/gear[0]/wow/"/>
-        <float n="9"  alias="/gear/gear[1]/wow/"/>
-        <float n="10" alias="/gear/gear[2]/wow/"/>
+        <float n="4" alias="/gear/gear[0]/caster-angle-deg"/>
+	<float n="5" alias="/sim/model/door-positions/bombs/position-norm"/>
+	<float n="6" alias="/sim/model/door-positions/crew/position-norm"/>
         <float n="11" alias="/gear/gear[0]/rollspeed-ms"/>
         <float n="12" alias="/gear/gear[1]/rollspeed-ms"/>
         <float n="13" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- float[14,15] reserved for the turret in the J variant -->
         <!-- For Bombable -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>
         <string n="9" type="string" />
@@ -70,8 +96,6 @@
   
   <controls include="Systems/controls.xml"/>
 
-  <engines include="Systems/engines.xml"/>
-
   <nasal>
     <doors>
       <file>Aircraft/B-25/Nasal/doors.nas</file>
@@ -84,7 +108,6 @@
       <file>Aircraft/B-25/Nasal/hydraulic.nas</file>
       <file>Aircraft/B-25/Nasal/clipboard.nas</file>
       <file>Aircraft/B-25/Nasal/convert.nas</file>
-      <file>Aircraft/B-25/Nasal/blower.nas</file>
       <file>Aircraft/Generic/limits.nas</file>
     </b25>
   </nasal>

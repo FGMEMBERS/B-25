@@ -76,7 +76,7 @@
     <dme-volume>instrumentation/dme/volume-norm</dme-volume>
     <dme-test>instrumentation/dme/test-btn</dme-test>
     <dimming>instrumentation/comm[0]/dimming-norm</dimming>
-    <nav-electrical>/systems/electrical/outputs/nav[0]</nav-electrical>
+    <nav-electrical>systems/electrical/outputs/nav[0]</nav-electrical>
   </params>
   
   <animation>

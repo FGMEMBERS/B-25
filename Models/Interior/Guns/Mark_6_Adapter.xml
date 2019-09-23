@@ -16,7 +16,7 @@
     <object-name>Mark_6_Adapter</object-name>
     <object-name>Gunsight</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.005 </red>
       <green> 0.005 </green>
       <blue>  0.005 </blue>

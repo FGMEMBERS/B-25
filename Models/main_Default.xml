@@ -1,35 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <PropertyList>
   
   <path>b25.ac</path>
   
-  <nasal>
-    <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/B-25/Models/Liveries", 10);
-      
-      var self = cmdarg();
-      
-      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
-      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
-      
-      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
-      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
-      
-      crew_door.alias(float_0);
-      passenger_door.alias(float_1);
-    </load>
-    
-    <unload>
-      livery_update.stop();
-      crew_door.unalias();
-      passenger_door.unalias();
-    </unload>
-  </nasal>
-  
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
+    <object-name>Crewdoor</object-name>
+    <object-name>Bombsdoorleft</object-name>
+    <object-name>Bombsdoorright</object-name>
     <object-name>ailes</object-name>
     <object-name>ailes2</object-name>
     <object-name>derives</object-name>
@@ -81,6 +61,7 @@
     
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
+    <object-name>vitreJ</object-name>
     <object-name>vitreL</object-name>
     <object-name>vitreR</object-name>
     <object-name>propblurG</object-name>
@@ -96,6 +77,9 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
+    <object-name>Crewdoor</object-name>
+    <object-name>Bombsdoorleft</object-name>
+    <object-name>Bombsdoorright</object-name>
     <object-name>ailes</object-name>
     <object-name>ailes2</object-name>
     <object-name>derives</object-name>
@@ -160,6 +144,9 @@
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
+    <object-name>Crewdoor</object-name>
+    <object-name>Bombsdoorleft</object-name>
+    <object-name>Bombsdoorright</object-name>
     <object-name>antenne</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -230,7 +217,7 @@
     <path>Aircraft/B-25/Models/Interior/interior.xml</path>
   </model>
   
-  <!-- Raind Drops Effect -->
+  <!-- Rain Drops Effect -->
   <model>
     <path>Aircraft/B-25/Models/Effects/RainDrops/rainglass.xml</path>
     <condition>
@@ -917,8 +904,8 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainAvantComlplet</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> -40 </factor>
+    <property>gear/gear[0]/caster-angle-deg</property>
+    <factor>-1</factor>
     <center>
       <x-m> -5.929317 </x-m>
       <y-m>  0.000293 </y-m>
@@ -935,7 +922,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>gear/gear[0]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -1.128 </x-m>
@@ -952,7 +939,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[2]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -1.128 </x-m>
@@ -969,7 +956,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>gear/gear[2]/rollspeed-ms</property>
+    <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -6.118 </x-m>
@@ -982,43 +969,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-  
-  <animation>
-    <name>GlassLeft</name>
-    <object-name>vitreL</object-name>
-    <object-name>tourvitreL</object-name>
-  </animation>
-  
-  <animation>
-    <type>translate</type>
-    <object-name>GlassLeft</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
-    <factor> 0.40 </factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-  
-  <animation>
-    <name>GlassRight</name>
-    <object-name>vitreR</object-name>
-    <object-name>tourvitreR</object-name>
-  </animation>
-  
-  <animation>
-    <type>translate</type>
-    <object-name>GlassRight</object-name>
-    <property>sim/model/door-positions/passenger/position-norm</property>
-    <factor> 0.40 </factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-  
+    
   <!-- B 25 J -->
   <animation>
     <name>detailsB25J</name>
@@ -1031,8 +982,8 @@
     <object-name>detailsB25J</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
   </animation>
@@ -1054,12 +1005,12 @@
     <object-name>detailsB25A</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25a</value>
+        <property>sim/model/variant</property>
+        <value>0</value>
       </equals>
     </condition>
   </animation>
-  
+
   <!-- Exterior Lights -->
   <model>
     <path>Aircraft/B-25/Models/Lights/b25-lights.xml</path>

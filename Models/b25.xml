@@ -2,6 +2,36 @@
 
 <PropertyList>
 
+  <nasal>
+    <load><![CDATA[
+    var r = cmdarg();
+    print ("B-25 loading for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
+    var livery_update = aircraft.livery_update.new("Aircraft/B-25/Models/Liveries", 10);
+    r.initNode ("engines/engine[0]/cranking", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[0]"));
+    r.initNode ("engines/engine[1]/cranking", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[1]"));
+    r.initNode ("gear/gear[0]/wow", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[2]"));
+    r.initNode ("gear/gear[1]/wow", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[3]"));
+    r.initNode ("gear/gear[2]/wow", 0, "BOOL").alias (r.getNode ("sim/multiplay/generic/bool[4]"));
+    r.initNode ("/sim/model/door-positions/window[0]/position-norm", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[0]"));
+    r.initNode ("/sim/model/door-positions/window[1]/position-norm", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[1]"));
+    r.initNode ("gear/gear[0]/caster-angle-deg", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[4]"));
+    r.initNode ("gear/gear[0]/rollspeed-ms", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[11]"));
+    r.initNode ("gear/gear[1]/rollspeed-ms", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[12]"));
+    r.initNode ("gear/gear[2]/rollspeed-ms", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[13]"));
+    r.initNode ("/sim/model/door-positions/bombs/position-norm", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[5]"));
+    r.initNode ("/sim/model/door-positions/crew/position-norm", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[6]"));
+    if (r.getNode ("sim/model/variant").getValue () == 1) {
+      r.initNode ("sim/model/turret[0]/heading", 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[14]"));
+      r.initNode ("sim/model/turret[0]/pitch"  , 0, "DOUBLE").alias (r.getNode ("sim/multiplay/generic/float[15]"));
+      print ("B-25J loaded for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
+    }
+    ]]></load>
+    <unload><![CDATA[
+    print ("B-25 unloading for remote pilot " ~ r.getNode ("sim/multiplay/callsign").getValue ());
+    livery_update.stop();
+    ]]></unload>
+  </nasal>
+
   <model>
     <path>Aircraft/B-25/Models/main_Default.xml</path>
     <condition>
@@ -38,10 +68,215 @@
     <path>Aircraft/B-25/Models/Interior/Guns/SideGuns.xml</path>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
   </model>
 
+  <model>
+    <name>Dorsal_Turret_Gun_Right</name>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
+    <condition>
+      <equals>
+        <property>sim/model/variant</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    <offsets>
+      <x-m> -3.000 </x-m>
+      <y-m>  0.240 </y-m>
+      <z-m>  1.200 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <model>
+    <name>Dorsal_Turret_Gun_Left</name>
+    <path>Aircraft/B-25/Models/Interior/Guns/M2_Browning.xml</path>
+    <condition>
+      <equals>
+        <property>sim/model/variant</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    <offsets>
+      <x-m> -3.000 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  1.200 </z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Dorsal_Turret</object-name>
+    <condition>
+      <equals>
+	<property>sim/model/variant</property>
+	<value>1</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Dorsal_Turret</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <center>
+      <x-m> -2.470 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.350 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>Dorsal_Turret_Gun_Right</object-name>
+    <object-name>Dorsal_Turret_Gun_Left</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <center>
+      <x-m> -2.470 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.350 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>GlassLeft</name>
+    <object-name>vitreL</object-name>
+    <object-name>tourvitreL</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>GlassLeft</object-name>
+    <property>sim/model/door-positions/window[0]/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>GlassRight</name>
+    <object-name>vitreR</object-name>
+    <object-name>tourvitreR</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>GlassRight</object-name>
+    <property>sim/model/door-positions/window[1]/position-norm</property>
+    <factor> 0.40 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Dorsal_Turret_Gun_Right</object-name>
+    <object-name>Dorsal_Turret_Gun_Left</object-name>
+    <property>sim/model/turret[0]/pitch</property>
+    <center>
+      <x-m> -2.470 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.150 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <model>
+    <path>Aircraft/B-25/Models/all-bombs.xml</path>
+  </model>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Bombsdoorright</object-name>
+    <property>sim/model/door-positions/bombs/position-norm</property>
+    <factor>105</factor>
+    <axis>
+      <x1-m>0.09703</x1-m>
+      <y1-m>-0.49019</y1-m>
+      <z1-m>-0.93674</z1-m>
+      <x2-m>-2.18846</x2-m>
+      <y2-m>-0.47939</y2-m>
+      <z2-m>-0.92950</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Bombsdoorleft</object-name>
+    <property>sim/model/door-positions/bombs/position-norm</property>
+    <factor>105</factor>
+    <axis>
+      <x1-m>-2.14097</x1-m>
+      <y1-m>0.47884</y1-m>
+      <z1-m>-0.92614</z1-m>
+      <x2-m>0.10352</x2-m>
+      <y2-m>0.48622</y2-m>
+      <z2-m>-0.92569</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>Crew_Door_With_Ladder</name>
+    <object-name>Crewdoor</object-name>
+    <object-name>Ladder</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Crew_Door_With_Ladder</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep> 80 </dep></entry>
+      <entry><ind> 1 </ind><dep> 80 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>-2.86155</x1-m>
+      <y1-m>-0.29236</y1-m>
+      <z1-m>-1.01191</z1-m>
+      <x2-m>-2.86155</x2-m>
+      <y2-m>0.29236</y2-m>
+      <z2-m>-1.01191</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>Ladder</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+     <interpolation>
+       <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+       <entry><ind> 0.5 </ind><dep> 0 </dep></entry>
+       <entry><ind> 1 </ind><dep> 0.44 </dep></entry>
+     </interpolation>
+     <axis>
+       <x>1</x>
+       <y>0</y>
+       <z>0</z>
+     </axis>
+  </animation>
+  
 </PropertyList>

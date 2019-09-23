@@ -17,7 +17,7 @@
     <object-name>Cube</object-name>
     <object-name>indicatorLightRight</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.003 </red>
       <green> 0.003 </green>
       <blue>  0.003 </blue>
@@ -30,7 +30,7 @@
     <object-name>RedSwithcLeft</object-name>
     <object-name>RedSwitchRight</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.15 </red>
       <green> 0.15 </green>
       <blue>  0.15 </blue>

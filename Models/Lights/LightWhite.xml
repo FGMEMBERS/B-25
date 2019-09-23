@@ -50,7 +50,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>/sim/model/lights/tail/state</property>
+      <property>sim/model/lights/tail/state</property>
     </condition>
   </animation>
   

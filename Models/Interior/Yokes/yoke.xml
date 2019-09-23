@@ -23,7 +23,7 @@
     <object-name>Yoke.Button.Base</object-name>
     <object-name>rivets</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.004 </red>
       <green> 0.004 </green>
       <blue>  0.004 </blue>
@@ -36,7 +36,7 @@
     <object-name>Boot1</object-name>
     <object-name>Boot2</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.002 </red>
       <green> 0.002 </green>
       <blue>  0.002 </blue>

@@ -39,7 +39,7 @@
   <animation>
     <type>rotate</type>
     <object-name>SecondHand</object-name>
-    <property>/sim/time/utc/day-seconds</property>
+    <property>sim/time/utc/day-seconds</property>
     <factor> 6 </factor>
     <axis>
       <x> -1 </x>
@@ -51,7 +51,7 @@
   <animation>
     <type>rotate</type>
     <object-name>MinuteHand</object-name>
-    <property>/sim/time/utc/day-seconds</property>
+    <property>sim/time/utc/day-seconds</property>
     <factor> 0.1 </factor>
     <axis>
       <x> -1 </x>
@@ -63,7 +63,7 @@
   <animation>
     <type>rotate</type>
     <object-name>HourHand</object-name>
-    <property>/sim/time/utc/day-seconds</property>
+    <property>sim/time/utc/day-seconds</property>
     <factor> 0.008333 </factor>
     <axis>
       <x> -1 </x>

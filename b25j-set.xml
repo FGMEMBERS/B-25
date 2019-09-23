@@ -1,51 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList include="b25-base.xml">
-  
+
   <sim>
-
     <description>B-25J Mitchell (YASim)</description>
-    <author>Baranger Emmanuel (3D/FDM) / JC_SV (Cockpit/FDM) / Gary Neely (FDM)</author>
-    
-    <flight-model>yasim</flight-model>
-    <aero>b25j-yasim</aero>
-    
     <variant-of>b25</variant-of>
-    
-    <rating>
-      <FDM type="int">     4 </FDM>
-      <systems type="int"> 4 </systems>
-      <cockpit type="int"> 4 </cockpit>
-      <model type="int">   4 </model>
-    </rating>
-
-    <tags>
-      <tag>bomber</tag>
-      <tag>1940s</tag>
-      <tag>1950s</tag>
-      <tag>1960s</tag>
-      <tag>1970s</tag>
-      <tag>ww2</tag>
-      <tag>ifr</tag>
-      <tag>retractable-gear</tag>
-      <tag>piston</tag>
-      <tag>propeller</tag>
-      <tag>radial</tag>
-      <tag>twin-engine</tag>
-    </tags>
 
     <startup>
       <splash-texture>Aircraft/B-25/Splashs/b25j-splash.png</splash-texture>
     </startup>
-    
-    <multiplay>
-      <generic>
-        <string n="1" type="string">b25j</string>
-      </generic>
-    </multiplay>
-    
+
     <menubar include="Dialogs/b25j-menu.xml"/>
-    
+
     <view n="106">
       <name>Tail Gunner View</name>
       <type>lookfrom</type>
@@ -54,14 +20,63 @@
         <from-model type="bool">true</from-model>
         <from-model-idx type="int">0</from-model-idx>
         <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-        <x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
-        <y-offset-m archive="y"> 0.7 </y-offset-m> <!--Up-->
-        <z-offset-m archive="y"> 7.0 </z-offset-m> <!--Back-->
-        <pitch-offset-deg> 0 </pitch-offset-deg>
-        <heading-offset-deg type="double"> 180 </heading-offset-deg>
+        <x-offset-m type="double" archive="y">0.000</x-offset-m> <!--Right-->
+        <y-offset-m type="double" archive="y">0.7</y-offset-m> <!--Up-->
+        <z-offset-m type="double" archive="y">7.0</z-offset-m> <!--Back-->
+        <pitch-offset-deg type="double">0</pitch-offset-deg>
+        <heading-offset-deg type="double">180</heading-offset-deg>
         <default-field-of-view-deg type="double">90</default-field-of-view-deg>
       </config>
     </view>
+    <view n="107">
+      <name>Turret_Gunner_View</name>
+      <type>lookfrom</type>
+      <internal archive="y">true</internal>
+      <config>
+	<from-model type="bool">true</from-model>
+	<from-model-idx type="int">0</from-model-idx>
+	<ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+	<x-offset-m type="double" archive="y">0.000</x-offset-m>	<!-- Right -->
+	<y-offset-m type="double" archive="y">1.350</y-offset-m>	<!-- Up    -->
+	<z-offset-m type="double" archive="y">-2.400</z-offset-m>	<!-- Back  -->
+	<pitch-offset-deg type="double">-15</pitch-offset-deg>
+	<default-field-of-view-deg type="double">65</default-field-of-view-deg>
+      </config>
+    </view>
+
+    <model>
+      <variant type="int">1</variant>
+      <turret>
+	<pitch type="double">0</pitch>
+	<heading type="double">0</heading>
+      </turret>
+    </model>
+
+    <multiplay>
+      <generic>
+        <float n="14" alias="/sim/model/turret[0]/heading"/>
+        <float n="15" alias="/sim/model/turret[0]/pitch"/>
+      </generic>
+    </multiplay>
+
+    <remote>
+      <pilot-callsign type="string"/> <!-- work around a bug in dual-control-tools.nas, which should create this node as necessary -->
+    </remote>
   </sim>
+
+  <nasal>
+    <turrets>
+      <file>Aircraft/B-25/Nasal/turrets.nas</file>
+    </turrets>
+    <dual_control_tools>
+      <file>Aircraft/Generic/DualControl/dual-control-tools.nas</file>
+    </dual_control_tools>
+    <aircraft_dual_control>
+      <file>Aircraft/B-25/Nasal/b25-dual-control.nas</file>
+    </aircraft_dual_control>
+    <dual_control>
+      <file>Aircraft/Generic/DualControl/pilot-dual-control.nas</file>
+    </dual_control>
+  </nasal>
 
 </PropertyList>

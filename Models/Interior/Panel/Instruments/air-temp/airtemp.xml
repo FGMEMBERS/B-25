@@ -35,7 +35,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Airtemp.Needle</object-name>
-    <property>/environment/temperature-degc</property>
+    <property>environment/temperature-degc</property>
     <interpolation>
       <entry><ind> -60 </ind><dep> -60 </dep></entry>
       <entry><ind>   0 </ind><dep>   0 </dep></entry>

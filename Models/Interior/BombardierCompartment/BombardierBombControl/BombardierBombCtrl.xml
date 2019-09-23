@@ -14,7 +14,7 @@
     <object-name>Base</object-name>
     <object-name>Indicators</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.003 </red>
       <green> 0.003 </green>
       <blue>  0.003 </blue>
@@ -25,7 +25,7 @@
     <type>material</type>
     <object-name>Indicators</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.15 </red>
       <green> 0.15 </green>
       <blue>  0.15 </blue>

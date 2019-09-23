@@ -24,7 +24,7 @@
     <object-name>needle1</object-name>  
     <object-name>needle2</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -34,7 +34,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle1</object-name>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <interpolation>
       <entry><ind>    0 </ind><dep>   0 </dep></entry>
       <entry><ind>  500 </ind><dep>  35 </dep></entry>
@@ -54,7 +54,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle2</object-name>
-    <property>/engines/engine[1]/rpm</property>
+    <property>engines/engine[1]/rpm</property>
     <interpolation>
       <entry><ind>    0 </ind><dep>   0 </dep></entry>
       <entry><ind>  500 </ind><dep>  35 </dep></entry>

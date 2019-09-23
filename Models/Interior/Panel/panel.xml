@@ -28,7 +28,7 @@
     <type>material</type>
     <object-name>panel</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.003 </red>
       <green> 0.003 </green>
       <blue>  0.003 </blue>

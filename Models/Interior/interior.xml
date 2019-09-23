@@ -78,8 +78,8 @@
     <object-name>intvitresoustour</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25a</value>
+        <property>sim/model/variant</property>
+        <value>0</value>
       </equals>
     </condition>
   </animation>
@@ -87,17 +87,33 @@
   <!-- B 25 J -->
   <animation>
     <type>select</type>
-    <object-name>IntSideGunsBase</object-name>
+    <object-name>Dorsal_Turret_Interior</object-name>
     <object-name>inttour1</object-name>
     <object-name>inttour2</object-name>
     <object-name>inttour3</object-name>
     <object-name>intvitreJ</object-name>
     <condition>
       <equals>
-        <property>sim/multiplay/generic/string[1]</property>
-        <value>b25j</value>
+        <property>sim/model/variant</property>
+        <value>1</value>
       </equals>
     </condition>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Dorsal_Turret_Interior</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <center>
+      <x-m> -2.470 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.350 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
   </animation>
 
   <animation>
@@ -110,7 +126,7 @@
       <red>   0.002 </red>
       <green> 0.002 </green>
       <blue>  0.002 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -261,7 +277,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.crew.toggle();</script>
+        <script>doors.left_window.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -279,7 +295,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntLeftGlass</object-name>
-    <property>sim/model/door-positions/crew/position-norm</property>
+    <property>sim/model/door-positions/window[0]/position-norm</property>
     <factor> 0.40 </factor>
     <axis>
       <x> 1 </x>
@@ -299,7 +315,7 @@
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-        <script>doors.passenger.toggle();</script>
+        <script>doors.right_window.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -317,7 +333,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntRightGlass</object-name>
-    <property>sim/model/door-positions/passenger/position-norm</property>
+    <property>sim/model/door-positions/window[1]/position-norm</property>
     <factor> 0.40 </factor>
     <axis>
       <x> 1 </x>

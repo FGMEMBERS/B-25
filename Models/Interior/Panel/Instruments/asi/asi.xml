@@ -23,7 +23,7 @@
     <object-name>face</object-name>
     <object-name>needle</object-name>
     <emission>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -33,7 +33,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/instrumentation/airspeed-indicator/indicated-speed-mph</property>
+    <property>instrumentation/airspeed-indicator/indicated-speed-mph</property>
     <interpolation>
       <entry><ind>   0 </ind><dep>   0 </dep></entry>
       <entry><ind>  50 </ind><dep>  20 </dep></entry>

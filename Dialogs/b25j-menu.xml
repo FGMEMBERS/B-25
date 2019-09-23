@@ -62,6 +62,13 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Select MP turret gunner</label>
+        <binding>
+          <command>nasal</command>
+          <script>dual_control_tools.copilot_dialog.show (aircraft_dual_control.copilot_type);</script>
+        </binding>
+      </item>
     </menu>
   </default>
 
